@@ -103,7 +103,7 @@ export default defineNuxtConfig({
 		'@nuxt/icon',
 		'@nuxt/image',
 		'@nuxtjs/color-mode',
-		'@nuxtjs/seo',
+		// '@nuxtjs/seo', // 临时注释掉，解决sitemap生成错误
 		'@pinia/nuxt',
 		'@vueuse/nuxt',
 		'unplugin-yaml/nuxt',
@@ -160,10 +160,28 @@ ${packageJson.homepage}
 	},
 
 	image: {
-		// Netlify 需要特殊处理
-		provider: process.env.NUXT_IMAGE_PROVIDER,
-		domains: blogConfig.imageDomains,
-		format: ['avif', 'webp'],
+		// 完全禁用远程图片处理
+		provider: 'none',
+		domains: [],
+		format: [],
+		screens: {},
+		nitro: {
+			output: {
+				dir: 'dist'
+			}
+		},
+		presets: {},
+		// 禁用所有图片优化
+		modifiers: {},
+		// 确保不会尝试处理外部图片
+		providerOptions: {
+			ipx: {
+				dir: false,
+				maxAge: 0,
+				clearCache: true,
+				remotePatterns: false
+			}
+		}
 	},
 
 	robots: {
@@ -175,5 +193,10 @@ ${packageJson.homepage}
 		name: blogConfig.title,
 		url: blogConfig.url,
 		defaultLocale: blogConfig.language,
+	},
+	
+	// 完全禁用sitemap功能
+	seo: {
+		sitemap: false
 	},
 })

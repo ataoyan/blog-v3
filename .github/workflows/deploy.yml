@@ -1,0 +1,69 @@
+name: Deploy ATao-Blog to Server
+
+on:
+  push:
+    branches:
+      - atao-blog
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8
+        run_install: false
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    # 添加调试步骤，查看环境变量和路径
+    - name: Debug Environment
+      run: |
+        echo "PATH: $PATH"
+        which pnpm || echo "pnpm not found in PATH"
+        npm -g list || echo "Global npm packages"
+
+    # 使用 npx 来运行 pnpm 命令
+    - name: Install Packages
+      run: |
+        npx pnpm install --frozen-lockfile
+
+    - name: Generate Static Site
+      run: npx pnpm generate
+
+    - name: Verify Build Output
+      run: |
+        echo "Build output structure:"
+        ls -la .output/public/ 
+
+    - name: Deploy to Server
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        username: root
+        password: ${{ secrets.SERVER_PASSWORD }}
+        port: 22
+        source: ".output/public/**"
+        target: "/var/www/html/ataoblog"
+        strip_components: 1
+        overwrite: true
+
+    - name: Cleanup Server Cache
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        username: root
+        password: ${{ secrets.SERVER_PASSWORD }}
+        port: 22
+        script: |
+          cd /var/www/html/ataoblog
+          echo "Deployment completed successfully!"
+          echo "Files deployed:"
+          ls -la
