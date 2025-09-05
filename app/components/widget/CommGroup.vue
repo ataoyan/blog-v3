@@ -7,7 +7,7 @@
 	bg-right
 >
 	<div class="title">
-		纸网接入点
+		ATao的工作台
 	</div>
 
 	<Tip copy icon="oui:empty" :tip-options="{ placement: 'left' }">

@@ -10,6 +10,16 @@ const showAllDate = isTimeDiffSignificant(props.date, props.updated)
 const categoryLabel = computed(() => props.categories?.[0])
 const categoryColor = computed(() => appConfig.article.categories[categoryLabel.value!]?.color)
 const categoryIcon = computed(() => getCategoryIcon(categoryLabel.value))
+
+const tagsWithIcons = computed(() => {
+  if (!props.tags || props.tags.length === 0) return []
+  
+  return props.tags.map(tag => ({
+    name: tag,
+    icon: getTagIcon(tag),
+    color: appConfig.article.tags[tag]?.color
+  }))
+})
 </script>
 
 <template>
@@ -53,6 +63,19 @@ const categoryIcon = computed(() => getCategoryIcon(categoryLabel.value))
 				>
 					<Icon :name="categoryIcon" />
 					{{ categoryLabel }}
+				</span>
+			</ClientOnly>
+
+			<!-- 标签显示 -->
+			<ClientOnly>
+				<span
+					v-for="tag in tagsWithIcons"
+					:key="tag.name"
+					class="article-tag"
+					:style="{ '--tag-color': tag.color }"
+				>
+					<Icon :name="tag.icon" />
+					{{ tag.name }}
 				</span>
 			</ClientOnly>
 
@@ -109,6 +132,10 @@ const categoryIcon = computed(() => getCategoryIcon(categoryLabel.value))
 
 .article-category {
 	color: var(--cg-color);
+}
+
+.article-tag {
+	color: var(--tag-color);
 }
 
 .article-cover {

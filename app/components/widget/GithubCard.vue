@@ -4,9 +4,10 @@ interface Repo {
 	description: string
 	url: string
 }
+const appConfig = useAppConfig()
 const route = useRoute()
 const { data: post } = await useAsyncData(() => `githubcard-${route.path}`, () => queryCollection('content').path(route.path).first())
-const repo = computed(() => post.value?.meta?.github as Repo | undefined)
+const repo = computed(() => (post.value?.meta?.github as Repo | undefined) || (appConfig.homepage as any)?.githubCard)
 </script>
 
 <template>

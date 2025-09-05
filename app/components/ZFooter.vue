@@ -4,61 +4,61 @@ const appConfig = useAppConfig()
 
 <template>
 <footer class="z-footer">
-	<nav class="footer-nav">
-		<div v-for="(group, groupIndex) in appConfig.footer.nav" :key="groupIndex" class="footer-nav-group">
-			<h3 v-if="group.title">
-				{{ group.title }}
-			</h3>
-			<menu>
-				<li v-for="(item, itemIndex) in group.items" :key="itemIndex">
-					<ZRawLink :to="item.url">
-						<Icon :name="item.icon" />
-						<span class="nav-text">{{ item.text }}</span>
-					</ZRawLink>
-				</li>
-			</menu>
+	<div class="footer-info">
+		<div class="icp">
+			<a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备2024096834号-3</a>
 		</div>
-	</nav>
-	<p v-html="appConfig.footer.copyright" />
+		<span class="divider">|</span>
+		<div class="copyright" v-html="appConfig.footer.copyright" />
+	</div>
 </footer>
 </template>
 
 <style lang="scss" scoped>
 .z-footer {
-	margin: 3rem 1rem;
-	font-size: 0.9em;
-	color: var(--c-text-2);
+	margin: 2rem 1rem 1rem;
+	font-size: 0.8em;
+	color: var(--c-text-3);
 
-	.footer-nav {
+	.footer-info {
 		display: flex;
-		flex-wrap: wrap;
-		gap: 5vw clamp(2rem, 5%, 5vw);
-		padding-block: 3rem;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		font-size: 0.8em;
+		color: var(--c-text-3);
 
-		h3 {
-			margin: 0.5em;
-			font: inherit;
+		.copyright {
+			font-weight: 500;
 		}
 
-		a {
-			display: flex;
-			align-items: center;
-			gap: 0.3em;
-			width: fit-content;
-			padding: 0.3em 0.5em;
-			border-radius: 0.5em;
-			font-size: 0.9em;
-			transition: background-color 0.2s, color 0.1s;
-
-			&:hover {
-				background-color: var(--c-bg-soft);
-				color: var(--c-text);
+		.icp {
+			a {
+				color: var(--c-text-3);
+				text-decoration: none;
+				font-weight: 500;
+				
+				&:hover {
+					color: #4a90e2;
+					text-decoration: underline;
+				}
 			}
 		}
-	}
 
-	p {
-		margin: 0.5em;
+		.divider {
+			color: var(--c-border);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.z-footer {
+		margin: 1.5rem 0.5rem 0.5rem;
+
+		.footer-info {
+			gap: 0.8rem;
+			font-size: 0.75em;
+		}
 	}
 }
 </style>

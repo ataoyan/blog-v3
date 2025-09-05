@@ -35,15 +35,16 @@ onMounted(() => {
 </script>
 
 <template>
-<Tooltip :delay="200" interactive hide-on-click="toggle">
-	<ZRawLink
-		class="feed-card gradient-card"
-		:to="error ? undefined : link"
-		:data-error="error"
-	>
+<div>
+	<Tooltip :delay="200">
+		<ZRawLink
+			class="feed-card gradient-card"
+			:to="error ? undefined : link"
+			:data-error="error"
+		>
 		<div class="avatar">
 			<ClientOnly v-if="inspect">
-				<NuxtImg :src="icon" :title="icon" :style="getInspectStyle(icon)" />
+				<!-- <NuxtImg :src="icon" :title="icon" :style="getInspectStyle(icon)" /> -->
 				<NuxtImg :src="avatar" :title="avatar" :style="getInspectStyle(avatar)" />
 			</ClientOnly>
 
@@ -88,7 +89,8 @@ onMounted(() => {
 			</p>
 		</div>
 	</template>
-</Tooltip>
+	</Tooltip>
+</div>
 </template>
 
 <style lang="scss" scoped>

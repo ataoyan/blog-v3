@@ -19,7 +19,7 @@ const auxDateLabel = computed(() => props.date
 <template>
 <li class="article-item">
 	<time :datetime="getLocaleDatetime(mainDate)" :title="getLocaleDatetime(mainDate)">{{ dateLabel }}</time>
-	<ZRawLink class="article-link gradient-card" :to :title="description">
+	<ZRawLink class="article-link" :to :title="description">
 		<span class="article-title">
 			{{ title }}
 		</span>

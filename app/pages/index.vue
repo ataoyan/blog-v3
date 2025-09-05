@@ -8,16 +8,19 @@ useSeoMeta({
 })
 
 const layoutStore = useLayoutStore()
-layoutStore.setAside(['blog-stats', 'blog-tech', 'comm-group'])
+layoutStore.setAside(['blog-stats', 'announcement-card', 'work-status', 'theme-card'])
 
 // BUG 若其他页面和 index.vue 共用同一数据源，其 payload 会被置空
 // 此处数据源不采用默认参数，以防归档页面刷新空白
 const { data: listRaw } = await useArticleIndex('posts%')
 const { listSorted, isAscending, sortOrder } = useArticleSort(listRaw)
-const { category, categories, listCategorized } = useCategory(listSorted, { bindQuery: 'category' })
-const { page, totalPages, listPaged } = usePagination(listCategorized, { bindQuery: 'page' })
+const { category, categories, tag, tags, listFiltered } = useArticleFilter(listSorted, { 
+	categoryBindQuery: 'category',
+	tagBindQuery: 'tag'
+})
+const { page, totalPages, listPaged } = usePagination(listFiltered, { bindQuery: 'page' })
 
-watch(category, () => {
+watch([category, tag], () => {
 	page.value = 1
 })
 
@@ -48,12 +51,19 @@ const listRecommended = computed(() => sort(
 			</ZRawLink>
 		</div>
 
-		<ZOrderToggle
-			v-model:is-ascending="isAscending"
-			v-model:sort-order="sortOrder"
-			v-model:category="category"
-			:categories
-		/>
+		<div class="filter-group">
+			<ZOrderToggle
+				v-model:is-ascending="isAscending"
+				v-model:sort-order="sortOrder"
+				v-model:category="category"
+				:categories
+			/>
+			
+			<ZTagToggle
+				v-model:tag="tag"
+				:tags
+			/>
+		</div>
 	</div>
 
 	<TransitionGroup name="float-in">
@@ -76,6 +86,12 @@ const listRecommended = computed(() => sort(
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.filter-group {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
 .preview-entrance {

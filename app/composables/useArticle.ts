@@ -7,7 +7,7 @@ export function useArticleIndex(path = 'posts/%') {
 		`index_${path}`,
 		() => queryCollection('content')
 			.where('stem', 'LIKE', path)
-			.select('categories', 'date', 'description', 'image', 'path', 'readingTime', 'recommend', 'title', 'type', 'updated')
+			.select('categories', 'date', 'description', 'image', 'path', 'readingTime', 'recommend', 'title', 'type', 'updated', 'tags')
 			.all(),
 		{ default: () => [] }, // 不返回 undefined
 	)
@@ -36,6 +36,32 @@ export function useCategory(list: MaybeRefOrGetter<ArticleProps[]>, options?: Us
 	}
 }
 
+interface UseTagOptions {
+	bindQuery?: string | false
+}
+
+export function useTag(list: MaybeRefOrGetter<ArticleProps[]>, options?: UseTagOptions) {
+	const { bindQuery } = options ?? {}
+	const tag = bindQuery
+		? useRouteQuery(bindQuery, undefined, { transform: (value?: string) => value, mode: 'push' })
+		: ref<string | undefined>()
+	const tags = computed(() => {
+		const allTags = toValue(list).flatMap(item => item.tags || [])
+		return [...new Set(allTags)].filter(Boolean)
+	})
+	const listTagged = computed(
+		() => toValue(list).filter(
+			item => !tag.value || (item.tags && item.tags.includes(tag.value)),
+		),
+	)
+
+	return {
+		tag,
+		tags,
+		listTagged,
+	}
+}
+
 export function useArticleSort(list: MaybeRefOrGetter<ArticleProps[]>) {
 	const appConfig = useAppConfig()
 	const sortOrder = ref<ArticleOrderType>(appConfig.pagination.sortOrder || 'date')
@@ -55,6 +81,31 @@ export function useArticleSort(list: MaybeRefOrGetter<ArticleProps[]>) {
 export function getCategoryIcon(category?: string) {
 	const appConfig = useAppConfig()
 	return appConfig.article.categories[category!]?.icon ?? 'ph:folder-bold'
+}
+
+export function getTagIcon(tag?: string) {
+	const appConfig = useAppConfig()
+	return appConfig.article.tags[tag!]?.icon ?? 'ph:tag-bold'
+}
+
+export function useArticleFilter(list: MaybeRefOrGetter<ArticleProps[]>, options?: {
+	categoryBindQuery?: string | false
+	tagBindQuery?: string | false
+}) {
+	const { categoryBindQuery, tagBindQuery } = options ?? {}
+	
+	const { category, categories, listCategorized } = useCategory(list, { bindQuery: categoryBindQuery })
+	const { tag, tags, listTagged } = useTag(listCategorized, { bindQuery: tagBindQuery })
+	
+	const listFiltered = computed(() => toValue(listTagged))
+	
+	return {
+		category,
+		categories,
+		tag,
+		tags,
+		listFiltered
+	}
 }
 
 export function getPostTypeClassName(type?: string, options = {

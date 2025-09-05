@@ -60,7 +60,9 @@ export default defineNuxtConfig({
 			nodeVersion: process.version,
 			platform: process.platform,
 			arch: process.arch,
+			githubUsername: process.env.GITHUB_USERNAME || 'L33Z22L11',
 		},
+		githubToken: process.env.GITHUB_TOKEN,
 	},
 
 	vite: {
@@ -73,6 +75,25 @@ export default defineNuxtConfig({
 		},
 		server: {
 			allowedHosts: true,
+		},
+		optimizeDeps: {
+			include: [
+				'vue',
+				'vue-router',
+				'@vueuse/core',
+				'pinia'
+			]
+		},
+		build: {
+			chunkSizeWarningLimit: 1000,
+			rollupOptions: {
+				output: {
+					manualChunks: {
+						'vue-vendor': ['vue', 'vue-router', 'pinia', '@vueuse/core'],
+						'ui-vendor': ['vue-tippy', 'vue-virtual-scroller']
+					}
+				}
+			}
 		},
 	},
 

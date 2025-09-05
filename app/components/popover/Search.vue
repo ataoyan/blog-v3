@@ -144,10 +144,11 @@ function openActiveItem() {
 	overflow: hidden;
 	width: 95%;
 	max-width: $breakpoint-mobile;
-	border: 1px solid var(--c-primary);
+	border: 1px solid transparent;
 	border-radius: 1em;
+	background: linear-gradient(var(--ld-bg-card), var(--ld-bg-card)) padding-box,
+	            linear-gradient(45deg, var(--c-primary), var(--c-accent)) border-box;
 	box-shadow: 0 0.5em 1em var(--ld-shadow);
-	background-color: var(--ld-bg-card);
 	transition: all var(--delay, 200);
 	z-index: 1000;
 }
@@ -180,7 +181,7 @@ function openActiveItem() {
 		width: 100%;
 		height: 100%;
 		border-right: 1px solid var(--c-primary);
-		background: linear-gradient(to right, transparent 50%, var(--c-primary-soft)) no-repeat;
+		background: linear-gradient(to right, transparent 50%, var(--c-primary)) no-repeat;
 		z-index: -1;
 	}
 

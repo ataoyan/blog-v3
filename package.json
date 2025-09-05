@@ -1,10 +1,10 @@
 {
-  "name": "zhilu-blog",
+  "name": "atao-blog",
   "type": "module",
   "version": "3.4.0",
   "private": true,
   "packageManager": "pnpm@10.13.1",
-  "homepage": "https://github.com/L33Z22L11/blog-v3",
+  "homepage": "https://github.com/ataoyan/blog-v3",
   "scripts": {
     "prepare": "pnpx rimraf .data node_modules/.cache && nuxt prepare",
     "dev": "nuxt dev --no-qr",
@@ -14,7 +14,10 @@
     "preview": "nuxt preview",
     "lint": "stylelint '**/*.{vue,scss}'",
     "lint:fix": "eslint --fix && stylelint '**/*.{vue,scss}' --fix",
-    "new": "node scripts/new-blog.js"
+    "new": "node scripts/new-blog.js",
+    "colors": "node scripts/generate-colors.js",
+    "dev": "npm run colors && nuxt dev --no-qr",
+    "build": "npm run colors && cross-env NODE_OPTIONS='--no-deprecation' nuxt build"
   },
   "dependencies": {
     "better-sqlite3": "catalog:content",

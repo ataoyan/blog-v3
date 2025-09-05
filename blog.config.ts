@@ -1,32 +1,38 @@
 import type { NitroConfig } from 'nitropack'
 import type { FeedEntry } from './app/types/feed'
 import redirectList from './redirects.json'
+import { faIR } from 'date-fns/locale'
 
 export { zhCN as dateLocale } from 'date-fns/locale/zh-CN'
 
 // 存储 nuxt.config 和 app.config 共用的配置
 // 此处为启动时需要的配置，启动后可变配置位于 app/app.config.ts
 const blogConfig = {
-	title: '纸鹿摸鱼处',
-	subtitle: '纸鹿至麓不知路，支炉制露不止漉',
+	title: 'Taoの开发笔记2',
+	subtitle: '做自己喜欢的事',
 	// 长 description 利好于 SEO
-	description: '纸鹿本鹿的个人博客，分享技术与生活。“折腾不止，摸鱼生活——摸门🙏🏻”。纸鹿是一名开源爱好者，结识了许多志同道合的朋友。这个博客记录了他在生活和技术学习中的点滴经历，充满启发与思考。网站界面简洁美观，内容丰富实用，人气互动活跃，涵盖了编程、生活、学习等多个领域，为读者提供了卓越的阅读体验。',
+	description: '这有关于个人开发相关的经验和分享，还有一些日常生活的分享。',
+	headerConfig: {
+		defaultTag: '自动化工程师',
+		hoverTag: '摸鱼大人',
+		hoverSubtitle: '爱自己喜欢的人💖'
+	},
 	author: {
-		name: '纸鹿本鹿',
-		avatar: 'https://www.zhilu.site/api/avatar.png',
-		email: 'hi@zhilu.cyou',
-		homepage: 'https://www.zhilu.site/',
+		name: 'ATao',
+		avatar: 'https://cdn.taonotespace.com/Web/Avatar.png',
+		email: 'qiatao0305@163.com',
+		homepage: 'https://atao.cyou',
 	},
 	copyright: {
 		abbr: 'CC BY-NC-SA 4.0',
 		name: '署名-非商业性使用-相同方式共享 4.0 国际',
 		url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans',
 	},
-	favicon: 'https://www.zhilu.site/api/icon.png',
+	favicon: 'https://cdn.taonotespace.com/Web/atao.png',
 	language: 'zh-CN',
-	timeEstablished: '2019-07-19',
+	timeEstablished: '2024-11-16',
 	timezone: 'Asia/Shanghai',
-	url: 'https://blog.zhilu.site/',
+	url: 'https://taonotespace.com',
 
 	defaultCategory: ['未分类'],
 
@@ -41,6 +47,7 @@ const blogConfig = {
 		// 自动启用本域名的 Nuxt Image
 		// 'www.zhilu.site',
 		// '7.isyangs.cn',
+		'cdn.taonotespace.com',
 	],
 
 	// 禁止搜索引擎收录的路径
@@ -48,17 +55,31 @@ const blogConfig = {
 
 	scripts: [
 		// 自己部署的 Umami 统计服务
-		{ 'src': 'https://zhi.zhilu.cyou/zhi.js', 'data-website-id': 'a1997c81-a42b-46f6-8d1d-8fbd67a8ef41', 'defer': true },
+		{ 'src': 'http://120.55.98.102:2222/script.js', 'data-website-id': 'db0898e0-ffdf-498b-93c7-b061a789904e', 'defer': true },
 		// 自己网站的 Cloudflare Insights 统计服务
 		{ 'src': 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token": "97a4fe32ed8240ac8284e9bffaf03962"}', 'defer': true },
+		// Twikoo 评论系统依赖
+		{ src: 'https://imgcache.qq.com/qcloud/cloudbase-js-sdk/1.3.3/cloudbase.full.js', defer: true },
 		// Twikoo 评论系统
 		{ src: 'https://lib.baomitu.com/twikoo/1.6.44/twikoo.min.js', defer: true },
 	],
 
 	// 自己部署的 Twikoo 服务
 	twikoo: {
-		envId: 'https://twikoo.zhilu.cyou/',
-		preload: 'https://twikoo.zhilu.cyou/',
+		envId: 'http://twikoo.taonotespace.com',
+		preload: 'http://twikoo.taonotespace.com',
+	},
+
+	// 公告配置
+	announcement: {
+		enabled: true,
+		message: '欢迎来到我的博客鸭！'
+	},
+
+	// ICP备案信息
+	icp: {
+		number: '浙ICP备2024096834号-3',
+		url: 'https://beian.miit.gov.cn/',
 	},
 }
 
@@ -92,6 +113,7 @@ export const routeRules = <NitroConfig['routeRules']>{
 	'/api/stats': { prerender: true, headers: { 'Content-Type': 'application/json' } },
 	'/atom.xml': { prerender: true, headers: { 'Content-Type': 'application/xml' } },
 	'/favicon.ico': { redirect: { to: blogConfig.favicon } },
+	'/figures': { prerender: false },
 	'/zhilu.opml': { prerender: true, headers: { 'Content-Type': 'application/xml' } },
 }
 

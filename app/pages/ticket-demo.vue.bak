@@ -1,0 +1,106 @@
+<script setup lang="ts">
+// 手动导入组件
+import TicketCard from '~/components/partial/ModernTicketCard.vue'
+
+// 示例数据
+const demoData = [
+  {
+    title: '电影票设计',
+    subtitle: '创意卡片组件',
+    description: '这是一个采用电影票设计风格的卡片组件，具有精美的视觉效果和流畅的交互体验。',
+    image: 'https://images.unsplash.com/photo-1489599102910-59206b8ca314?w=400&h=300&fit=crop',
+    href: 'https://example.com',
+    tags: ['设计', 'UI', '卡片'],
+    meta: '2小时前',
+    badge: 'NEW'
+  },
+  {
+    title: '现代网页设计',
+    subtitle: '响应式布局',
+    description: '采用最新的响应式设计技术，确保在各种设备上都能完美展示。',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
+    href: 'https://example.com/design',
+    tags: ['响应式', '现代'],
+    meta: '1天前'
+  },
+  {
+    title: '用户体验优化',
+    subtitle: '交互设计',
+    description: '专注于用户体验的细节设计，提供流畅自然的交互效果。',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop',
+    href: 'https://example.com/ux',
+    tags: ['UX', '动画'],
+    meta: '3天前',
+    badge: '热门'
+  }
+]
+</script>
+
+<template>
+  <div class="demo-container">
+    <h1>电影票风格卡片组件</h1>
+    <p class="demo-description">这是一个固定尺寸的卡片组件，采用电影票设计风格，具有平滑的动画效果。</p>
+    
+    <div class="cards-grid">
+      <TicketCard
+        v-for="(item, index) in demoData"
+        :key="index"
+        :title="item.title"
+        :subtitle="item.subtitle"
+        :description="item.description"
+        :image="item.image"
+        :href="item.href"
+        :tags="item.tags"
+        :meta="item.meta"
+        :badge="item.badge"
+      />
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.demo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .demo-description {
+    text-align: center;
+    color: var(--c-text-2);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+  }
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .demo-container {
+    padding: 1rem;
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .cards-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+}
+</style>

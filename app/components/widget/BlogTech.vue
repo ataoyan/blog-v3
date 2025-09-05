@@ -26,20 +26,13 @@ const techstack = computed(() => ([
 	{ label: 'Arch', value: arch },
 ]))
 
-const expand = ref(false)
 </script>
 
 <template>
 <ZWidget card title="技术信息">
 	<ZDlGroup :items="service" />
-	<ZExpand v-model="expand" in-place name="构建信息">
-		<ZDlGroup size="small" :items="techstack" />
-	</ZExpand>
+	<ZDlGroup size="small" :items="techstack" />
 </ZWidget>
 </template>
 
-<style lang="scss" scoped>
-.z-expand {
-	margin-top: 0.2em;
-}
-</style>
+

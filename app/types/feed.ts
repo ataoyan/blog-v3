@@ -12,7 +12,7 @@ export interface FeedEntry {
 	/** 订阅源 */
 	feed?: string
 	/** 站点小图标 */
-	icon: string
+	icon?: string
 	/** 个人头像 */
 	avatar: string
 	/** 博客技术架构 */
@@ -21,8 +21,16 @@ export interface FeedEntry {
 	date: string
 	/** 博主备注 */
 	comment?: string
+	/** 徽章文本 */
+	badgeText?: string
+	/** 徽章颜色 */
+	badgeColor?: string
+	/** 性别 */
+	gender?: 'male' | 'female'
 	/** 错误信息 */
 	error?: string
+	/** 标签 */
+	tags?: string[]
 }
 
 export interface FeedGroup {

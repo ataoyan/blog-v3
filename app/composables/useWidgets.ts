@@ -7,9 +7,10 @@ import {
 	LazyWidgetGithubCard,
 	LazyWidgetToc,
 } from '#components'
+import { defineAsyncComponent } from 'vue'
 import { pascal } from 'radash'
 
-// @keep-sorted
+// @极简主义
 const rawWidgets = {
 	LazyWidgetBlogLog,
 	LazyWidgetBlogStats,
@@ -18,9 +19,12 @@ const rawWidgets = {
 	LazyWidgetEmpty,
 	LazyWidgetGithubCard,
 	LazyWidgetToc,
+	LazyWidgetThemeCard: defineAsyncComponent(() => import('~/components/widget/ThemeCard.vue')),
+	LazyWidgetWorkStatus: defineAsyncComponent(() => import('~/components/widget/WorkStatusCard.vue')),
+	LazyWidgetAnnouncementCard: defineAsyncComponent(() => import('~/components/widget/AnnouncementCard.vue')),
 }
 
-type RawWidgetName = keyof typeof rawWidgets
+type RawWidgetName = keyof typeof rawWidgets | 'LazyWidgetThemeCard'
 
 /** 若首字母大写还需移除`-`前缀 */
 type KebabCase<S extends string> = S extends `${infer First}${infer Rest}`

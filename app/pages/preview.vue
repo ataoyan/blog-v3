@@ -7,9 +7,10 @@ useSeoMeta({
 const layoutStore = useLayoutStore()
 layoutStore.setAside(['blog-log'])
 
+layoutStore.setAside(['theme-card'])
 const { data: listRaw } = useArticleIndex('previews/%')
 const { listSorted, isAscending, sortOrder } = useArticleSort(listRaw)
-const { category, categories, listCategorized } = useCategory(listSorted)
+const { category, categories, tag, tags, listFiltered } = useArticleFilter(listSorted)
 </script>
 
 <template>
@@ -20,18 +21,25 @@ const { category, categories, listCategorized } = useCategory(listSorted)
 				<Icon name="ph:caret-left-bold" />
 			</ZRawLink>预览
 		</h1>
-		<ZOrderToggle
-			v-model:is-ascending="isAscending"
-			v-model:sort-order="sortOrder"
-			v-model:category="category"
-			:categories
-		/>
+		<div class="filter-group">
+			<ZOrderToggle
+				v-model:is-ascending="isAscending"
+				v-model:sort-order="sortOrder"
+				v-model:category="category"
+				:categories
+			/>
+			
+			<ZTagToggle
+				v-model:tag="tag"
+				:tags
+			/>
+		</div>
 	</div>
 	<p>勇敢的人探索世界。这里是一些还未发布的文章。</p>
 
 	<menu>
 		<ZArticle
-			v-for="article in listCategorized"
+			v-for="article in listFiltered"
 			:key="article.path"
 			v-bind="article"
 			:to="article.path"
@@ -54,5 +62,11 @@ const { category, categories, listCategorized } = useCategory(listSorted)
 	h1 {
 		mask-image: linear-gradient(#FFF, transparent);
 	}
+}
+
+.filter-group {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 </style>
