@@ -8,7 +8,7 @@ export { zhCN as dateLocale } from 'date-fns/locale/zh-CN'
 // 存储 nuxt.config 和 app.config 共用的配置
 // 此处为启动时需要的配置，启动后可变配置位于 app/app.config.ts
 const blogConfig = {
-	title: 'Taoの开发笔记2',
+	title: 'ATao-Blog',
 	subtitle: '做自己喜欢的事',
 	// 长 description 利好于 SEO
 	description: '这有关于个人开发相关的经验和分享，还有一些日常生活的分享。',
@@ -28,7 +28,7 @@ const blogConfig = {
 		name: '署名-非商业性使用-相同方式共享 4.0 国际',
 		url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans',
 	},
-	favicon: 'https://cdn.taonotespace.com/Web/atao.png',
+	favicon: 'https://cdn.taonotespace.com/Web/Avatar.png',
 	language: 'zh-CN',
 	timeEstablished: '2024-11-16',
 	timezone: 'Asia/Shanghai',
@@ -101,7 +101,7 @@ export const myFeed = <FeedEntry>{
 // 将旧页面永久重定向到新页面
 const redirectRouteRules = Object.entries(redirectList)
 	.reduce<NitroConfig['routeRules']>((acc, [from, to]) => {
-		acc![from] = { redirect: { to, statusCode: 301 } }
+		acc![from] = { redirect: { to: to as string, statusCode: 301 } }
 		return acc
 	}, {})
 

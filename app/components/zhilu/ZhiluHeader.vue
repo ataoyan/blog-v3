@@ -44,9 +44,6 @@ const navigateToArticles = () => {
 <style scoped>
 .zhilu-header {
   position: relative;
-  background:
-  linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='15' y='10' width='20' height='30' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1.5' transform='rotate(10,25,25)'/%3E%3Crect x='60' y='25' width='25' height='25' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1'/%3E%3Crect x='10' y='60' width='40' height='15' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1.2'/%3E%3Crect x='65' y='65' width='20' height='20' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1.5' transform='rotate(-15,75,75)'/%3E%3Crect x='30' y='40' width='35' height='25' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='1'/%3E%3C/svg%3E");
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 8px;

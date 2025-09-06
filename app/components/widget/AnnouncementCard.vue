@@ -48,6 +48,14 @@ const message = appConfig.announcement?.enabled ? appConfig.announcement.message
   color: var(--c-text);
   font-size: 0.95rem;
   line-height: 1.4;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.announcement-text:hover {
+  color: var(--c-primary);
+  transform: translateY(-1px);
+  text-shadow: 0 2px 4px rgba(var(--c-primary-rgb), 0.2);
 }
 
 /* 响应式设计 */

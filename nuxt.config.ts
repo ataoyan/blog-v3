@@ -24,7 +24,7 @@ export default defineNuxtConfig({
 			templateParams: {
 				separator: '|',
 			},
-			titleTemplate: `%s %separator ${blogConfig.title}`,
+			titleTemplate: `${blogConfig.title}`,
 			script: blogConfig.scripts,
 		},
 		rootAttrs: {
@@ -184,10 +184,10 @@ ${packageJson.homepage}
 		}
 	},
 
-	robots: {
-		disableNuxtContentIntegration: true,
-		disallow: blogConfig.robotsNotIndex,
-	},
+	// robots: {
+	// 	disableNuxtContentIntegration: true,
+	// 	disallow: blogConfig.robotsNotIndex,
+	// },
 
 	site: {
 		name: blogConfig.title,
