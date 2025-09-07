@@ -52,6 +52,18 @@ export default defineAppConfig({
 		},
 	},
 
+	/** 交通工具图标映射 */
+	travel: {
+		transportation: <{ [type: string]: { icon: string, color?: string } }>{
+			高铁: { icon: 'ph:train-bold', color: '#FF6B35' },
+			飞机: { icon: 'ph:airplane-takeoff-bold', color: '#007ACC' },
+			自驾: { icon: 'ph:car-bold', color: '#4CAF50' },
+			火车: { icon: 'ph:train-bold', color: '#9C27B0' },
+			轮船: { icon: 'ph:ship-bold', color: '#2196F3' },
+			公交: { icon: 'ph:bus-bold', color: '#FF9800' },
+		},
+	},
+
 	content: {
 		/** 代码块自动折叠触发行数 */
 		codeblockCollapsibleRows: 16,
@@ -105,6 +117,7 @@ export default defineAppConfig({
 				{ icon: 'ph:devices-bold', text: '装备', url: '/devices' },
 				{ icon: 'flowbite:teddy-bear-outline', text: '手办', url: '/figures' },
 				{ icon: 'ph:paw-print-bold', text: '宠物', url: '/pets' },
+				{ icon: 'ph:airplane-takeoff-bold', text: '旅行', url: '/travels' },
 				{ icon: 'ph:link-bold', text: '友链', url: '/link' },
 			],
 		},
