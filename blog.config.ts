@@ -66,8 +66,8 @@ const blogConfig = {
 
 	// 自己部署的 Twikoo 服务
 	twikoo: {
-		envId: 'http://twikoo.taonotespace.com',
-		preload: 'http://twikoo.taonotespace.com',
+		envId: 'https://twikoo.taonotespace.com',
+		preload: 'https://twikoo.taonotespace.com',
 	},
 
 	// 公告配置
