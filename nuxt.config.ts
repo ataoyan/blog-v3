@@ -1,6 +1,7 @@
 import process from 'node:process'
 import blogConfig, { routeRules } from './blog.config'
 import packageJson from './package.json'
+import travels from './app/travels'
 
 // 此处配置无需修改
 export default defineNuxtConfig({
@@ -189,14 +190,13 @@ ${packageJson.homepage}
 	// 	disallow: blogConfig.robotsNotIndex,
 	// },
 
-	site: {
-		name: blogConfig.title,
-		url: blogConfig.url,
-		defaultLocale: blogConfig.language,
-	},
-	
 	// 完全禁用sitemap功能
 	seo: {
 		sitemap: false
+	},
+
+	// 静态生成配置 - 为旅行详情页面生成静态文件
+	generate: {
+		routes: travels.map(travel => `/travels/detail/${travel.id}`)
 	},
 })
