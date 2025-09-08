@@ -118,6 +118,7 @@ export default defineAppConfig({
 				{ icon: 'flowbite:teddy-bear-outline', text: '手办', url: '/figures' },
 				{ icon: 'ph:paw-print-bold', text: '宠物', url: '/pets' },
 				{ icon: 'ph:airplane-takeoff-bold', text: '旅行', url: '/travels' },
+				{ icon: 'ph:sparkle-bold', text: '即刻', url: '/moments' },
 				{ icon: 'ph:link-bold', text: '友链', url: '/link' },
 			],
 		},
