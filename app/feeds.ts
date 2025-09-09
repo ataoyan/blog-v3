@@ -49,6 +49,16 @@ export default [
 				date: '2025-09-09',
 				gender: 'male'
 			},
+			{
+				author: 'kzhik',
+				sitenick: "kzhik's website",
+				desc: 'EXPLORE THE WORLD!',
+				link: 'https://www.kzhik.cn',
+				avatar: 'https://www.kzhik.cn/avatar.webp',
+				tags: ['技术', '生活'],
+				date: '2025-09-09',
+				gender: 'male'
+			},
 		],
 	},
 ] satisfies FeedGroup[]
