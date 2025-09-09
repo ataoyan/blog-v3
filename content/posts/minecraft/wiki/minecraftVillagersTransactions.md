@@ -1,7 +1,7 @@
 ---
 title: minecraft村民交易
 date: 2025-02-21 23:13:36
-image: https://cdn.taonotespace.com/Cover/cover_250223_140312.png
+image: https://cdn.atao.cyou/Cover/cover_250223_140312.png
 categories: [minecraft]
 tags: [wiki]
 description: 本文简要介绍了minecraft中村民交易系统的完整机制，包括职业分类、交易规则和各职业具体交易内容。
@@ -25,112 +25,112 @@ minecraft村民共有13种职业（如农民、图书管理员、盔甲匠等）
 
 #### 盔甲商
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250222_185601.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250222_191657.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250222_185601.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250222_191657.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
-![](https://cdn.taonotespace.com/Blog/blog_250222_193315.png)
+![](https://cdn.atao.cyou/Blog/blog_250222_193315.png)
 
 #### 屠夫
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250222_193550.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250222_193740.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250222_193550.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250222_193740.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
-![](https://cdn.taonotespace.com/Blog/blog_250222_194034.png)
+![](https://cdn.atao.cyou/Blog/blog_250222_194034.png)
 
 #### 制图师
 
 纸 + 任意木板
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250222_194512.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250222_195055.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250222_194512.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250222_195055.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
-![](https://cdn.taonotespace.com/Blog/blog_250222_195200.png)
+![](https://cdn.atao.cyou/Blog/blog_250222_195200.png)
 
 #### 牧师
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250222_195754.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250222_195845.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250222_195754.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250222_195845.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
 烈焰棒 + 任意类圆石方块
 
-![](https://cdn.taonotespace.com/Blog/blog_250222_195930.png)
+![](https://cdn.atao.cyou/Blog/blog_250222_195930.png)
 
 #### 农民
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250223_124220.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250223_124401.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250223_124220.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250223_124401.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
 任意木质台阶
 
-![](https://cdn.taonotespace.com/Blog/blog_250223_124540.png)
+![](https://cdn.atao.cyou/Blog/blog_250223_124540.png)
 
 #### 渔夫
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250223_124911.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250223_125002.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250223_124911.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250223_125002.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
 任意木板 + 任意木质台阶
 
-![](https://cdn.taonotespace.com/Blog/blog_250223_125105.png)
+![](https://cdn.atao.cyou/Blog/blog_250223_125105.png)
 
 #### 制箭师
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250223_125333.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250223_125423.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250223_125333.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250223_125423.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
 燧石 + 任意木板
 
-![](https://cdn.taonotespace.com/Blog/blog_250223_125540.png)
+![](https://cdn.atao.cyou/Blog/blog_250223_125540.png)
 
 #### 皮匠
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250223_125934.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250223_130042.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250223_125934.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250223_130042.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
-![](https://cdn.taonotespace.com/Blog/blog_250223_130125.png)
+![](https://cdn.atao.cyou/Blog/blog_250223_130125.png)
 
 #### 图书管理员
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250223_130643.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250223_130734.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250223_130643.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250223_130734.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
 任意木质台阶 + 书架
 
-![](https://cdn.taonotespace.com/Blog/blog_250223_130822.png)
+![](https://cdn.atao.cyou/Blog/blog_250223_130822.png)
 
 #### 石匠
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250223_131029.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250223_131141.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250223_131029.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250223_131141.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
-![](https://cdn.taonotespace.com/Blog/blog_250223_131234.png)
+![](https://cdn.atao.cyou/Blog/blog_250223_131234.png)
 
-![](https://cdn.taonotespace.com/Blog/blog_250223_131335.png)
+![](https://cdn.atao.cyou/Blog/blog_250223_131335.png)
 
 #### 牧羊人
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250223_131712.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250223_131758.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250223_131712.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250223_131758.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
 线 + 任意木板  <br/><br/><br/><br/><br/><br/>
 
-![](https://cdn.taonotespace.com/Blog/blog_250223_131914.png)
+![](https://cdn.atao.cyou/Blog/blog_250223_131914.png)
 
-![](https://cdn.taonotespace.com/Blog/blog_250223_132006.png)
+![](https://cdn.atao.cyou/Blog/blog_250223_132006.png)
 
 #### 工具匠
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250223_132454.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250223_132829.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250223_132454.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250223_132829.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
 铁锭 + 任意木板
 
-![](https://cdn.taonotespace.com/Blog/blog_250223_132721.png)
+![](https://cdn.atao.cyou/Blog/blog_250223_132721.png)
 
 #### 武器匠
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250223_134038.png" style="float:left;zoom:20%;" />   <img src="https://cdn.taonotespace.com/Blog/blog_250825_185822.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
+<img src="https://cdn.atao.cyou/Blog/blog_250223_134038.png" style="float:left;zoom:20%;" />   <img src="https://cdn.atao.cyou/Blog/blog_250825_185822.png" style="float: left; zoom: 125%;margin-left: 30px;"/>
 
 木棍 + 石头台阶 + 任意木板
 
-![](https://cdn.taonotespace.com/Blog/blog_250223_135848.png)
+![](https://cdn.atao.cyou/Blog/blog_250223_135848.png)
 
 #### 失业
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250223_135429.png" style="float:left;zoom:20%;" /> <br/><br/><br/><br/><br/><br/>
+<img src="https://cdn.atao.cyou/Blog/blog_250223_135429.png" style="float:left;zoom:20%;" /> <br/><br/><br/><br/><br/><br/>
 
 没有穿着职业着装，只有对应生物群系的衣服的村民为失业村民，它们无法进行交易。
 
 #### 傻子
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250223_135455.png" style="float:left;zoom:20%;" /> <br/><br/><br/><br/><br/><br/>
+<img src="https://cdn.atao.cyou/Blog/blog_250223_135455.png" style="float:left;zoom:20%;" /> <br/><br/><br/><br/><br/><br/>
 
 傻子是穿着绿色袍子的村民。自然生成的傻子不会提供任何交易。与失业村民不同的是，傻子不能获得以及改变职业。

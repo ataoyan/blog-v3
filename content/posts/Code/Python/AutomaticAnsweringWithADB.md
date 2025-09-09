@@ -1,7 +1,7 @@
 ---
 title: adb实现自动接听
 date: 2025-01-15 09:56:51
-image: https://cdn.taonotespace.com/Cover/cover_250122_180046.png
+image: https://cdn.atao.cyou/Cover/cover_250122_180046.png
 categories: [代码]
 tags: [python]
 description: 介绍如何用Python和ADB实现手机自动接听，涵盖基本原理和实现方法。

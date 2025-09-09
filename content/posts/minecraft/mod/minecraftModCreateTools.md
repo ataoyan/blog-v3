@@ -1,7 +1,7 @@
 ---
 title: minecraft模组：02创建工具
 date: 2025-03-07 21:50:28
-image: https://cdn.taonotespace.com/Cover/cover_250309_201633.png
+image: https://cdn.atao.cyou/Cover/cover_250309_201633.png
 categories: [minecraft]
 tags: [mod]
 description: 本文简要介绍了如何使用Fabric模组在Minecraft中创建一套铜质工具。
@@ -269,7 +269,7 @@ public class CopperSword {
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250309_190327.png
+src: https://cdn.atao.cyou/Blog/blog_250309_190327.png
 caption: 工具纹理
 ---
 ::
@@ -307,7 +307,7 @@ caption: 工具纹理
 ```
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250309_191955.png
+src: https://cdn.atao.cyou/Blog/blog_250309_191955.png
 caption: 铜镐
 ---
 ::
@@ -340,7 +340,7 @@ caption: 铜镐
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250309_192619.png
+src: https://cdn.atao.cyou/Blog/blog_250309_192619.png
 caption: 铜铲
 ---
 ::
@@ -397,14 +397,14 @@ caption: 铜铲
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250309_193240.png
+src: https://cdn.atao.cyou/Blog/blog_250309_193240.png
 caption: 铜锄1
 ---
 ::
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250309_193235.png
+src: https://cdn.atao.cyou/Blog/blog_250309_193235.png
 caption: 铜锄2
 ---
 ::
@@ -437,7 +437,7 @@ caption: 铜锄2
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250309_193615.png
+src: https://cdn.atao.cyou/Blog/blog_250309_193615.png
 caption: 铜剑
 ---
 ::
@@ -494,14 +494,14 @@ caption: 铜剑
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250309_192921.png
+src: https://cdn.atao.cyou/Blog/blog_250309_192921.png
 caption: 铜斧1
 ---
 ::
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250309_192916.png
+src: https://cdn.atao.cyou/Blog/blog_250309_192916.png
 caption: 铜斧2
 ---
 ::
@@ -537,4 +537,4 @@ caption: 铜斧2
 
 ### 实现效果
 
-![](https://cdn.taonotespace.com/Blog/blog_250309_201138.gif)
+![](https://cdn.atao.cyou/Blog/blog_250309_201138.gif)

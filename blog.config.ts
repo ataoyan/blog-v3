@@ -19,7 +19,7 @@ const blogConfig = {
 	},
 	author: {
 		name: 'ATao',
-		avatar: 'https://cdn.taonotespace.com/Web/Avatar.png',
+		avatar: 'https://cdn.atao.cyou/Web/Avatar.png',
 		email: 'qiatao0305@163.com',
 		homepage: 'https://atao.cyou',
 	},
@@ -28,7 +28,7 @@ const blogConfig = {
 		name: '署名-非商业性使用-相同方式共享 4.0 国际',
 		url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans',
 	},
-	favicon: 'https://cdn.taonotespace.com/Web/Avatar.png',
+	favicon: 'https://cdn.atao.cyou/Web/Avatar.png',
 	language: 'zh-CN',
 	timeEstablished: '2024-11-16',
 	timezone: 'Asia/Shanghai',
@@ -47,7 +47,7 @@ const blogConfig = {
 		// 自动启用本域名的 Nuxt Image
 		// 'www.zhilu.site',
 		// '7.isyangs.cn',
-		'cdn.taonotespace.com',
+		'cdn.atao.cyou',
 	],
 
 	// 禁止搜索引擎收录的路径

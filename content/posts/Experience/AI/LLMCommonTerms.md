@@ -3,7 +3,7 @@ title: AI大模型常见术语
 description: 汇总了AI大模型中常见的名词术语及解释。
 date: 2025-08-26 10:09:43
 updated: 2025-08-26 10:09:43
-image: https://cdn.taonotespace.com/Cover/cover_250826_104746.png
+image: https://cdn.atao.cyou/Cover/cover_250826_104746.png
 categories: [经验分享]
 tags: [AI]
 ---

@@ -1,7 +1,7 @@
 ---
 title: WPF错误的依赖属性仍然运行问题
 date: 2025-05-14 09:27:47
-image: https://cdn.taonotespace.com/Cover/cover_250514_095126.png
+image: https://cdn.atao.cyou/Cover/cover_250514_095126.png
 categories: [经验分享]
 tags: [code]
 description: 本文简要说明了 WPF 中依赖属性声明错误的常见原因及解决方法。

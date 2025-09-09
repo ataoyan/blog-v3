@@ -1,6 +1,6 @@
 ---
 title: Ollama突然无法识别GPU问题
-image: https://cdn.taonotespace.com/Cover/cover_250805_100210.png
+image: https://cdn.atao.cyou/Cover/cover_250805_100210.png
 categories: [经验分享]
 tags: [AI]
 description: 本文介绍Ollama在Docker中无法识别GPU的原因及解决方法。
@@ -16,7 +16,7 @@ references:
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250805_094501.png
+src: https://cdn.atao.cyou/Blog/blog_250805_094501.png
 caption: Ollama日志
 ---
 ::

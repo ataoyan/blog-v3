@@ -1,6 +1,6 @@
 ---
 title: 本地部署deepseek-r1
-image: https://cdn.taonotespace.com/Cover/cover_250218_190659.png
+image: https://cdn.atao.cyou/Cover/cover_250218_190659.png
 categories: [经验分享]
 tags: [AI]
 description: 本文介绍本地部署deepseek-r1模型的流程。
@@ -26,7 +26,7 @@ references:
 
 ::link-card
 ---
-icon: https://cdn.taonotespace.com/Icon/zhihu.svg
+icon: https://cdn.atao.cyou/Icon/zhihu.svg
 title: DeepSeek-R1模型1.5B/7B/14B/70B/671B区别及硬件配置要求
 description: 百亿云互联
 link: https://zhuanlan.zhihu.com/p/22524204610
@@ -43,7 +43,7 @@ link: https://zhuanlan.zhihu.com/p/22524204610
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250218_173055.png
+src: https://cdn.atao.cyou/Blog/blog_250218_173055.png
 caption: 下载Ollama
 ---
 ::
@@ -54,7 +54,7 @@ caption: 下载Ollama
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250218_174912.png
+src: https://cdn.atao.cyou/Blog/blog_250218_174912.png
 caption: 搜索deepseek
 ---
 ::
@@ -63,7 +63,7 @@ caption: 搜索deepseek
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250218_182347.png
+src: https://cdn.atao.cyou/Blog/blog_250218_182347.png
 caption: 下载模型
 ---
 ::
@@ -78,7 +78,7 @@ ollama run deepseek-r1:8b
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250218_182853.png
+src: https://cdn.atao.cyou/Blog/blog_250218_182853.png
 caption: 模型推理
 ---
 ::
@@ -95,7 +95,7 @@ caption: 模型推理
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250218_183550.png
+src: https://cdn.atao.cyou/Blog/blog_250218_183550.png
 caption: 下载Chatbox
 ---
 ::
@@ -106,7 +106,7 @@ caption: 下载Chatbox
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250218_183753.png
+src: https://cdn.atao.cyou/Blog/blog_250218_183753.png
 caption: 模型设置
 ---
 ::
@@ -115,7 +115,7 @@ caption: 模型设置
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250218_185302.png
+src: https://cdn.atao.cyou/Blog/blog_250218_185302.png
 caption: 模型对话
 ---
 ::

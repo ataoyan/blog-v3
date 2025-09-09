@@ -2,7 +2,7 @@
 title: 基于QThread的多线程任务管理
 date: 2025-01-14 14:04:30
 categories: [代码]
-image: https://cdn.taonotespace.com/Cover/cover_250122_164231.png
+image: https://cdn.atao.cyou/Cover/cover_250122_164231.png
 tags: [python]
 description: 介绍如何用Python实现多线程任务管理，包含基本原理和代码示例。
 type: story

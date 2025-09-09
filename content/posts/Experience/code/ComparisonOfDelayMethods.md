@@ -1,7 +1,7 @@
 ---
 title: .NET延时方法对比
 date: 2025-05-15 15:24:30
-image: https://cdn.taonotespace.com/Cover/cover_250825_131904.png
+image: https://cdn.atao.cyou/Cover/cover_250825_131904.png
 categories: [经验分享]
 tags: [code]
 description: 简要对比了.NET中的延时实现方法，并分析了各自的优缺点。

@@ -38,10 +38,10 @@ const flipCard = () => {
 }
 
 // 资源定义
-const frontImage = 'https://cdn.taonotespace.com/Web/shangban.png'
-const frontImageMirror = 'https://cdn.taonotespace.com/Web/shangban-mirror.png' // 镜像版本
-const backImage = 'https://cdn.taonotespace.com/Web/xiaban.png' 
-const backImageMirror = 'https://cdn.taonotespace.com/Web/xiaban-mirror.png' // 镜像版本
+const frontImage = 'https://cdn.atao.cyou/Web/shangban.png'
+const frontImageMirror = 'https://cdn.atao.cyou/Web/shangban-mirror.png' // 镜像版本
+const backImage = 'https://cdn.atao.cyou/Web/xiaban.png' 
+const backImageMirror = 'https://cdn.atao.cyou/Web/xiaban-mirror.png' // 镜像版本
 
 // 状态计算
 const currentImage = computed(() => {

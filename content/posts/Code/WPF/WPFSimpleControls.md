@@ -1,6 +1,6 @@
 ---
 title: WPF创建简单用户控件
-image: https://cdn.taonotespace.com/Cover/cover_250513_164908.png
+image: https://cdn.atao.cyou/Cover/cover_250513_164908.png
 categories: [代码]
 tags: [WPF]
 description: 介绍如何在WPF中创建和使用简单用户控件，包含依赖属性和自定义事件的实现方法。
@@ -40,7 +40,7 @@ OnFileChanged(当文件路径发生改变)
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250513_135731.png
+src: https://cdn.atao.cyou/Blog/blog_250513_135731.png
 caption: 创建控件
 ---
 ::
@@ -158,7 +158,7 @@ public partial class ToolMainWindow : UserControl, INotifyPropertyChanged
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250513_153823.png
+src: https://cdn.atao.cyou/Blog/blog_250513_153823.png
 zoom: false
 ---
 ::

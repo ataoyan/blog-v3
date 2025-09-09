@@ -1,7 +1,7 @@
 ---
 title: adb相关功能封装
 date: 2025-01-28 15:43:55
-image: https://cdn.taonotespace.com/Cover/cover_250122_145407.png
+image: https://cdn.atao.cyou/Cover/cover_250122_145407.png
 categories: [代码]
 tags: [C#]
 description: 介绍如何实现区域截图功能，包含基本方法和应用场景。

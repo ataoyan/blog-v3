@@ -5,8 +5,8 @@ const props = defineProps<{ pet: PetItem }>()
 
 const getGenderImage = (gender: string) => {
   return gender === 'male' 
-    ? 'https://cdn.taonotespace.com/Web/male.png'
-    : 'https://cdn.taonotespace.com/Web/female.png'
+    ? 'https://cdn.atao.cyou/Web/male.png'
+    : 'https://cdn.atao.cyou/Web/female.png'
 }
 </script>
 

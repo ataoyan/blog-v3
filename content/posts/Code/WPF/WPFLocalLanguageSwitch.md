@@ -1,6 +1,6 @@
 ---
 title: WPF实现本地化及运行时切换语言
-image: https://cdn.taonotespace.com/Cover/cover_250619_162335.png
+image: https://cdn.atao.cyou/Cover/cover_250619_162335.png
 categories: [代码]
 tags: [WPF]
 description: 本文介绍如何在WPF中通过资源字典实现本地化，并支持运行时切换语言。

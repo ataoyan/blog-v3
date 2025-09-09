@@ -1,7 +1,7 @@
 ---
 title: minecraft模组：01创建物品
 date: 2025-03-02 22:06:34
-image: https://cdn.taonotespace.com/Cover/cover_250303_213337.png
+image: https://cdn.atao.cyou/Cover/cover_250303_213337.png
 categories: [minecraft]
 tags: [mod]
 description: 本文简要介绍了如何使用Fabric模组在Minecraft中创建自定义物品。
@@ -24,7 +24,7 @@ description: 本文简要介绍了如何使用Fabric模组在Minecraft中创建�
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250302_222639.png
+src: https://cdn.atao.cyou/Blog/blog_250302_222639.png
 caption: 创建项目
 ---
 ::
@@ -104,7 +104,7 @@ public class Mymod implements ModInitializer {
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250302_232351.png
+src: https://cdn.atao.cyou/Blog/blog_250302_232351.png
 caption: 新建的物品
 ---
 ::
@@ -124,7 +124,7 @@ caption: 新建的物品
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250302_232827.png
+src: https://cdn.atao.cyou/Blog/blog_250302_232827.png
 caption: 添加翻译
 ---
 ::
@@ -160,7 +160,7 @@ caption: 添加翻译
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250302_234104.png
+src: https://cdn.atao.cyou/Blog/blog_250302_234104.png
 caption: 添加模型和纹理
 ---
 ::
@@ -193,11 +193,11 @@ caption: 添加模型和纹理
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250302_234652.png
+src: https://cdn.atao.cyou/Blog/blog_250302_234652.png
 caption: 合成配方
 ---
 ::
 
 ### 实现效果
 
-![](https://cdn.taonotespace.com/Blog/blog_250303_211828.gif)
+![](https://cdn.atao.cyou/Blog/blog_250303_211828.gif)

@@ -1,6 +1,6 @@
 ---
 title: Maxkb加载gpt2失败
-image: https://cdn.taonotespace.com/Cover/cover_250425_092113.png
+image: https://cdn.atao.cyou/Cover/cover_250425_092113.png
 categories: [经验分享]
 tags: [AI]
 description: 本文介绍Maxkb加载gpt2失败的原因及解决方法。
@@ -22,7 +22,7 @@ a GPT2TokenizerFast tokenizer.
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250425_090427.png
+src: https://cdn.atao.cyou/Blog/blog_250425_090427.png
 caption: 错误日志
 ---
 ::

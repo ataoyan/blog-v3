@@ -1,6 +1,6 @@
 ---
 title: ubuntu22.04源码部署maxkb
-image: https://cdn.taonotespace.com/Cover/cover_250317_184548.png
+image: https://cdn.atao.cyou/Cover/cover_250317_184548.png
 categories: [经验分享]
 tags: [AI]
 description: 本文介绍在Ubuntu 22.04环境下源码部署Maxkb的完整流程，适用于AI应用部署场景。
@@ -13,7 +13,7 @@ date: 2025-03-17 09:04:58
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_091220.png
+src: https://cdn.atao.cyou/Blog/blog_250317_091220.png
 caption: 拉取源码
 ---
 ::
@@ -30,7 +30,7 @@ apt list -a nodejs
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_092014.png
+src: https://cdn.atao.cyou/Blog/blog_250317_092014.png
 caption: nodejs版本
 ---
 ::
@@ -47,7 +47,7 @@ npm -v
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_092634.png
+src: https://cdn.atao.cyou/Blog/blog_250317_092634.png
 caption: 更新nodejs版本
 ---
 ::
@@ -71,7 +71,7 @@ npm install
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_093133.png
+src: https://cdn.atao.cyou/Blog/blog_250317_093133.png
 caption: 下载依赖项
 ---
 ::
@@ -108,7 +108,7 @@ poetry install
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_095147.png
+src: https://cdn.atao.cyou/Blog/blog_250317_095147.png
 caption: 安装依赖
 ---
 ::
@@ -127,7 +127,7 @@ sudo systemctl status postgresql  # 验证 PostgreSQL 服务是否启动并运�
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_111914.png
+src: https://cdn.atao.cyou/Blog/blog_250317_111914.png
 caption: 安装Postgresql
 ---
 ::
@@ -228,7 +228,7 @@ npm run dev
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_173630.png
+src: https://cdn.atao.cyou/Blog/blog_250317_173630.png
 caption: 前端页面
 ---
 ::
@@ -247,14 +247,14 @@ caption: 前端页面
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_174828.png
+src: https://cdn.atao.cyou/Blog/blog_250317_174828.png
 caption: user_serializers.py修改处1
 ---
 ::
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_174837.png
+src: https://cdn.atao.cyou/Blog/blog_250317_174837.png
 caption: user_serializers.py修改处2
 ---
 ::
@@ -269,14 +269,14 @@ caption: user_serializers.py修改处2
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_180914.png
+src: https://cdn.atao.cyou/Blog/blog_250317_180914.png
 caption: application_serializers.py修改处1
 ---
 ::
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_180919.png
+src: https://cdn.atao.cyou/Blog/blog_250317_180919.png
 caption: application_serializers.py修改处2
 ---
 ::
@@ -291,7 +291,7 @@ caption: application_serializers.py修改处2
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_181132.png
+src: https://cdn.atao.cyou/Blog/blog_250317_181132.png
 caption: dataset_serializers.py修改处1
 ---
 ::
@@ -306,7 +306,7 @@ caption: dataset_serializers.py修改处1
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_180445.png
+src: https://cdn.atao.cyou/Blog/blog_250317_180445.png
 caption: valid_serializers.py修改处1
 ---
 ::
@@ -323,7 +323,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250318_085030.png
+src: https://cdn.atao.cyou/Blog/blog_250318_085030.png
 caption: 安装ollama
 ---
 ::
@@ -336,14 +336,14 @@ caption: 安装ollama
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_183035.png
+src: https://cdn.atao.cyou/Blog/blog_250317_183035.png
 caption: 添加模型
 ---
 ::
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250317_183045.png
+src: https://cdn.atao.cyou/Blog/blog_250317_183045.png
 caption: 填写API
 ---
 ::

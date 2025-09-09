@@ -1,6 +1,6 @@
 ---
 title: C#测试基类实现
-image: https://cdn.taonotespace.com/Cover/cover_250123_090144.png
+image: https://cdn.atao.cyou/Cover/cover_250123_090144.png
 date: 2025-01-14 09:03:52
 categories: [代码]
 tags: [C#]
@@ -19,7 +19,7 @@ description: 本文介绍如何通过抽象测试基类简化C#自动化测试�
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250116_231604.png
+src: https://cdn.atao.cyou/Blog/blog_250116_231604.png
 caption: 测试流程
 zoom: false
 ---
@@ -467,7 +467,7 @@ exampleTests.RunTests();
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250116_232430.png
+src: https://cdn.atao.cyou/Blog/blog_250116_232430.png
 caption: 测试结果
 ---
 ::

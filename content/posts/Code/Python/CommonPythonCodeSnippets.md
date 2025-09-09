@@ -1,7 +1,7 @@
 ---
 title: python常用代码片段
 date: 2025-01-14 11:22:18
-image: https://cdn.taonotespace.com/Cover/cover_250122_163336.png
+image: https://cdn.atao.cyou/Cover/cover_250122_163336.png
 categories: [代码]
 tags: [python]
 description: 收集常用的Python代码片段，方便快速查阅和应用。

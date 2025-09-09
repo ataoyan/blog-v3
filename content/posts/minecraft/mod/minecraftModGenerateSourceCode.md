@@ -1,7 +1,7 @@
 ---
 title: 生成minecraft源码
 date: 2025-02-20 21:47:40
-image: https://cdn.taonotespace.com/Cover/cover_250220_232012.png
+image: https://cdn.atao.cyou/Cover/cover_250220_232012.png
 categories: [minecraft]
 tags: [mod]
 description: 本文简要介绍了利用Fabric工具链生成Minecraft可读化源码的原理与流程。
@@ -52,7 +52,7 @@ repositories {
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250220_230534.png
+src: https://cdn.atao.cyou/Blog/blog_250220_230534.png
 caption: 源码映射
 ---
 ::

@@ -1,6 +1,6 @@
 ---
 title: WPF实现数据绑定
-image: https://cdn.taonotespace.com/Cover/cover_250122_152616.png
+image: https://cdn.atao.cyou/Cover/cover_250122_152616.png
 categories: [代码]
 tags: [WPF]
 description: 本文介绍WPF中数据绑定的实现方法，包括INotifyPropertyChanged接口、数据上下文设置及MVVM模式应用。

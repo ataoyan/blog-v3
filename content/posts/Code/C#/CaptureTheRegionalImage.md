@@ -1,7 +1,7 @@
 ---
 title: 截取指定区域图像
 date: 2025-01-28 10:11:51
-image: https://cdn.taonotespace.com/Cover/cover_250122_134621.png
+image: https://cdn.atao.cyou/Cover/cover_250122_134621.png
 categories: [代码]
 tags: [C#]
 description: 介绍如何实现区域截图功能，包含基本方法和应用场景。

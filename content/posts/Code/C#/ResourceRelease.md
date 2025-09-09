@@ -1,6 +1,6 @@
 ---
 title: C#资源释放管理
-image: https://cdn.taonotespace.com/Cover/cover_250822_224708.png
+image: https://cdn.atao.cyou/Cover/cover_250822_224708.png
 categories: [代码]
 tags: [C#]
 description: 本文介绍如何通过实现IDisposable接口规范释放非托管资源，避免资源泄漏，并附C#代码示例和用法说明。

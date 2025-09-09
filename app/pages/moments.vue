@@ -5,7 +5,7 @@ import moments from '~/moments'
 // 默认作者信息
 const defaultAuthor = {
   name: 'ATao',
-  avatar: 'https://cdn.taonotespace.com/Web/Avatar.png',
+  avatar: 'https://cdn.atao.cyou/Web/Avatar.png',
   badges: ['摸鱼达人']
 }
 

@@ -15,7 +15,7 @@ const figures: FigureItem[] = [
 		name: '啊啊啊爱你',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195918.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195918.jpg',
 		scale: 1,
 	},
 	{
@@ -23,7 +23,7 @@ const figures: FigureItem[] = [
 		name: '略略略出来玩',
 		owned: false,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195914.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195914.jpg',
 		scale: 1,
 	},
 	{
@@ -31,7 +31,7 @@ const figures: FigureItem[] = [
 		name: '抠抠脚发发呆',
 		owned: false,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195912.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195912.jpg',
 		scale: 1,
 	},
 	{
@@ -39,7 +39,7 @@ const figures: FigureItem[] = [
 		name: '突然就难过了',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195948.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195948.jpg',
 		scale: 1,
 	},
 	{
@@ -47,7 +47,7 @@ const figures: FigureItem[] = [
 		name: '我怎么这么好看',
 		owned: false,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195946.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195946.jpg',
 		scale: 1,
 	},
 	{
@@ -55,7 +55,7 @@ const figures: FigureItem[] = [
 		name: '颤抖吧！我的脂肪',
 		owned: false,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195944.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195944.jpg',
 		scale: 1,
 	},
 	{
@@ -63,7 +63,7 @@ const figures: FigureItem[] = [
 		name: '嘻嘻嘻零食自由',
 		owned: false,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195934.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195934.jpg',
 		scale: 1,
 	},
 	{
@@ -71,7 +71,7 @@ const figures: FigureItem[] = [
 		name: '呜呜呜看哭了',
 		owned: false,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195928.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195928.jpg',
 		scale: 1,
 	},
 	{
@@ -79,7 +79,7 @@ const figures: FigureItem[] = [
 		name: '沉浸式追剧',
 		owned: false,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195906.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195906.jpg',
 		scale: 1,
 	},
 	{
@@ -87,7 +87,7 @@ const figures: FigureItem[] = [
 		name: '洗香香',
 		owned: false,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195926.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195926.jpg',
 		scale: 1,
 	},
 	{
@@ -95,7 +95,7 @@ const figures: FigureItem[] = [
 		name: '什么瓜？',
 		owned: false,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195920.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195920.jpg',
 		scale: 1,
 	},
 	{
@@ -103,7 +103,7 @@ const figures: FigureItem[] = [
 		name: '是锅先动的手',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195849.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195849.jpg',
 		scale: 1,
 	},
 	{
@@ -111,7 +111,7 @@ const figures: FigureItem[] = [
 		name: '我要认真减肥了',
 		owned: false,
 		isHidden: true,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195910.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195910.jpg',
 		scale: 1,
 	},
 	{
@@ -119,7 +119,7 @@ const figures: FigureItem[] = [
 		name: '小本生意，假一赔十',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195851.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195851.jpg',
 		scale: 1,
 	},
 	{
@@ -127,7 +127,7 @@ const figures: FigureItem[] = [
 		name: '猪师傅，我赶时间',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195843.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195843.jpg',
 		scale: 1,
 	},
 	{
@@ -135,7 +135,7 @@ const figures: FigureItem[] = [
 		name: '换个发型换个心情',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195908.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195908.jpg',
 		scale: 1,
 	},
 	{
@@ -143,7 +143,7 @@ const figures: FigureItem[] = [
 		name: '感觉身体被掏空',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195916.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195916.jpg',
 		scale: 1,
 	},
 	{
@@ -151,7 +151,7 @@ const figures: FigureItem[] = [
 		name: '珍珠奶茶真好喝',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195857.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195857.jpg',
 		scale: 1,
 	},
 	{
@@ -159,7 +159,7 @@ const figures: FigureItem[] = [
 		name: '嘬嘬嘬嘬',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195845.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195845.jpg',
 		scale: 1,
 	},
 	{
@@ -167,7 +167,7 @@ const figures: FigureItem[] = [
 		name: '早八真的困',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195841.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195841.jpg',
 		scale: 1,
 	},
 	{
@@ -175,7 +175,7 @@ const figures: FigureItem[] = [
 		name: '微笑小刘为您服务',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195901.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195901.jpg',
 		scale: 1,
 	},
 	{
@@ -183,7 +183,7 @@ const figures: FigureItem[] = [
 		name: '带薪拉屎有点麻',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195924.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195924.jpg',
 		scale: 1,
 	},
 	{
@@ -191,7 +191,7 @@ const figures: FigureItem[] = [
 		name: '打工是不可能打工的',
 		owned: false,
 		isHidden: true,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195847.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195847.jpg',
 		scale: 1,
 	},
 	{
@@ -199,23 +199,23 @@ const figures: FigureItem[] = [
 		name: '选A还是选C',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195950.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195950.jpg',
 		scale: 1,
 	},
 	{
 		series: '长不大真好',
 		name: '零钱罐摔碎了',
-		owned: false,
+		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195853.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195853.jpg',
 		scale: 1,
 	},
 	{
 		series: '长不大真好',
 		name: '下雨天快乐',
-		owned: false,
+		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195855.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195855.jpg',
 		scale: 1,
 	},
 	{
@@ -223,15 +223,15 @@ const figures: FigureItem[] = [
 		name: '我可真时髦',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195936.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195936.jpg',
 		scale: 1,
 	},
 	{
 		series: '长不大真好',
 		name: '下次不敢啦！',
-		owned: false,
+		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195940.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195940.jpg',
 		scale: 1,
 	},
 	{
@@ -239,15 +239,15 @@ const figures: FigureItem[] = [
 		name: '又被骗了',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195938.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195938.jpg',
 		scale: 1,
 	},
 	{
 		series: '长不大真好',
 		name: '我倒要看看',
-		owned: false,
+		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195932.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195932.jpg',
 		scale: 1,
 	},
 	{
@@ -255,15 +255,15 @@ const figures: FigureItem[] = [
 		name: '看我的奖状！',
 		owned: false,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_204434.png',
+		image: 'https://cdn.atao.cyou/Web/web_250830_204434.png',
 		scale: 1,
 	},
 	{
 		series: '长不大真好',
 		name: '头皮紧紧的！',
-		owned: false,
+		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195904.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195904.jpg',
 		scale: 1,
 	},
 	{
@@ -271,15 +271,15 @@ const figures: FigureItem[] = [
 		name: '你看我能这样',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195930.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195930.jpg',
 		scale: 1,
 	},
 	{
 		series: '长不大真好',
 		name: '给小流浪送饭',
-		owned: false,
+		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195922.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195922.jpg',
 		scale: 1,
 	},
 	{
@@ -287,7 +287,7 @@ const figures: FigureItem[] = [
 		name: '才艺表演我最行',
 		owned: true,
 		isHidden: false,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195942.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195942.jpg',
 		scale: 1,
 	},
 	{
@@ -295,7 +295,7 @@ const figures: FigureItem[] = [
 		name: '扭啊扭出发',
 		owned: false,
 		isHidden: true,
-		image: 'https://cdn.taonotespace.com/Web/web_250830_195859.jpg',
+		image: 'https://cdn.atao.cyou/Web/web_250830_195859.jpg',
 		scale: 1,
 	},
 ]

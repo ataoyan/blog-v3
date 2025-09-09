@@ -1,6 +1,6 @@
 ---
 title: 一种轻APP的通知推送方案
-image: https://cdn.taonotespace.com/Cover/cover_250821_164621.png
+image: https://cdn.atao.cyou/Cover/cover_250821_164621.png
 categories: [经验分享]
 tags: [docker]
 description: 本文介绍一种轻量、可自托管的APP通知推送方案PushDeer。
@@ -48,7 +48,7 @@ docker-compose -f docker-compose.self-hosted.yml up --build -d
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250821_141617.png
+src: https://cdn.atao.cyou/Blog/blog_250821_141617.png
 caption: 访问8800端口
 ---
 ::
@@ -57,15 +57,15 @@ caption: 访问8800端口
 
 在苹果商店搜索「PushDeer·自架版」或扫描上方的二维码进行安装并启动
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250821_143221.jpg" style="zoom: 40%;" />
+<img src="https://cdn.atao.cyou/Blog/blog_250821_143221.jpg" style="zoom: 40%;" />
 
 API服务地址输入http://公网ip:8800, 并用苹果id进行登录
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250821_143435.jpg" style="zoom: 40%;" />
+<img src="https://cdn.atao.cyou/Blog/blog_250821_143435.jpg" style="zoom: 40%;" />
 
 登陆后，没有注册就先进行注册
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250821_143528.jpg" style="zoom: 40%;" />
+<img src="https://cdn.atao.cyou/Blog/blog_250821_143528.jpg" style="zoom: 40%;" />
 
 注册完成后，点击`Key`就可以看到当前设备的密钥了
 
@@ -116,7 +116,7 @@ pushdeer_send("Hello World",key="PDU1Tn3kcl...")
 
 客户端接收到消息推送
 
-<img src="https://cdn.taonotespace.com/Blog/blog_250821_143727.jpg" style="zoom: 50%;" />
+<img src="https://cdn.atao.cyou/Blog/blog_250821_143727.jpg" style="zoom: 50%;" />
 
 ::alert
 实测,APP退出或者在锁屏界面也可以接收到推送

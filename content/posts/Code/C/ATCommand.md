@@ -2,7 +2,7 @@
 title: 51单片机接收AT指令功能实现
 date: 2025-01-03 11:11:01
 categories: [代码]
-image: https://cdn.taonotespace.com/Cover/cover_250122_111404.png
+image: https://cdn.atao.cyou/Cover/cover_250122_111404.png
 tags: [C]
 description: 简要介绍51单片机如何通过串口接收和解析AT指令，实现字符串命令的识别与功能控制，并提供相关代码实现思路
 type: story

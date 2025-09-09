@@ -1,7 +1,7 @@
 ---
 title: Android使用uiautomator
 date: 2025-01-13 09:28:08
-image: https://cdn.taonotespace.com/Cover/cover_250122_152916.png
+image: https://cdn.atao.cyou/Cover/cover_250122_152916.png
 categories: [代码]
 tags: [Android]
 description: 介绍如何在Android中使用Uiautomator进行自动化操作，包含基本用法和应用场景。
@@ -15,7 +15,7 @@ description: 介绍如何在Android中使用Uiautomator进行自动化操作，�
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250116_231853.png
+src: https://cdn.atao.cyou/Blog/blog_250116_231853.png
 caption: 添加依赖
 zoom: true
 ---
@@ -62,7 +62,7 @@ public class test {
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250116_232043.png
+src: https://cdn.atao.cyou/Blog/blog_250116_232043.png
 caption: 安装APK
 zoom: true
 ---

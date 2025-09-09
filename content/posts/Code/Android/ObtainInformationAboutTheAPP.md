@@ -1,7 +1,7 @@
 ---
 title: 获取APK相关信息
 date: 2025-01-13 16:56:45
-image: https://cdn.taonotespace.com/Cover/cover_250122_155915.png
+image: https://cdn.atao.cyou/Cover/cover_250122_155915.png
 categories: [代码]
 tags: [Android]
 description: 介绍如何在Android中获取APP相关信息，包括实现方法和常见应用场景
@@ -262,7 +262,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250116_232352.png
+src: https://cdn.atao.cyou/Blog/blog_250116_232352.png
 caption: 临时查看结果
 zoom: true
 ---

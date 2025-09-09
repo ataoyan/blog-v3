@@ -9,8 +9,8 @@ const petStatus = computed(() => getPetStatus(props.pet.id))
 
 const getGenderImage = (gender: string) => {
   return gender === 'male' 
-    ? 'https://cdn.taonotespace.com/Web/male.png'
-    : 'https://cdn.taonotespace.com/Web/female.png'
+    ? 'https://cdn.atao.cyou/Web/male.png'
+    : 'https://cdn.atao.cyou/Web/female.png'
 }
 
 const calculateAge = (birthday: string) => {

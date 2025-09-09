@@ -14,7 +14,7 @@ export const petStatusData: PetStatusItem[] = [
     petId: '1',
     date: '2025-08-30',
     type: 'image',
-    content: 'https://cdn.taonotespace.com/Web/web_250903_221722.jpg',
+    content: 'https://cdn.atao.cyou/Web/web_250903_221722.jpg',
     description: '疑惑的表情'
   },
   // {
@@ -32,7 +32,7 @@ export const petStatusData: PetStatusItem[] = [
     petId: '2',
     date: '2025-08-30',
     type: 'image',
-    content: 'https://cdn.taonotespace.com/Web/web_250903_221732.jpg',
+    content: 'https://cdn.atao.cyou/Web/web_250903_221732.jpg',
     description: '好像在说：我好饿，快给我吃鱼🐟'
   },
   // 小不点的状态 (ID: '3')
@@ -41,7 +41,7 @@ export const petStatusData: PetStatusItem[] = [
     petId: '3',
     date: '2025-08-31',
     type: 'image',
-    content: 'https://cdn.taonotespace.com/Web/web_250903_221712.jpg',
+    content: 'https://cdn.atao.cyou/Web/web_250903_221712.jpg',
     description: '倒头就睡'
   },
 ]

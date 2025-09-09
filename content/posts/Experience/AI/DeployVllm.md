@@ -3,7 +3,7 @@ title: 本地部署vllm
 description: 使用Docker部署vLLM大语言模型推理服务。
 date: 2025-08-26 09:07:22
 updated: 2025-08-26 09:07:22
-image: https://cdn.taonotespace.com/Cover/cover_250826_093951.png
+image: https://cdn.atao.cyou/Cover/cover_250826_093951.png
 categories: [经验分享]
 tags: [AI]
 ---

@@ -1,7 +1,7 @@
 ---
 title: WPF布局控件
 date: 2025-05-15 16:15:08
-image: https://cdn.taonotespace.com/Cover/cover_250515_163935.png
+image: https://cdn.atao.cyou/Cover/cover_250515_163935.png
 categories: [经验分享]
 tags: [code]
 description: 简要介绍了 WPF 常用布局控件的功能及使用方法。

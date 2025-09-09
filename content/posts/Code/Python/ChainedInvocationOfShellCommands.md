@@ -1,7 +1,7 @@
 ---
 title: 链式调用shell指令
 date: 2025-01-14 16:58:23
-image: https://cdn.taonotespace.com/Cover/cover_250122_165757.png
+image: https://cdn.atao.cyou/Cover/cover_250122_165757.png
 categories: [代码]
 tags: [python]
 description: 介绍如何用Python实现Shell命令的链式调用，包含基本方法和应用场景。

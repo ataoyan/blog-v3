@@ -1,7 +1,7 @@
 ---
 title: MCDR安装与使用
 date: 2025-03-12 20:36:25
-image: https://cdn.taonotespace.com/Cover/cover_250312_224907.png
+image: https://cdn.atao.cyou/Cover/cover_250312_224907.png
 categories: [minecraft]
 tags: [mod]
 description: 本文简要介绍了MCDR的安装与使用方法。
@@ -15,7 +15,7 @@ MCDR（MCDaemon Reforged）是由[Fallen_Breath](https://github.com/MCDReforged/
 
 ::link-card
 ---
-icon: https://cdn.taonotespace.com/Icon/mcdreforged.svg
+icon: https://cdn.atao.cyou/Icon/mcdreforged.svg
 title: MCDReforged
 description: 这是一个基于 Python 的 Minecraft 服务端控制工具
 link: https://mcdreforged.com
@@ -32,7 +32,7 @@ link: https://mcdreforged.com
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250312_210827.png
+src: https://cdn.atao.cyou/Blog/blog_250312_210827.png
 zoom: false
 ---
 ::
@@ -107,11 +107,11 @@ mcdreforged
 
 - 服务端
 
-![](https://cdn.taonotespace.com/Blog/blog_250312_214316.gif)
+![](https://cdn.atao.cyou/Blog/blog_250312_214316.gif)
 
 - 客户端
 
-![](https://cdn.taonotespace.com/Blog/blog_250312_220516.gif)
+![](https://cdn.atao.cyou/Blog/blog_250312_220516.gif)
 
 ### 插件
 
@@ -129,7 +129,7 @@ mcdreforged
 
 - 效果
 
-![](https://cdn.taonotespace.com/Blog/blog_250312_220846.gif)
+![](https://cdn.atao.cyou/Blog/blog_250312_220846.gif)
 
 #### Prime Backup
 
@@ -170,6 +170,6 @@ mcdreforged
 ::video-embed
 ---
 type: raw
-id: https://cdn.taonotespace.com/Blog/blog_250312_222911.mp4
+id: https://cdn.atao.cyou/Blog/blog_250312_222911.mp4
 ---
 ::

@@ -1,7 +1,7 @@
 ---
 title: 激活Typora
 date: 2025-03-09 23:11:21
-image: https://cdn.taonotespace.com/Cover/cover_250310_072348.png
+image: https://cdn.atao.cyou/Cover/cover_250310_072348.png
 categories: [经验分享]
 tags: [environment]
 description: 介绍了在 Windows 系统上激活 Typora 编辑器的步骤和注意事项。
@@ -26,7 +26,7 @@ e.hasActivated = true;
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250309_232354.png
+src: https://cdn.atao.cyou/Blog/blog_250309_232354.png
 caption: 激活成功
 ---
 ::

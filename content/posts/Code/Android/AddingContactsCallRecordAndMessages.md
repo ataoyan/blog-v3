@@ -1,7 +1,7 @@
 ---
 title: 填充联系人、通话记录、短信的方法
 date: 2025-01-13 11:19:44
-image: https://cdn.taonotespace.com/Cover/cover_250122_162525.png
+image: https://cdn.atao.cyou/Cover/cover_250122_162525.png
 categories: [代码]
 tags: [Android]
 description: 介绍如何在Android中添加联系人、通话记录和短信，包含实现方法和注意事项。
@@ -264,7 +264,7 @@ public class SmsReceiver extends BroadcastReceiver {
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250116_232142.png
+src: https://cdn.atao.cyou/Blog/blog_250116_232142.png
 caption: 创建所须的类
 zoom: true
 ---

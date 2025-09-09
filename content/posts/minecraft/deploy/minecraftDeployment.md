@@ -1,7 +1,7 @@
 ---
 title: 华为云部署minecraft服务端
 date: 2025-03-09 22:44:23
-image: https://cdn.taonotespace.com/Cover/cover_250310_224017.png
+image: https://cdn.atao.cyou/Cover/cover_250310_224017.png
 categories: [minecraft]
 tags: [deploy]
 description: 本文简要介绍了利用Fabric工具链生成Minecraft可读化源码的原理与流程。
@@ -18,7 +18,7 @@ description: 本文简要介绍了利用Fabric工具链生成Minecraft可读化�
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250309_225056.png
+src: https://cdn.atao.cyou/Blog/blog_250309_225056.png
 caption: 服务器实例
 ---
 ::
@@ -29,7 +29,7 @@ caption: 服务器实例
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250309_230254.png
+src: https://cdn.atao.cyou/Blog/blog_250309_230254.png
 caption: 登录后台
 ---
 ::
@@ -40,7 +40,7 @@ caption: 登录后台
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250310_211000.png
+src: https://cdn.atao.cyou/Blog/blog_250310_211000.png
 caption: 下载jdk
 ---
 ::
@@ -87,7 +87,7 @@ java -version
 
 访问[fabric官网](https://fabricmc.net/use/server/){icon="file-icons:fabric"}，下载服务器核心，并上传到服务器上
 
-![](https://cdn.taonotespace.com/Blog/blog_250310_205749.png)
+![](https://cdn.atao.cyou/Blog/blog_250310_205749.png)
 
 ### 首次启动
 
@@ -323,7 +323,7 @@ nohup sh start.sh &
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250310_223400.png
+src: https://cdn.atao.cyou/Blog/blog_250310_223400.png
 caption: 安全组
 ---
 ::

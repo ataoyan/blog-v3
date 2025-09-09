@@ -1,6 +1,6 @@
 ---
 title: C#发送http请求
-image: https://cdn.taonotespace.com/Cover/cover_250122_143908.png
+image: https://cdn.atao.cyou/Cover/cover_250122_143908.png
 categories: [代码]
 tags: [C#]
 description: 本文介绍如何用C#简单封装HTTP请求，包括GET、POST方法及网络连通性检测，附核心代码实现。

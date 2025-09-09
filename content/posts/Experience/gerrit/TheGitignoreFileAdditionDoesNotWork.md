@@ -1,6 +1,6 @@
 ---
 title: gitignore添加文件不起作用
-image: https://cdn.taonotespace.com/Cover/cover_250122_173435.png
+image: https://cdn.atao.cyou/Cover/cover_250122_173435.png
 categories: [经验分享]
 tags: [gerrit]
 description: 本文介绍.gitignore文件添加后不生效的原因及解决方法。

@@ -1,6 +1,6 @@
 ---
 title: 配置用户环境变量
-image: https://cdn.taonotespace.com/Cover/cover_250122_164438.png
+image: https://cdn.atao.cyou/Cover/cover_250122_164438.png
 categories: [代码]
 tags: [C#, python]
 description: 本文介绍如何在Windows系统下自动添加用户环境变量PATH，支持C#和Python实现，避免重复添加并检查管理员权限，适用于自动化部署和软件安装场景。

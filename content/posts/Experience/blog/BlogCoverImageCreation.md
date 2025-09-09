@@ -1,6 +1,6 @@
 ---
 title: 博客封面图制作
-image: https://cdn.taonotespace.com/Cover/cover_250123_133514.png
+image: https://cdn.atao.cyou/Cover/cover_250123_133514.png
 categories: [经验分享]
 tags: [blog]
 description: 本文介绍博客封面图的制作流程。
@@ -39,7 +39,7 @@ references:
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250123_093548.png
+src: https://cdn.atao.cyou/Blog/blog_250123_093548.png
 caption: 图标背景
 ---
 ::
@@ -48,7 +48,7 @@ caption: 图标背景
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250123_131427.png
+src: https://cdn.atao.cyou/Blog/blog_250123_131427.png
 caption: 添加素材
 ---
 ::
@@ -63,7 +63,7 @@ caption: 添加素材
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250123_131944.png
+src: https://cdn.atao.cyou/Blog/blog_250123_131944.png
 caption: 封面背景
 ---
 ::
@@ -80,7 +80,7 @@ caption: 封面背景
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250123_132616.png
+src: https://cdn.atao.cyou/Blog/blog_250123_132616.png
 caption: 添加文字
 ---
 ::
@@ -89,7 +89,7 @@ caption: 添加文字
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250123_132806.png
+src: https://cdn.atao.cyou/Blog/blog_250123_132806.png
 caption: 添加阴影
 ---
 ::

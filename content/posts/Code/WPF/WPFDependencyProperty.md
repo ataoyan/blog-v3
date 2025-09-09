@@ -1,6 +1,6 @@
 ---
 title: WPF依赖属性的注册与绑定
-image: https://cdn.taonotespace.com/Cover/cover_250218_163513.png
+image: https://cdn.atao.cyou/Cover/cover_250218_163513.png
 categories: [代码]
 tags: [WPF]
 description: 本文介绍WPF依赖属性的注册与绑定方法。

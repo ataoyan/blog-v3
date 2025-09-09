@@ -1,6 +1,6 @@
 ---
 title: C#执行终端指令
-image: https://cdn.taonotespace.com/Cover/cover_250122_144812.png
+image: https://cdn.atao.cyou/Cover/cover_250122_144812.png
 categories: [代码]
 tags: [C#]
 description: 本文介绍如何用C#执行终端命令并获取输出结果，支持返回字符串和流，适用于自动化脚本和系统操作场景。

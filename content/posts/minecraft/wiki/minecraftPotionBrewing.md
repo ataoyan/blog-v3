@@ -1,7 +1,7 @@
 ---
 title: minecraft药水酿造
 date: 2025-02-23 22:26:13
-image: https://cdn.taonotespace.com/Cover/cover_250223_230309.png
+image: https://cdn.atao.cyou/Cover/cover_250223_230309.png
 categories: [minecraft]
 tags: [wiki]
 description: 本文简要介绍了Minecraft中药水酿造的完整系统，包括药水分类、酿造设备、制作流程、配方表以及相关游戏机制。
@@ -34,7 +34,7 @@ minecraft药水分为**基础药水**（无效果，如粗制药水）、**正�
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250223_224154.png
+src: https://cdn.atao.cyou/Blog/blog_250223_224154.png
 caption: 酿造配方
 ---
 ::

@@ -1,7 +1,7 @@
 ---
 title: minecraft刷怪机制
 date: 2025-02-25 21:52:03
-image: https://cdn.taonotespace.com/Cover/cover_250225_234335.png
+image: https://cdn.atao.cyou/Cover/cover_250225_234335.png
 categories: [minecraft]
 tags: [mod]
 description: 本文简要介绍了Minecraft的刷怪机制，包括生物类别划分、生成上限计算、核心生成条件、生成步骤流程以及LC值对刷怪效率的影响。

@@ -1,7 +1,7 @@
 ---
 title: minecraft铁傀儡生成机制
 date: 2025-02-27 21:12:21
-image: https://cdn.taonotespace.com/Cover/cover_250227_230652.png
+image: https://cdn.atao.cyou/Cover/cover_250227_230652.png
 categories: [minecraft]
 tags: [mod]
 description: 本文简要介绍了minecraft铁傀儡的生成机制，包括生成条件、恐慌状态下的生成、交谈状态下的生成、生成过程以及冷却时间等核心机制。
@@ -24,7 +24,7 @@ references:
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250227_220604.png
+src: https://cdn.atao.cyou/Blog/blog_250227_220604.png
 zoom: false
 ---
 ::

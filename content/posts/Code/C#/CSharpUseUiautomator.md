@@ -1,6 +1,6 @@
 ---
 title: C#使用uiautomator
-image: https://cdn.taonotespace.com/Cover/cover_250122_144957.png
+image: https://cdn.atao.cyou/Cover/cover_250122_144957.png
 date: 2025-02-07 17:14:34
 categories: [代码]
 tags: [C#]
@@ -30,7 +30,7 @@ link: https://github.com/openatx/uiautomator2
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250116_232731.png
+src: https://cdn.atao.cyou/Blog/blog_250116_232731.png
 caption: 实现原理
 ---
 ::
@@ -58,7 +58,7 @@ adb forward tcp:1234 tcp:9008
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250116_232625.png
+src: https://cdn.atao.cyou/Blog/blog_250116_232625.png
 caption: 修改源码
 ---
 ::

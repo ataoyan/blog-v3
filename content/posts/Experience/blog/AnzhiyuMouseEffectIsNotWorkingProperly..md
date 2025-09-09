@@ -1,6 +1,6 @@
 ---
 title: anzhiyu主题about页面鼠标动效不生效问题
-image: https://cdn.taonotespace.com/Cover/cover_250122_174116.png
+image: https://cdn.atao.cyou/Cover/cover_250122_174116.png
 categories: [经验分享]
 tags: [blog]
 description: 本文介绍anzhiyu主题about页面鼠标动效失效的原因及解决方法。
@@ -11,7 +11,7 @@ date: 2025-01-16 09:36:53
 
 在配置[安知鱼主题](https://github.com/anzhiyu-c/hexo-theme-anzhiyu)的关于页面时，发现**helloAbout**的动效突然不起作用了。如下图所示
 
-![](https://cdn.taonotespace.com/Blog/blog_250116_170327.gif)
+![](https://cdn.atao.cyou/Blog/blog_250116_170327.gif)
 
 ### 原因分析
 
@@ -19,7 +19,7 @@ date: 2025-01-16 09:36:53
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250116_170745.png
+src: https://cdn.atao.cyou/Blog/blog_250116_170745.png
 caption: 控制台信息
 ---
 ::
@@ -52,4 +52,4 @@ selfInfo:
 
 #### 恢复正常
 
-![](https://cdn.taonotespace.com/Blog/blog_250116_173812.gif)
+![](https://cdn.atao.cyou/Blog/blog_250116_173812.gif)

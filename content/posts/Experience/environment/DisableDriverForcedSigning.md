@@ -1,7 +1,7 @@
 ---
 title: 高级启动中缺少禁用驱动强制签名的解决方法
 date: 2025-01-03 10:36:31
-image: https://cdn.taonotespace.com/Cover/cover_250122_111322.png
+image: https://cdn.atao.cyou/Cover/cover_250122_111322.png
 categories: [经验分享]
 tags: [environment]
 description: 介绍了如何在 Windows 系统中禁用驱动强制签名，以便安装未签名的驱动程序。
@@ -27,7 +27,7 @@ reagentc /info
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250116_232532.png
+src: https://cdn.atao.cyou/Blog/blog_250116_232532.png
 caption: 恢复环境
 ---
 ::
@@ -47,7 +47,7 @@ reagentc /enable
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250116_232659.png
+src: https://cdn.atao.cyou/Blog/blog_250116_232659.png
 caption: 启用Windows RE
 ---
 ::

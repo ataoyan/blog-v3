@@ -1,7 +1,7 @@
 ---
 title: 安装adb环境
 date: 2025-01-06 13:42:15
-image: https://cdn.taonotespace.com/Cover/cover_250122_140721.png
+image: https://cdn.atao.cyou/Cover/cover_250122_140721.png
 categories: [经验分享]
 tags: [environment]
 description: 本文简要介绍了在 Windows 系统上安装和配置 ADB 工具的方法。
@@ -25,7 +25,7 @@ adb（Android Debug Bridge）是Android开发工具包（SDK）中的一个命�
 
 点击**新建**，添加**Platform-Tools**路径，如下图。
 
-![](https://cdn.taonotespace.com/Blog/blog_250116_232230.png)
+![](https://cdn.atao.cyou/Blog/blog_250116_232230.png)
 
 保存。
 

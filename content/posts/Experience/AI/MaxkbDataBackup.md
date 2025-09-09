@@ -1,6 +1,6 @@
 ---
 title: Maxkb实现数据库备份与恢复
-image: https://cdn.taonotespace.com/Cover/cover_250606_491538.png
+image: https://cdn.atao.cyou/Cover/cover_250606_491538.png
 categories: [经验分享]
 tags: [AI]
 description: 本文介绍Maxkb数据库的备份与恢复方法。
@@ -186,7 +186,7 @@ sudo bash restore_maxkb.sh
 
 ::pic
 ---
-src: https://cdn.taonotespace.com/Blog/blog_250606_431523.png
+src: https://cdn.atao.cyou/Blog/blog_250606_431523.png
 caption: 恢复完成
 ---
 ::

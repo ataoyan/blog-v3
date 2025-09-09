@@ -1,6 +1,6 @@
 ---
 title: 常用Git指令
-image: https://cdn.taonotespace.com/Cover/cover_250721_164705.png
+image: https://cdn.atao.cyou/Cover/cover_250721_164705.png
 categories: [经验分享]
 tags: [gerrit]
 description: 本文整理了常用Git指令及操作技巧。
