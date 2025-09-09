@@ -16,7 +16,7 @@ const moments: MomentItem[] = [
         id: '1',
         content: '测试',
         location: '宁波',
-        createdAt: '2025-09-08T18:15:00Z'
+        createdAt: '2025-09-08 18:15'
     },
     {
         id: '2',
@@ -26,7 +26,16 @@ const moments: MomentItem[] = [
             'https://cdn.atao.cyou/Web/web_250909_085624.jpg'
         ],
         location: '宁波',
-        createdAt: '2025-09-08T22:46:00Z'
+        createdAt: '2025-09-08 22:46'
+    },
+        {
+        id: '3',
+        content: '还能再红吗，能的能的',
+        images: [   
+            'https://cdn.atao.cyou/Web/web_250909_210134.jpg',
+        ],
+        location: '宁波',
+        createdAt: '2025-09-09 21:04'
     }
 ]
 
