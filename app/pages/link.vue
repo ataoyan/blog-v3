@@ -321,7 +321,7 @@ const showToast = (message: string) => {
               font-weight: 600;
               margin-bottom: 0.5rem;
             ">
-              博客名称、描述、地址、头像、性别等信息
+              博客名称、描述、地址、头像等信息
             </div>
             <div style="font-size: 0.9rem; color: var(--c-text-2);">
               任意格式均可，包含基本信息即可
