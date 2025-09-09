@@ -1,4 +1,4 @@
-export type DeviceBrand = 'Apple' | 'Huawei' | 'Xiaomi' | 'Sony' | (string & {})
+export type DeviceBrand = 'Apple' | 'Huawei' | 'Xiaomi' | 'Sony' | 'Tamron' |(string & {})
 
 export interface DeviceItem {
 	brand: DeviceBrand
@@ -10,7 +10,7 @@ export interface DeviceItem {
 }
 
 export default {
-	brands: ['Apple', 'Huawei', 'Xiaomi', 'Sony'] as DeviceBrand[],
+	brands: ['Apple', 'Huawei', 'Xiaomi', 'Sony', 'Tamron'] as DeviceBrand[],
 	items: [
 		{
 			brand: 'Apple',
@@ -99,6 +99,14 @@ export default {
 			desc: '小巧机身，轻便便携，画质出色，操作简单，功能丰富。',
 			image: 'https://cdn.atao.cyou/Web/web_250830_213756.png',
 			url: 'https://www.sonystyle.com.cn/search.html?q=A6400',
+		},
+		{
+			brand: 'Tamron',
+			name: '17-70mm F/2.8 Di Ⅲ-A VC RXD',
+			series: '索尼APS-C专用E口',
+			desc: '小巧机身，轻便便携，画质出色，操作简单，功能丰富。',
+			image: 'https://cdn.atao.cyou/Web/web_250909_211712.png',
+			url: 'https://www.tamron.com.cn/cameralens/products/b070/index.shtml',
 		},
 	],
 }
