@@ -5,7 +5,7 @@ import ModernTicketCard from '~/components/partial/ModernTicketCard.vue'
 
 const appConfig = useAppConfig()
 const layoutStore = useLayoutStore()
-layoutStore.setAside([])
+layoutStore.setAside(['blog-stats', 'announcement-card', 'work-status', 'theme-card'])
 
 const { data: postLink } = await useAsyncData('/link', () => queryCollection('content').path('/link').first())
 
@@ -88,63 +88,61 @@ const showToast = (message: string) => {
   <!-- 我的博客信息 -->
   <div class="my-blog-section" style="margin-top: 2rem;">
     <div class="my-blog-card" style="
-      background: linear-gradient(135deg, var(--c-primary-soft), color-mix(in srgb, var(--c-primary) 5%, transparent));
-      border: 2px solid color-mix(in srgb, var(--c-primary) 15%, transparent);
-      border-radius: 20px;
+      background: var(--ld-bg-card);
+      border: 1px solid var(--c-border);
+      border-radius: 16px;
       padding: 2rem;
-      box-shadow: 0 8px 32px rgba(74, 144, 226, 0.08);
+      box-shadow: 0 4px 20px var(--ld-shadow);
       transition: all 0.3s ease;
+      max-width: 800px;
+      margin: 0 auto;
     ">
       <!-- 头像和基本信息 -->
-      <div class="blog-header" style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+      <div class="blog-header" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
         <div class="avatar-wrapper" style="position: relative; flex-shrink: 0;">
           <img :src="myFeed.avatar" :alt="myFeed.author" class="blog-avatar" style="
-            width: 80px;
-            height: 80px;
-            border-radius: 16px;
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
             object-fit: cover;
-            border: 3px solid var(--c-primary);
-            box-shadow: 0 6px 20px rgba(var(--c-primary-rgb), 0.25);
+            border: 1.5px solid var(--c-border);
           " />
           <span class="blog-owner-badge" :style="{
             position: 'absolute',
-            top: '-8px',
-            right: '-8px',
-            background: 'linear-gradient(135deg, var(--c-primary), var(--c-secondary))',
+            top: '-4px',
+            right: '-4px',
+            background: 'var(--c-primary)',
             color: 'white',
-            padding: '6px 12px',
-            borderRadius: '16px',
-            fontSize: '0.75rem',
-            fontWeight: '700',
-            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
-            zIndex: '5',
-            textTransform: 'uppercase',
-            letterSpacing: '0.5px'
+            padding: '3px 8px',
+            borderRadius: '8px',
+            fontSize: '0.65rem',
+            fontWeight: '600',
+            zIndex: '5'
           }">博主</span>
         </div>
         <div class="blog-main-info">
-          <h3 class="blog-name" style="font-size: 1.5rem; font-weight: 700; margin: 0 0 0.5rem 0; color: var(--c-primary);">{{ myFeed.author }}</h3>
-          <p class="blog-subtitle" style="font-size: 1rem; color: var(--c-text-2); margin: 0; font-weight: 600;">{{ myFeed.title }}</p>
+          <h3 class="blog-name" style="font-size: 1.4rem; font-weight: 600; margin: 0 0 0.5rem 0; color: var(--c-text);">{{ myFeed.author }}</h3>
+          <p class="blog-subtitle" style="font-size: 1rem; color: var(--c-text-2); margin: 0; font-weight: 500;">{{ myFeed.title }}</p>
         </div>
       </div>
       
       <!-- 博客描述 -->
-      <div class="blog-content" style="margin-bottom: 2rem;">
+      <div class="blog-content" style="margin-bottom: 1.5rem;">
         <p class="blog-desc" style="
-          font-size: 1.1rem;
-          line-height: 1.6;
+          font-size: 1rem;
+          line-height: 1.5;
           color: var(--c-text);
           margin: 0;
-          padding: 1rem;
-          background: rgba(74, 144, 226, 0.08);
-          border-radius: 12px;
-          border-left: 4px solid var(--c-primary);
+          padding: 0.8rem;
+          background: rgba(74, 144, 226, 0.06);
+          border-radius: 10px;
+          border-left: 3px solid var(--c-primary);
         ">{{ myFeed.desc }}</p>
       </div>
       
       <!-- 复制按钮 -->
       <div class="blog-actions">
-        <div class="copy-buttons" style="display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: flex-start; margin-top: 2rem;">
+        <div class="copy-buttons" style="display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: flex-start; margin-top: 1.5rem;">
           <Copy v-for="(code, prompt) in copyFields" :key="prompt" :prompt :code />
         </div>
       </div>
@@ -189,62 +187,65 @@ const showToast = (message: string) => {
 
   <!-- 申请友链 -->
   <div class="apply-section" style="
-    background: linear-gradient(135deg, var(--c-primary-soft), color-mix(in srgb, var(--c-primary) 5%, transparent));
-    border: 2px solid color-mix(in srgb, var(--c-primary) 15%, transparent);
-    border-radius: 16px;
-    padding: 2.5rem;
-    margin-top: 3rem;
+    background: var(--ld-bg-card);
+    border: 1px solid var(--c-border);
+    border-radius: 14px;
+    padding: 2rem;
+    margin-top: 2.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   ">
     <h2 style="
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: 700;
       color: var(--c-primary);
-      margin: 0 0 1.5rem 0;
+      margin: 0 0 1.2rem 0;
       text-align: center;
     ">申请友链</h2>
     
-    <div class="apply-content" style="font-size: 1rem; line-height: 1.7; color: var(--c-text);">
+    <div class="apply-content" style="font-size: 0.95rem; line-height: 1.6; color: var(--c-text);">
       <!-- 申请要求 -->
-      <div style="margin-bottom: 2rem;">
-        <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--c-primary); margin: 0 0 1rem 0; display: flex; align-items: center; gap: 0.8rem;">
+      <div style="margin-bottom: 1.5rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--c-primary); margin: 0 0 0.8rem 0; display: flex; align-items: center; gap: 0.6rem;">
           <span style="
             display: inline-block;
-            width: 8px;
-            height: 8px;
+            width: 6px;
+            height: 6px;
             background: var(--c-primary);
             border-radius: 50%;
           "></span>
           申请要求
         </h3>
         <ul style="list-style: none; padding: 0; margin: 0;">
-          <li style="display: flex; align-items: flex-start; margin-bottom: 0.8rem;">
+          <li style="display: flex; align-items: flex-start; margin-bottom: 0.6rem;">
             <span style="
               display: inline-flex;
               align-items: center;
               justify-content: center;
-              width: 24px;
-              height: 24px;
+              width: 20px;
+              height: 20px;
               background: rgba(var(--c-primary-rgb), 0.2);
               color: var(--c-primary);
               border-radius: 50%;
               font-weight: 600;
-              margin-right: 0.8rem;
+              margin-right: 0.6rem;
               flex-shrink: 0;
             ">✓</span>
             <span>能够<strong>长期更新维护</strong>，并输出<strong>有价值的原创内容</strong></span>
           </li>
-          <li style="display: flex; align-items: flex-start; margin-bottom: 0.8rem;">
+          <li style="display: flex; align-items: flex-start; margin-bottom: 0.6rem;">
             <span style="
               display: inline-flex;
               align-items: center;
               justify-content: center;
-              width: 24px;
-              height: 24px;
+              width: 20px;
+              height: 20px;
               background: color-mix(in srgb, var(--c-primary) 20%, transparent);
               color: var(--c-primary);
               border-radius: 50%;
               font-weight: 600;
-              margin-right: 0.8rem;
+              margin-right: 0.6rem;
               flex-shrink: 0;
             ">✓</span>
             <span>可以参考 <a href="https://www.travellings.cn/docs/join.html" target="_blank" style="color: var(--c-primary); text-decoration: none; font-weight: 500;">加入开往</a> 页面的规则</span>
@@ -254,11 +255,11 @@ const showToast = (message: string) => {
 
       <!-- 申请方式 -->
       <div style="margin-bottom: 2rem;">
-        <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--c-primary); margin: 0 0 1rem 0; display: flex; align-items: center; gap: 0.8rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--c-primary); margin: 0 0 0.8rem 0; display: flex; align-items: center; gap: 0.6rem;">
           <span style="
             display: inline-block;
-            width: 8px;
-            height: 8px;
+            width: 6px;
+            height: 6px;
             background: var(--c-primary);
             border-radius: 50%;
           "></span>
@@ -331,11 +332,11 @@ const showToast = (message: string) => {
 
       <!-- 注意事项 -->
       <div>
-        <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--c-primary); margin: 0 0 1rem 0; display: flex; align-items: center; gap: 0.8rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--c-primary); margin: 0 0 0.8rem 0; display: flex; align-items: center; gap: 0.6rem;">
           <span style="
             display: inline-block;
-            width: 8px;
-            height: 8px;
+            width: 6px;
+            height: 6px;
             background: var(--c-primary);
             border-radius: 50%;
           "></span>
@@ -514,102 +515,9 @@ const showToast = (message: string) => {
 
     .feeds-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 1.5rem;
-
-      .feed-card {
-        height: fit-content;
-        transition: all 0.3s ease;
-
-        &:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 8px 30px var(--ld-shadow);
-        }
-
-        .feed-header {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          margin-bottom: 1rem;
-
-          .feed-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 10px;
-            object-fit: cover;
-          }
-
-          .feed-info {
-            h3.feed-author {
-              margin: 0;
-              font-size: 1.1rem;
-              color: var(--c-text);
-              font-weight: 600;
-            }
-
-            .feed-sitenick {
-              margin: 0.1rem 0 0;
-              color: var(--c-primary);
-              font-size: 0.85rem;
-              font-weight: 500;
-            }
-
-            .feed-title {
-              margin: 0.1rem 0 0;
-              color: var(--c-text-2);
-              font-size: 0.9rem;
-            }
-          }
-        }
-
-        .feed-desc {
-          color: var(--c-text-2);
-          line-height: 1.5;
-          margin-bottom: 1rem;
-          font-size: 0.95rem;
-        }
-
-        .feed-meta {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 1rem;
-          font-size: 0.85rem;
-
-          .feed-link {
-            color: var(--c-text-3);
-          }
-
-          .feed-date {
-            color: var(--c-text-3);
-          }
-        }
-
-        .feed-tags {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.3rem;
-          margin-bottom: 1rem;
-
-          .tag {
-            padding: 0.2rem 0.6rem;
-            background: var(--c-primary-soft);
-            color: var(--c-primary);
-            border-radius: 12px;
-            font-size: 0.75rem;
-            font-weight: 500;
-          }
-        }
-
-        .feed-comment {
-          color: var(--c-text-2);
-          font-style: italic;
-          font-size: 0.9rem;
-          border-left: 3px solid var(--c-primary-soft);
-          padding-left: 0.75rem;
-          margin: 0;
-        }
-      }
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      justify-content: center;
     }
   }
 

@@ -32,7 +32,7 @@ const blogConfig = {
 	language: 'zh-CN',
 	timeEstablished: '2024-11-16',
 	timezone: 'Asia/Shanghai',
-	url: 'https://taonotespace.com',
+	url: 'https://blog.atao.cyou',
 
 	defaultCategory: ['未分类'],
 

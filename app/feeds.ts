@@ -19,7 +19,36 @@ export default [
 				badgeColor: '#ff4757',
 				gender: 'male'
 			},
-		
+			{
+				author: 'Luxynth',
+				sitenick: 'Luxynth',
+				desc: '我心匪石不可转',
+				link: 'https://www.luxynth.cn',
+				avatar: 'https://www.luxynth.cn/assets/images/avatar.jpg',
+				tags: ['技术'],
+				date: '2025-09-09',
+				gender: 'male'
+			},
+			{
+				author: '鈴奈咲桜',
+				sitenick: '鈴奈咲桜のBlog',
+				desc: '愛することを忘れないで',
+				link: 'https://blog.sakura.ink',
+				avatar: 'https://q2.qlogo.cn/headimg_dl?dst_uin=2731443459&spec=5',
+				tags: ['技术'],
+				date: '2025-09-09',
+				gender: 'male'
+			},
+			{
+				author: 'Almango',
+				sitenick: 'Almango',
+				desc: '天真永不消逝，浪漫至死不渝。',
+				link: 'https://www.almango.cn/',
+				avatar: 'https://www.almango.cn/img/favicon.png',
+				tags: ['技术'],
+				date: '2025-09-09',
+				gender: 'male'
+			},
 		],
 	},
 ] satisfies FeedGroup[]
