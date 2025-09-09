@@ -47,6 +47,61 @@ const formatTime = (dateString: string) => {
   // 格式化为 YYYY-MM-DD HH:MM
   return localDateString.replace(/\//g, '-').replace(',', '')
 }
+
+// 图片预览状态
+const showPreview = ref(false)
+const currentPhoto = ref('')
+const currentPhotoIndex = ref(0)
+const currentMomentImages = ref<string[]>([])
+
+// 打开照片预览
+const openPhotoPreview = (photo: string, images: string[], index: number) => {
+  currentPhoto.value = photo
+  currentPhotoIndex.value = index
+  currentMomentImages.value = images
+  showPreview.value = true
+}
+
+// 关闭照片预览
+const closePhotoPreview = () => {
+  showPreview.value = false
+}
+
+// 切换到下一张照片
+const nextPhoto = () => {
+  if (currentMomentImages.value.length > 1) {
+    currentPhotoIndex.value = (currentPhotoIndex.value + 1) % currentMomentImages.value.length
+    currentPhoto.value = currentMomentImages.value[currentPhotoIndex.value]
+  }
+}
+
+// 切换到上一张照片
+const prevPhoto = () => {
+  if (currentMomentImages.value.length > 1) {
+    currentPhotoIndex.value = (currentPhotoIndex.value - 1 + currentMomentImages.value.length) % currentMomentImages.value.length
+    currentPhoto.value = currentMomentImages.value[currentPhotoIndex.value]
+  }
+}
+
+// 键盘事件监听
+onMounted(() => {
+  const handleKeydown = (e: KeyboardEvent) => {
+    if (showPreview.value) {
+      if (e.key === 'Escape') {
+        closePhotoPreview()
+      } else if (e.key === 'ArrowRight') {
+        nextPhoto()
+      } else if (e.key === 'ArrowLeft') {
+        prevPhoto()
+      }
+    }
+  }
+
+  window.addEventListener('keydown', handleKeydown)
+  onUnmounted(() => {
+    window.removeEventListener('keydown', handleKeydown)
+  })
+})
 </script>
 
 <template>
@@ -109,6 +164,7 @@ const formatTime = (dateString: string) => {
                 :alt="`图片 ${index + 1}`"
                 class="moment-image"
                 :class="{ 'grid-item': moment.images.length > 1 }"
+                @click="openPhotoPreview(image, moment.images, index)"
               />
             </div>
           </div>
@@ -132,6 +188,35 @@ const formatTime = (dateString: string) => {
         >
           下一页
         </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 图片预览模态框 -->
+  <div v-if="showPreview" class="photo-preview-modal" @click="closePhotoPreview">
+    <div class="preview-content" @click.stop>
+      <button class="close-btn" @click="closePhotoPreview">
+        <Icon name="ph:x-bold" />
+      </button>
+      
+      <div class="preview-image-container">
+        <button v-if="currentMomentImages && currentMomentImages.length > 1" class="nav-btn prev-btn" @click="prevPhoto">
+          <Icon name="ph:caret-left-bold" size="32" />
+        </button>
+        
+        <NuxtImg 
+          :src="currentPhoto" 
+          :alt="`即刻图片 ${currentPhotoIndex + 1}`"
+          class="preview-image"
+        />
+        
+        <button v-if="currentMomentImages && currentMomentImages.length > 1" class="nav-btn next-btn" @click="nextPhoto">
+          <Icon name="ph:caret-right-bold" size="32" />
+        </button>
+      </div>
+
+      <div v-if="currentMomentImages && currentMomentImages.length > 1" class="photo-counter">
+        {{ currentPhotoIndex + 1 }} / {{ currentMomentImages.length }}
       </div>
     </div>
   </div>
@@ -358,6 +443,155 @@ const formatTime = (dateString: string) => {
   
   .grid-images {
     grid-template-columns: 1fr;
+  }
+}
+
+/* 图片预览模态框样式 */
+.photo-preview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  
+  .preview-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    background: var(--ld-bg-card);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    
+    .close-btn {
+      position: absolute;
+      top: -50px;
+      right: 0;
+      background: rgba(255, 255, 255, 0.12);
+      border: none;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      backdrop-filter: blur(20px);
+      transition: all 0.2s ease;
+      z-index: 10;
+      
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(1.1);
+      }
+    }
+    
+    .preview-image-container {
+      max-width: 80vw;
+      max-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      .preview-image {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+    
+    /* 左右导航按钮 */
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.12);
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      backdrop-filter: blur(20px);
+      transition: all 0.2s ease;
+      opacity: 0.8;
+      z-index: 10;
+      
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        opacity: 1;
+        transform: translateY(-50%) scale(1.1);
+      }
+      
+      &.prev-btn {
+        left: 20px;
+      }
+      
+      &.next-btn {
+        right: 20px;
+      }
+    }
+    
+    /* 页码指示器 */
+    .photo-counter {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.95);
+      padding: 0.75rem 2rem;
+      border-radius: 2rem;
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: 700;
+      z-index: 10;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      border: 2px solid rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+/* 响应式设计 - 移动端预览 */
+@media (max-width: 768px) {
+  .photo-preview-modal {
+    .preview-content {
+      .close-btn {
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+      
+      .nav-btn {
+        width: 50px;
+        height: 50px;
+        
+        &.prev-btn {
+          left: 10px;
+        }
+        
+        &.next-btn {
+          right: 10px;
+        }
+      }
+      
+      .photo-counter {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+      }
+    }
   }
 }
 </style>
