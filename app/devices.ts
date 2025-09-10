@@ -102,9 +102,9 @@ export default {
 		},
 		{
 			brand: 'Tamron',
-			name: '17-70mm F/2.8 Di Ⅲ-A VC RXD',
+			name: '17-70mm F/2.8 Di Ⅲ-A eVC RXD',
 			series: '索尼APS-C专用E口',
-			desc: '小巧机身，轻便便携，画质出色，操作简单，功能丰富。',
+			desc: '恒定F2.8大光圈，覆盖常用焦段，防抖给力。',
 			image: 'https://cdn.atao.cyou/Web/web_250909_211712.png',
 			url: 'https://www.tamron.com.cn/cameralens/products/b070/index.shtml',
 		},
