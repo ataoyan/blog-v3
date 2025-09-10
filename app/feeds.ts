@@ -59,6 +59,16 @@ export default [
 				date: '2025-09-09',
 				gender: 'male'
 			},
+			{
+				author: '成烁',
+				sitenick: "成烁BLOG",
+				desc: '致一锦程 探索不停',
+				link: 'https://chengshuo.top',
+				avatar: 'https://chengshuo.top/usr/uploads/2025/08/1293883047.webp',
+				tags: ['技术', '生活'],
+				date: '2025-09-10',
+				gender: 'male'
+			},
 		],
 	},
 ] satisfies FeedGroup[]
