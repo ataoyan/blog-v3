@@ -250,22 +250,22 @@ onMounted(() => {
 }
 
 .moment-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--ld-bg-card);
   backdrop-filter: blur(20px);
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 
-    0 4px 20px rgba(0, 0, 0, 0.05),
-    0 1px 3px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+    0 4px 20px var(--ld-shadow),
+    0 1px 3px var(--ld-shadow);
+  border: 1px solid var(--c-border);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .moment-card:hover {
   transform: translateY(-2px);
   box-shadow: 
-    0 8px 30px rgba(0, 0, 0, 0.08),
-    0 2px 6px rgba(0, 0, 0, 0.1);
+    0 8px 30px var(--ld-shadow),
+    0 2px 6px var(--ld-shadow);
 }
 
 .moment-header {
@@ -299,7 +299,7 @@ onMounted(() => {
 .author-name {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #1d1d1f;
+  color: var(--c-text-1);
   margin: 0;
 }
 
@@ -328,16 +328,16 @@ onMounted(() => {
 
 .moment-time {
   font-size: 0.875rem;
-  color: #86868b;
+  color: var(--c-text-3);
 }
 
 .location-separator {
-  color: #86868b;
+  color: var(--c-text-3);
 }
 
 .location {
   font-size: 0.875rem;
-  color: #86868b;
+  color: var(--c-text-3);
 }
 
 .moment-content {
@@ -347,7 +347,7 @@ onMounted(() => {
 .moment-text {
   font-size: 1rem;
   line-height: 1.5;
-  color: #1d1d1f;
+  color: var(--c-text-1);
   margin: 0 0 0.5rem 0;
   word-wrap: break-word;
 }
@@ -361,6 +361,7 @@ onMounted(() => {
   border-radius: 12px;
   object-fit: cover;
   max-height: 400px;
+  transition: filter 0.3s ease;
 }
 
 .grid-images {
@@ -375,6 +376,13 @@ onMounted(() => {
   border-radius: 8px;
   object-fit: cover;
   aspect-ratio: 1;
+  transition: filter 0.3s ease;
+}
+
+/* 深色模式下的图片滤镜 */
+:global(.dark) .single-image .moment-image,
+:global(.dark) .grid-item {
+  filter: brightness(0.9) contrast(1.05);
 }
 
 .pagination {
@@ -388,9 +396,9 @@ onMounted(() => {
 
 .pagination-btn {
   padding: 0.5rem 1rem;
-  border: 1px solid #007aff;
+  border: 1px solid var(--c-primary);
   background: transparent;
-  color: #007aff;
+  color: var(--c-primary);
   border-radius: 8px;
   font-weight: 500;
   font-size: 0.875rem;
@@ -399,7 +407,7 @@ onMounted(() => {
 }
 
 .pagination-btn:hover:not(:disabled) {
-  background: #007aff;
+  background: var(--c-primary);
   color: white;
 }
 
@@ -409,7 +417,7 @@ onMounted(() => {
 }
 
 .page-info {
-  color: #86868b;
+  color: var(--c-text-3);
   font-size: 0.875rem;
 }
 
@@ -550,15 +558,15 @@ onMounted(() => {
       bottom: 2rem;
       left: 50%;
       transform: translateX(-50%);
-      background: rgba(255, 255, 255, 0.95);
+      background: var(--ld-bg-card);
       padding: 0.75rem 2rem;
       border-radius: 2rem;
-      color: #000;
+      color: var(--c-text-1);
       font-size: 1.2rem;
       font-weight: 700;
       z-index: 10;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-      border: 2px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 4px 20px var(--ld-shadow);
+      border: 2px solid var(--c-border);
     }
   }
 }

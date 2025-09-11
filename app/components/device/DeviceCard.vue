@@ -45,7 +45,7 @@ const props = defineProps<{ item: DeviceItem }>()
 	padding: 1.25rem;
 	border-radius: 1rem;
 	background: transparent;
-	border: 2px solid rgba(0, 0, 0, 0.12);
+	border: 2px solid var(--c-border);
 	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 	min-height: 220px;
 	width: 100%;
@@ -60,8 +60,8 @@ const props = defineProps<{ item: DeviceItem }>()
 		transform: translateY(-4px) scale(1.02);
 		border-color: var(--c-primary);
 		box-shadow: 
-			0 8px 24px rgba(0, 0, 0, 0.08),
-			0 2px 6px rgba(0, 0, 0, 0.02);
+			0 8px 24px var(--ld-shadow),
+			0 2px 6px var(--ld-shadow);
 	}
 
 	.cover-box {
@@ -69,7 +69,7 @@ const props = defineProps<{ item: DeviceItem }>()
 		height: 140px;
 		border-radius: 0.375rem;
 		overflow: hidden;
-		background: #f8f9fa;
+		background: var(--c-bg-2);
 		display: flex;
 		align-items: center;
 		justify-content: center;

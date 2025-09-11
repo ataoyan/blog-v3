@@ -76,12 +76,12 @@ const handleClick = () => {
   --primary-color: #2563eb;
   --secondary-color: #3b82f6;
   --accent-color: #60a5fa;
-  --bg-color: #ffffff;
-  --text-primary: #1f2937;
-  --text-secondary: #6b7280;
-  --border-color: #e5e7eb;
-  --shadow-color: rgba(0, 0, 0, 0.08);
-  --hover-shadow-color: rgba(0, 0, 0, 0.15);
+  --bg-color: var(--ld-bg-card, #ffffff);
+  --text-primary: var(--c-text-1, #1f2937);
+  --text-secondary: var(--c-text-2, #6b7280);
+  --border-color: var(--c-border, #e5e7eb);
+  --shadow-color: var(--ld-shadow, rgba(0, 0, 0, 0.08));
+  --hover-shadow-color: var(--ld-shadow-hover, rgba(0, 0, 0, 0.15));
 
   /* 男性主题 - 蓝色 */
   &.male {
@@ -146,7 +146,7 @@ const handleClick = () => {
     border-radius: 12px;
     object-fit: cover;
     border: 2px solid var(--border-color);
-    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    background: linear-gradient(135deg, var(--ld-bg-subtle), var(--ld-bg-muted));
   }
 
   .status-badge {
@@ -329,13 +329,13 @@ const handleClick = () => {
   &.left {
     left: 0;
     border-radius: 12px 0 0 12px;
-    box-shadow: 2px 0 8px rgba(37, 99, 235, 0.3);
+    box-shadow: 2px 0 8px var(--shadow-color);
   }
 
   &.right {
     right: 0;
     border-radius: 0 12px 12px 0;
-    box-shadow: -2px 0 8px rgba(37, 99, 235, 0.3);
+    box-shadow: -2px 0 8px var(--shadow-color);
   }
 }
 
@@ -356,11 +356,11 @@ const handleClick = () => {
     width: 5px;
     
     &.left {
-      box-shadow: 3px 0 12px rgba(37, 99, 235, 0.4);
+      box-shadow: 3px 0 12px var(--hover-shadow-color);
     }
     
     &.right {
-      box-shadow: -3px 0 12px rgba(37, 99, 235, 0.4);
+      box-shadow: -3px 0 12px var(--hover-shadow-color);
     }
   }
 }
@@ -374,7 +374,7 @@ const handleClick = () => {
   height: 8px;
   background: var(--bg-color);
   z-index: 2;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 .modern-ticket-card::before {
@@ -406,15 +406,7 @@ const handleClick = () => {
   }
 }
 
-/* 深色模式支持 */
-:global(.dark) .modern-ticket-card {
-  --bg-color: #1f2937;
-  --text-primary: #f9fafb;
-  --text-secondary: #d1d5db;
-  --border-color: #374151;
-  --shadow-color: rgba(0, 0, 0, 0.3);
-  --hover-shadow-color: rgba(0, 0, 0, 0.4);
-}
+
 
 /* 响应式设计 */
 @media (max-width: 768px) {

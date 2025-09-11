@@ -257,16 +257,16 @@ const calculateAge = (birthday: string) => {
     }
     
     &::-webkit-scrollbar-track {
-      background: rgba(0, 0, 0, 0.05);
+      background: var(--ld-bg-subtle);
       border-radius: 3px;
     }
     
     &::-webkit-scrollbar-thumb {
-      background: rgba(0, 0, 0, 0.2);
+      background: var(--c-text-3);
       border-radius: 3px;
       
       &:hover {
-        background: rgba(0, 0, 0, 0.3);
+        background: var(--c-text-2);
       }
     }
   }
@@ -279,7 +279,7 @@ const calculateAge = (birthday: string) => {
     .status-date-badge {
       flex-shrink: 0;
       padding: 0.5rem 0.75rem;
-      background: rgba(0, 0, 0, 0.05);
+      background: var(--ld-bg-subtle);
       border-radius: 0.5rem;
       font-size: 0.875rem;
       font-weight: 500;
@@ -293,11 +293,11 @@ const calculateAge = (birthday: string) => {
     }
 
     .status-content {
-      background: white;
-      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: var(--ld-bg-card);
+      border: 1px solid var(--c-border);
       border-radius: 0.75rem;
       padding: 1rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 8px var(--ld-shadow);
 
       &.image {
         .status-image {
@@ -324,7 +324,7 @@ const calculateAge = (birthday: string) => {
         font-style: italic;
         margin: 0;
         padding-top: 0.75rem;
-        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        border-top: 1px solid var(--c-border);
       }
     }
   }

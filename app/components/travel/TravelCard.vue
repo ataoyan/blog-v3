@@ -89,7 +89,7 @@ const handleClick = async () => {
     height: 140px;
     border-radius: 0.75rem;
     overflow: hidden;
-    background: #f8f9fa;
+    background: var(--ld-bg-subtle);
     display: flex;
     align-items: center;
     justify-content: center;

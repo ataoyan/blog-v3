@@ -44,7 +44,7 @@ const getGenderImage = (gender: string) => {
   padding: 1.5rem;
   border-radius: 1rem;
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.12);
+  border: 2px solid var(--c-border);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   
@@ -62,7 +62,7 @@ const getGenderImage = (gender: string) => {
     height: 200px;
     border-radius: 0.75rem;
     overflow: hidden;
-    background: #f8f9fa;
+    background: var(--ld-bg-subtle);
     margin-bottom: 1rem;
     
     .cover {
@@ -112,7 +112,7 @@ const getGenderImage = (gender: string) => {
       .stat {
         text-align: center;
         padding: 0.5rem;
-        background: rgba(0, 0, 0, 0.03);
+        background: var(--ld-bg-subtle);
         border-radius: 0.5rem;
         
         .stat-label {

@@ -9,7 +9,7 @@ const layoutStore = useLayoutStore()
 layoutStore.setAside(['blog-stats', 'announcement-card', 'work-status', 'theme-card'])
 
 const selectedPetId = ref<string>(pets[0]?.id || '')
-const selectedPet = ref(pets.find(pet => pet.id === selectedPetId.value))
+const selectedPet = ref(pets.find(pet => pet.id === selectedPetId.value) || undefined)
 
 const selectPet = (petId: string) => {
   selectedPetId.value = petId
@@ -74,6 +74,7 @@ const selectPet = (petId: string) => {
         box-shadow: 0 2px 10px var(--ld-shadow);
         transition: all 0.2s;
         font-weight: 600;
+        color: var(--c-text-1);
 
         &:hover {
           transform: translateY(-1px);
