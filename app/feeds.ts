@@ -89,6 +89,16 @@ export default [
 				date: '2025-09-11',
 				gender: 'male'
 			},
+			{
+				author: '克喵爱吃卤面',
+				sitenick: "喵洛阁",
+				desc: '愿你看清一切真相后，依旧热爱你的家人和朋友。',
+				link: 'https://blog-v3.kemeow.top',
+				avatar: 'https://img.314926.xyz/images/2025/08/13/no-background-kemiaofxjun.webp',
+				tags: ['技术', '生活'],
+				date: '2025-09-11',
+				gender: 'male'
+			},
 		],
 	},
 ] satisfies FeedGroup[]
