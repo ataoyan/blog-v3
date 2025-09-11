@@ -99,6 +99,16 @@ export default [
 				date: '2025-09-11',
 				gender: 'male'
 			},
+			{
+				author: 'Zixue',
+				sitenick: "紫血小站",
+				desc: '人山人海人来人往,自尊自爱自由自在',
+				link: 'https://blog.ziyibbs.com/',
+				avatar: 'https://blog.ziyibbs.com/favicon/logo.png',
+				tags: ['技术', '生活'],
+				date: '2025-09-11',
+				gender: 'male'
+			},
 		],
 	},
 ] satisfies FeedGroup[]
