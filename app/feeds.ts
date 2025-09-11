@@ -69,6 +69,26 @@ export default [
 				date: '2025-09-10',
 				gender: 'male'
 			},
+			{
+				author: '落尘up',
+				sitenick: "落尘up",
+				desc: '不止于代码与技术，更关注生活与思考。在喧嚣中落下的尘埃，亦能闪烁微光。',
+				link: 'https://www.luochen.chat/',
+				avatar: 'https://www.luochenup.xyz/b_a5a3aa888355bdc617dca021efb19ab8.png',
+				tags: ['技术', '生活'],
+				date: '2025-09-11',
+				gender: 'male'
+			},
+			{
+				author: 'HeLongaa',
+				sitenick: "硅基漫游指南",
+				desc: '等待和犹豫才是这个世界上最无情的杀手',
+				link: 'https://blog.helong.online',
+				avatar: 'https://oss.helong.online/bucket-IMG/bea2394fef15b88de49ae37707b3c1b86d7dbc2035a752ef2581a8b6cb3b2e8c.png',
+				tags: ['技术', '生活'],
+				date: '2025-09-11',
+				gender: 'male'
+			},
 		],
 	},
 ] satisfies FeedGroup[]
