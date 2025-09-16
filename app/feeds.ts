@@ -63,8 +63,8 @@ export default [
 				author: '成烁',
 				sitenick: "成烁BLOG",
 				desc: '致一锦程 探索不停',
-				link: 'https://chengshuo.top',
-				avatar: 'https://chengshuo.top/usr/uploads/2025/08/1293883047.webp',
+				link: 'https://blog.chengshuo.top',
+				avatar: 'https://blog.chengshuo.top/usr/uploads/2025/08/1293883047.webp',
 				tags: ['技术', '生活'],
 				date: '2025-09-10',
 				gender: 'male'
