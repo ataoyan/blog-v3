@@ -135,7 +135,25 @@ const message = appConfig.announcement?.enabled ? appConfig.announcement.message
   position: relative;
   padding: 0.625rem 0;
   font-family: var(--font-creative);
-  animation: textGlow 4s ease-in-out infinite;
+  animation: textPulse 3s ease-in-out infinite;
+}
+
+@keyframes textPulse {
+  0%, 100% {
+    color: var(--c-text-1);
+    transform: scale(1);
+    text-shadow: 
+      0 1px 2px rgba(0, 0, 0, 0.08),
+      0 0 4px rgba(var(--c-primary-rgb), 0.1);
+  }
+  50% {
+    color: var(--c-primary);
+    transform: scale(1.02);
+    text-shadow: 
+      0 2px 6px rgba(0, 0, 0, 0.12),
+      0 0 12px rgba(var(--c-primary-rgb), 0.3),
+      0 0 18px rgba(var(--c-primary-rgb), 0.2);
+  }
 }
 
 @keyframes textGlow {
@@ -155,42 +173,7 @@ const message = appConfig.announcement?.enabled ? appConfig.announcement.message
 }
 
 .announcement-text::before {
-  content: '';
-  position: absolute;
-  bottom: 0.375rem;
-  left: 50%;
-  width: 30%;
-  height: 1.5px;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    rgba(var(--c-primary-rgb), 0.6) 30%, 
-    rgba(var(--c-primary-rgb), 0.4) 70%,
-    transparent 100%
-  );
-  transform: translateX(-50%);
-  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-  border-radius: 0.75px;
-  opacity: 0.6;
-  animation: linePulse 3s ease-in-out infinite;
-}
-
-@keyframes linePulse {
-  0%, 100% {
-    width: 20%;
-    opacity: 0.4;
-    height: 1px;
-  }
-  50% {
-    width: 60%;
-    opacity: 0.9;
-    height: 2px;
-    background: linear-gradient(90deg, 
-      transparent 0%, 
-      var(--c-primary) 30%, 
-      var(--c-primary-soft) 70%,
-      transparent 100%
-    );
-  }
+  display: none;
 }
 
 .announcement-content {
@@ -246,26 +229,25 @@ const message = appConfig.announcement?.enabled ? appConfig.announcement.message
   }
 }
 
-.announcement-content:hover .announcement-text::before {
-  width: 70%;
-  opacity: 0.9;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    var(--c-primary) 30%, 
-    var(--c-primary-soft) 70%,
-    transparent 100%
-  );
-  animation: lineExpand 1.5s ease-out forwards;
+.announcement-content:hover .announcement-text {
+  animation: textHighlight 1.5s ease-in-out forwards;
 }
 
-@keyframes lineExpand {
+@keyframes textHighlight {
   0% {
-    width: 30%;
-    opacity: 0.6;
+    color: var(--c-text-1);
+    transform: scale(1);
+    text-shadow: 
+      0 1px 2px rgba(0, 0, 0, 0.08),
+      0 0 4px rgba(var(--c-primary-rgb), 0.1);
   }
   100% {
-    width: 70%;
-    opacity: 0.9;
+    color: var(--c-primary);
+    transform: scale(1.05);
+    text-shadow: 
+      0 4px 12px rgba(0, 0, 0, 0.15),
+      0 0 20px rgba(var(--c-primary-rgb), 0.4),
+      0 0 30px rgba(var(--c-primary-rgb), 0.3);
   }
 }
 
