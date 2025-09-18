@@ -73,7 +73,7 @@ const blogConfig = {
 	// 公告配置
 	announcement: {
 		enabled: true,
-		message: '欢迎来到我的博客鸭！'
+		message: '主页终于上线啦！'
 	},
 
 	// ICP备案信息
