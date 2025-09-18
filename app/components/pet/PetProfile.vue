@@ -125,7 +125,7 @@ const calculateAge = (birthday: string) => {
   padding: 2rem;
   border-radius: 1rem;
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.12);
+  border: 1.5px solid rgba(0, 0, 0, 0.12);
 
   .profile-header {
     display: flex;

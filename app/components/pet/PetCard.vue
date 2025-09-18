@@ -44,7 +44,7 @@ const getGenderImage = (gender: string) => {
   padding: 1.5rem;
   border-radius: 1rem;
   background: transparent;
-  border: 2px solid var(--c-border);
+  border: 1.5px solid var(--c-border);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   
