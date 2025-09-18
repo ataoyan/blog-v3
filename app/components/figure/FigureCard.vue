@@ -21,7 +21,7 @@ const props = defineProps<{ item: FigureItem }>()
 	<div class="card-content">
 		<div class="image-container">
 			<div class="cover-box" :style="{ '--img-scale': String(props.item.scale ?? 1) }">
-				<NuxtImg class="cover" :src="props.item.image" :alt="props.item.name" loading="lazy" :width="200" :quality="90" densities="x1 x1.5 x2 x3" sizes="120px" :modifiers="{ fit: 'cover', background: 'transparent' }" :class="{ 'is-gray': !props.item.owned }" />
+				<NuxtImg class="cover" :src="props.item.image" :alt="props.item.name" loading="lazy" :width="200" :quality="90" densities="x1 x1.5 x2" sizes="120px" :modifiers="{ fit: 'cover', background: 'transparent' }" :class="{ 'is-gray': !props.item.owned }" />
 			</div>
 		</div>
 		
@@ -39,14 +39,14 @@ const props = defineProps<{ item: FigureItem }>()
 	-moz-osx-font-smoothing: auto;
 	text-rendering: geometricPrecision;
 	
-	padding: 1.25rem;
-	border-radius: 1rem;
+	padding: 1rem;
+	border-radius: 0.75rem;
 	background: transparent;
-	border: 2px solid var(--c-border);
+	border: 1.5px solid var(--c-border);
 	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-	min-height: 220px;
+	min-height: 180px;
 	width: 100%;
-	max-width: none;
+	max-width: 160px;
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
@@ -146,7 +146,7 @@ const props = defineProps<{ item: FigureItem }>()
 	.image-container {
 		position: relative;
 		width: 100%;
-		height: 140px;
+		height: 100px;
 		border-radius: 0.375rem;
 		overflow: hidden;
 		background: var(--c-bg-2);
@@ -204,26 +204,26 @@ const props = defineProps<{ item: FigureItem }>()
 
 @media (max-width: 640px) {
 	.figure-card {
-		padding: 0.75rem;
-		max-width: 180px;
-		min-height: 200px;
+		padding: 0.5rem;
+		max-width: 140px;
+		min-height: 160px;
 
 		.image-container {
-			height: 110px;
+			height: 90px;
 		}
 
 		.meta .name {
-			font-size: 0.8125rem;
+			font-size: 0.75rem;
 		}
 
 		.status-badges {
-			top: 0.375rem;
-			right: 0.375rem;
+			top: 0.25rem;
+			right: 0.25rem;
 			
 			.badge {
-				font-size: 0.5625rem;
-				padding: 0.15rem 0.3rem;
-				border-radius: 0.25rem;
+				font-size: 0.5rem;
+				padding: 0.1rem 0.25rem;
+				border-radius: 0.2rem;
 			}
 		}
 	}
