@@ -125,7 +125,6 @@ onMounted(() => {
             <div class="author-info">
               <div class="author-main">
                 <h3 class="author-name">{{ moment.author.name }}</h3>
-                <!-- 徽章区域 - Apple风格 -->
                 <div v-if="moment.author.badges?.length" class="badges-container">
                   <span 
                     v-for="badge in moment.author.badges" 

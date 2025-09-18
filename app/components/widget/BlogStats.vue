@@ -102,7 +102,7 @@ onMounted(async () => {
 
 .stat-value {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--c-text);
   line-height: 1.2;
   margin-bottom: 0.25rem;
@@ -111,7 +111,7 @@ onMounted(async () => {
 .stat-label {
   font-size: 0.85rem;
   color: var(--c-text-2);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .stat-tooltip {
