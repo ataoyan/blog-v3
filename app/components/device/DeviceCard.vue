@@ -45,7 +45,7 @@ const props = defineProps<{ item: DeviceItem }>()
 	padding: 1.25rem;
 	border-radius: 1rem;
 	background: transparent;
-	border: 2px solid var(--c-border);
+	border: 1px solid var(--c-border);
 	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 	min-height: 220px;
 	width: 100%;
