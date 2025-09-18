@@ -103,6 +103,11 @@ onMounted(() => {
 	padding: 0.5rem;
 	line-height: 1.4;
 	animation: float-in 0.2s var(--delay) backwards;
+	background: linear-gradient(135deg, var(--c-bg-soft) 0%, var(--c-bg-card) 100%);
+	border: 1px solid var(--c-border);
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover {
 		transform: translateY(-2px);

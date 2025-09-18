@@ -124,8 +124,8 @@ const calculateAge = (birthday: string) => {
 .pet-profile {
   padding: 2rem;
   border-radius: 1rem;
-  background: transparent;
-  border: 1.5px solid rgba(0, 0, 0, 0.12);
+  background: linear-gradient(135deg, var(--c-bg-soft) 0%, var(--c-bg-card) 100%);
+  border: 1px solid var(--c-border);
 
   .profile-header {
     display: flex;

@@ -32,26 +32,27 @@ defineProps<{
 
 .icon-nav-menu {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 0.5rem;
 	justify-content: center;
+	align-items: center;
 }
 
 .icon-nav-item {
 	display: flex;
 	align-items: center;
-	gap: 0.75rem;
-	padding: 0.75rem 1rem;
-	border-radius: 0.75rem;
-	transition: all 0.2s ease;
-	background-color: var(--c-bg-soft);
+	justify-content: center;
+	padding: 0.75rem;
+	border-radius: 10px;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	background: linear-gradient(135deg, var(--c-bg-soft) 0%, var(--c-bg-card) 100%);
 	border: 1px solid var(--c-border);
 	
 	&:hover {
-		background-color: var(--c-primary-soft);
-		border-color: var(--c-primary);
+		background: rgba(var(--c-primary-rgb), 0.1);
 		transform: translateY(-1px);
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 4px 12px rgba(var(--c-primary-rgb), 0.1);
 	}
 
 	&:active {
@@ -61,19 +62,17 @@ defineProps<{
 
 .icon-nav-icon {
 	font-size: 1.4em;
-	color: var(--c-primary);
+	color: var(--c-text-1);
 	flex-shrink: 0;
+	transition: color 0.3s ease;
+	
+	.icon-nav-item:hover & {
+		color: var(--c-primary);
+	}
 }
 
 .icon-nav-text {
-	font-size: 0.9em;
-	font-weight: 500;
-	color: var(--c-text-2);
-	transition: color 0.2s ease;
-	
-	.icon-nav-item:hover & {
-		color: var(--c-text);
-	}
+	display: none;
 }
 
 // 响应式设计

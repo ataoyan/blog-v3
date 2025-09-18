@@ -54,7 +54,7 @@ const handleClick = async () => {
 .travel-card {
   padding: 1rem;
   border-radius: 1rem;
-  background: var(--ld-bg-card);
+  background: linear-gradient(135deg, var(--c-bg-soft) 0%, var(--c-bg-card) 100%);
   border: 1px solid var(--c-border);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 200px;
