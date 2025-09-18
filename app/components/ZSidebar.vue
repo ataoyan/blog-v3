@@ -112,22 +112,74 @@ const keycut = computed(() => navigator?.userAgent.includes('Mac OS') ? '⌘K' :
 .sidebar-nav-item {
 	display: flex;
 	align-items: center;
-	gap: 0.5em;
-	padding: 0.5em 1em;
-	border-radius: 0.5em;
-	transition: all 0.2s;
+	gap: 0.625em;
+	padding: 0.75em 1.25em;
+	border-radius: 12px;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	background: linear-gradient(135deg, var(--c-bg-soft) 0%, var(--c-bg-card) 100%);
+	border: 1px solid var(--c-border);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	position: relative;
+	overflow: hidden;
 
-	&:hover,
-	&.router-link-active {
-		background-color: var(--c-bg-soft);
+	
+	&:hover {
+		background: linear-gradient(135deg, rgba(var(--c-primary-rgb), 0.1) 0%, rgba(var(--c-primary-rgb), 0.05) 100%);
 		color: var(--c-text);
+		transform: translateY(-1px);
+		box-shadow: 0 4px 16px rgba(var(--c-primary-rgb), 0.1);
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, transparent, rgba(var(--c-primary-rgb), 0.1), transparent);
+		transition: left 0.6s ease;
+	}
+
+	&:hover::before {
+		left: 100%;
+	}
+
+	&.router-link-active {
+		background: linear-gradient(135deg, rgba(var(--c-primary-rgb), 0.15) 0%, rgba(var(--c-primary-rgb), 0.08) 100%);
+		color: var(--c-primary);
+		box-shadow: 0 2px 8px rgba(var(--c-primary-rgb), 0.15);
+		font-weight: 600;
+		position: relative;
+		overflow: hidden;
+	}
+
+	&.router-link-active::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 3px;
+		height: 100%;
+		background: var(--c-primary);
+		transform: scaleY(1);
+		transform-origin: center center;
+		transition: transform 0.3s ease-out;
 	}
 
 	&.router-link-active::after {
-		content: "⦁";
+		content: "•";
 		width: 1em;
 		text-align: center;
-		color: var(--c-text-3);
+		color: var(--c-primary);
+		font-weight: bold;
+		font-size: 1.4em;
+		margin-left: 2px;
+	}
+
+	&:not(.router-link-active)::before {
+		transform: scaleY(0);
+		transform-origin: center center;
+		transition: transform 0.2s ease-in;
 	}
 
 	.iconify {
@@ -143,6 +195,8 @@ const keycut = computed(() => navigator?.userAgent.includes('Mac OS') ? '⌘K' :
 		font-size: 1em;
 	}
 }
+
+
 
 .search-btn {
 	margin: 1rem 0;

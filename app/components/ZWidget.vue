@@ -84,7 +84,9 @@ defineProps<{
 	> .widget-card {
 		padding: 0.5rem 0.8rem;
 		border-radius: 0.8rem;
-		background-color: var(--c-bg-2);
+		background: linear-gradient(135deg, var(--c-bg-soft) 0%, var(--c-bg-card) 100%);
+		border: 1px solid var(--c-border);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 
 		:deep(p) {
 			padding: 0.2em 0;
