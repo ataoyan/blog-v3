@@ -21,6 +21,51 @@ export interface TravelItem {
 const travels: TravelItem[] = [
   {
     id: '1',
+    year: '2020',
+    location: '南京',
+    province: '江苏',
+    date: '2020-12-31',
+    transportation: '高铁',
+    duration: '2天',
+    weather: '晴朗',
+    rating: 5,
+    coverImage: 'https://cdn.atao.cyou/Travel/travel_250919_224943.jpg',
+    photos: [
+      'https://cdn.atao.cyou/Travel/travel_250919_224943.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224942.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224941.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224939.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224938.jpg',
+    ],
+    attractions: [
+    ]
+  },
+  {
+    id: '2',
+    year: '2021',
+    location: '衡阳',
+    province: '湖南',
+    date: '2021-03-04',
+    transportation: '高铁',
+    duration: '2天',
+    weather: '小雨',
+    rating: 5,
+    coverImage: 'https://cdn.atao.cyou/Travel/travel_250919_224946.jpg',
+    photos: [
+      'https://cdn.atao.cyou/Travel/travel_250919_224946.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224945.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224934.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224933.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224932.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224931.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224947.jpg',
+    ],
+    attractions: [
+      { name: '剧本杀', color: '#93a08d' },
+    ]
+  },
+  {
+    id: '3',
     year: '2021',
     location: '武汉',
     province: '湖北',
@@ -34,12 +79,37 @@ const travels: TravelItem[] = [
       'https://cdn.atao.cyou/Travel/travel_250907_185312.JPG',
       'https://cdn.atao.cyou/Travel/travel_250907_185313.JPG',
       'https://cdn.atao.cyou/Travel/travel_250907_185314.JPG',
+      'https://cdn.atao.cyou/Travel/travel_250919_224928.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224927.jpg',
     ],
     attractions: [
     ]
   },
   {
-    id: '2',
+    id: '4',
+    year: '2021',
+    location: '宁波',
+    province: '浙江',
+    date: '2021-06-14',
+    transportation: '地铁',
+    duration: '1天',
+    weather: '晴朗',
+    rating: 4,
+    coverImage: 'https://cdn.atao.cyou/Travel/travel_250919_224921.jpg',
+    photos: [
+      'https://cdn.atao.cyou/Travel/travel_250919_224926.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224925.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224924.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224923.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224922.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224921.jpg',
+    ],
+    attractions: [
+      { name: '电影院', color: '#55742c' },
+    ]
+  },
+  {
+    id: '5',
     year: '2022',
     location: '厦门',
     province: '福建',
@@ -57,6 +127,10 @@ const travels: TravelItem[] = [
       'https://cdn.atao.cyou/Travel/travel_250907_185356.JPEG',
       'https://cdn.atao.cyou/Travel/travel_250907_185357.JPEG',
       'https://cdn.atao.cyou/Travel/travel_250907_185358.JPEG',
+      'https://cdn.atao.cyou/Travel/travel_250919_224918.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224917.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224916.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224914.jpg',
     ],
     attractions: [
       { name: '植物园', color: '#FF6B6B' },
@@ -64,7 +138,7 @@ const travels: TravelItem[] = [
     ]
   },
   {
-    id: '3',
+    id: '6',
     year: '2022',
     location: '宁波-象山',
     province: '浙江',
@@ -75,6 +149,8 @@ const travels: TravelItem[] = [
     rating: 4.5,
     coverImage: 'https://cdn.atao.cyou/Travel/travel_250907_202914.JPEG',
     photos: [
+      'https://cdn.atao.cyou/Travel/travel_250919_224913.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224912.jpg',
       'https://cdn.atao.cyou/Travel/travel_250907_202914.JPEG',
       'https://cdn.atao.cyou/Travel/travel_250907_202915.JPEG',
       'https://cdn.atao.cyou/Travel/travel_250907_202916.JPEG',
@@ -92,6 +168,9 @@ const travels: TravelItem[] = [
       'https://cdn.atao.cyou/Travel/travel_250907_202928.JPEG',
       'https://cdn.atao.cyou/Travel/travel_250907_202929.JPEG',
       'https://cdn.atao.cyou/Travel/travel_250907_202930.JPEG',
+      'https://cdn.atao.cyou/Travel/travel_250919_224908.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224907.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224903.jpg',
     ],
     attractions: [
       { name: '象山影视城', color: '#FF9F1C' },
@@ -99,7 +178,7 @@ const travels: TravelItem[] = [
     ]
   },
   {
-    id: '4',
+    id: '7',
     year: '2023',
     location: '宁波-余姚',
     province: '浙江',
@@ -110,9 +189,12 @@ const travels: TravelItem[] = [
     rating: 3.5,
     coverImage: 'https://cdn.atao.cyou/Travel/travel_250907_204912.JPEG',
     photos: [
+      'https://cdn.atao.cyou/Travel/travel_250919_224906.jpg',
       'https://cdn.atao.cyou/Travel/travel_250907_204912.JPEG',
       'https://cdn.atao.cyou/Travel/travel_250907_204913.JPEG',
       'https://cdn.atao.cyou/Travel/travel_250907_204914.JPEG',
+      'https://cdn.atao.cyou/Travel/travel_250919_224905.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224904.jpg',
     ],
     attractions: [
       { name: '河姆渡遗址', color: '#5D5C61' },
@@ -120,7 +202,7 @@ const travels: TravelItem[] = [
     ]
   },
   {
-    id: '5',
+    id: '8',
     year: '2023',
     location: '宁波-余姚',
     province: '浙江',
@@ -139,7 +221,7 @@ const travels: TravelItem[] = [
     ]
   },
   {
-    id: '6',
+    id: '9',
     year: '2023',
     location: '杭州',
     province: '浙江',
@@ -150,6 +232,7 @@ const travels: TravelItem[] = [
     rating: 4.5,
     coverImage: 'https://cdn.atao.cyou/Travel/travel_250907_214649.JPEG',
     photos: [
+      'https://cdn.atao.cyou/Travel/travel_250919_224902.jpg',
       'https://cdn.atao.cyou/Travel/travel_250907_214648.JPEG',
       'https://cdn.atao.cyou/Travel/travel_250907_214649.JPEG',
       'https://cdn.atao.cyou/Travel/travel_250907_214650.MP4'
@@ -159,7 +242,7 @@ const travels: TravelItem[] = [
     ]
   },
   {
-    id: '7',
+    id: '10',
     year: '2025',
     location: '苏州',
     province: '江苏',
@@ -173,6 +256,9 @@ const travels: TravelItem[] = [
       'https://cdn.atao.cyou/Travel/travel_250907_222042.JPG',
       'https://cdn.atao.cyou/Travel/travel_250907_222043.JPG',
       'https://cdn.atao.cyou/Travel/travel_250907_222044.JPG',
+      'https://cdn.atao.cyou/Travel/travel_250919_224901.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224859.jpg',
+      'https://cdn.atao.cyou/Travel/travel_250919_224900.jpg',
       'https://cdn.atao.cyou/Travel/travel_250907_222045.JPEG',
       'https://cdn.atao.cyou/Travel/travel_250907_222046.JPEG',
       'https://cdn.atao.cyou/Travel/travel_250907_222047.MP4',

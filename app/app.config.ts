@@ -61,6 +61,7 @@ export default defineAppConfig({
 			火车: { icon: 'ph:train-bold', color: '#9C27B0' },
 			轮船: { icon: 'ph:ship-bold', color: '#2196F3' },
 			公交: { icon: 'ph:bus-bold', color: '#FF9800' },
+			地铁: { icon: 'ph:subway-bold', color: '#3f79b2' },
 		},
 	},
 
