@@ -45,7 +45,7 @@ const figures: FigureItem[] = [
 	{
 		series: '悠悠日常',
 		name: '我怎么这么好看',
-		owned: false,
+		owned: true,
 		isHidden: false,
 		image: 'https://cdn.atao.cyou/Web/web_250830_195946.jpg',
 		scale: 1,
@@ -53,7 +53,7 @@ const figures: FigureItem[] = [
 	{
 		series: '悠悠日常',
 		name: '颤抖吧！我的脂肪',
-		owned: false,
+		owned: true,
 		isHidden: false,
 		image: 'https://cdn.atao.cyou/Web/web_250830_195944.jpg',
 		scale: 1,
@@ -77,7 +77,7 @@ const figures: FigureItem[] = [
 	{
 		series: '悠悠日常',
 		name: '沉浸式追剧',
-		owned: false,
+		owned: true,
 		isHidden: false,
 		image: 'https://cdn.atao.cyou/Web/web_250830_195906.jpg',
 		scale: 1,
@@ -85,7 +85,7 @@ const figures: FigureItem[] = [
 	{
 		series: '悠悠日常',
 		name: '洗香香',
-		owned: false,
+		owned: true,
 		isHidden: false,
 		image: 'https://cdn.atao.cyou/Web/web_250830_195926.jpg',
 		scale: 1,
@@ -93,7 +93,7 @@ const figures: FigureItem[] = [
 	{
 		series: '悠悠日常',
 		name: '什么瓜？',
-		owned: false,
+		owned: true,
 		isHidden: false,
 		image: 'https://cdn.atao.cyou/Web/web_250830_195920.jpg',
 		scale: 1,
