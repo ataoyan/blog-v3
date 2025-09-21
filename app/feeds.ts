@@ -109,6 +109,16 @@ export default [
 				date: '2025-09-11',
 				gender: 'male'
 			},
+			{
+				author: 'Refactored',
+				sitenick: "RefactX Project",
+				desc: '形体是简单而纯粹的，它不是完整的群体，每个形体都指向其复杂性，并最终被复杂性联系在一起。',
+				link: 'https://www.refact.cc/',
+				avatar: 'https://www.refact.cc/avatar.png',
+				tags: ['技术'],
+				date: '2025-09-21',
+				gender: 'male'
+			},
 		],
 	},
 ] satisfies FeedGroup[]
