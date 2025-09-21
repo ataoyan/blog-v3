@@ -71,7 +71,10 @@ const closePhotoPreview = () => {
 const nextPhoto = () => {
   if (currentMomentImages.value.length > 1) {
     currentPhotoIndex.value = (currentPhotoIndex.value + 1) % currentMomentImages.value.length
-    currentPhoto.value = currentMomentImages.value[currentPhotoIndex.value]
+    const nextPhoto = currentMomentImages.value[currentPhotoIndex.value]
+    if (typeof nextPhoto === 'string') {
+      currentPhoto.value = nextPhoto
+    }
   }
 }
 
@@ -79,7 +82,10 @@ const nextPhoto = () => {
 const prevPhoto = () => {
   if (currentMomentImages.value.length > 1) {
     currentPhotoIndex.value = (currentPhotoIndex.value - 1 + currentMomentImages.value.length) % currentMomentImages.value.length
-    currentPhoto.value = currentMomentImages.value[currentPhotoIndex.value]
+    const photo = currentMomentImages.value[currentPhotoIndex.value]
+    if (photo) {
+      currentPhoto.value = photo
+    }
   }
 }
 
