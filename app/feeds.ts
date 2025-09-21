@@ -119,6 +119,16 @@ export default [
 				date: '2025-09-21',
 				gender: 'male'
 			},
+			{
+				author: '酥米',
+				sitenick: "酥米的小站",
+				desc: '终有一日，寻梦中人',
+				link: 'https://www.sumi233.top/',
+				avatar: 'https://cdn.sumi233.top/gh/huang233893/blog-image-bed/top/huang233893/imgs/blog/userfb6a1018b84ce485.jpg',
+				tags: ['技术'],
+				date: '2025-09-21',
+				gender: 'male'
+			},
 		],
 	},
 ] satisfies FeedGroup[]
