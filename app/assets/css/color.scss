@@ -3,7 +3,7 @@
 
 :root {
   // 基础色调（基于主色调）
-  --hue-theme: 207deg;
+  --hue-theme: 86deg;
 
   // 文本颜色
   --c-text: hsl(var(--hue-theme) 0% 0%);
@@ -22,8 +22,8 @@
   --c-bg-a80: hsl(var(--hue-theme) 20% 98% / 80%);
 
   // 主题色
-  --c-primary: hsl(207deg 72% 52%); /* #2c8edd */
-  --c-primary-soft: hsl(207deg 72% 52% / 20%);
+  --c-primary: hsl(86deg 45% 31%); /* #55742c */
+  --c-primary-soft: hsl(86deg 45% 31% / 20%);
   --c-secondary: hsl(210deg 56% 47%); /* #357abd */
   --c-accent: hsl(48deg 92% 75%); /* #fae386 */
 
