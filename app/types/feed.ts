@@ -19,18 +19,12 @@ export interface FeedEntry {
 	archs?: Arch[]
 	/** 订阅日期 */
 	date: string
-	/** 博主备注 */
-	comment?: string
-	/** 徽章文本 */
-	badgeText?: string
-	/** 徽章颜色 */
-	badgeColor?: string
-	/** 性别 */
-	gender?: 'male' | 'female'
 	/** 错误信息 */
 	error?: string
 	/** 标签 */
 	tags?: string[]
+	/** 是否为上游友链 */
+	upstream?: boolean
 }
 
 export interface FeedGroup {

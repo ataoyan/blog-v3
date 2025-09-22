@@ -169,6 +169,13 @@ onMounted(() => {
                 :alt="`图片 ${index + 1}`"
                 class="moment-image"
                 :class="{ 'grid-item': moment.images.length > 1 }"
+                :modifiers="{
+                  width: 600,
+                  height: 400,
+                  fit: 'cover',
+                  quality: 75
+                }"
+                loading="lazy"
                 @click="openPhotoPreview(image, moment.images, index)"
               />
             </div>
@@ -213,6 +220,13 @@ onMounted(() => {
           :src="currentPhoto" 
           :alt="`即刻图片 ${currentPhotoIndex + 1}`"
           class="preview-image"
+          :modifiers="{
+            width: 1200,
+            height: 800,
+            fit: 'contain',
+            quality: 80
+          }"
+          loading="lazy"
         />
         
         <button v-if="currentMomentImages && currentMomentImages.length > 1" class="nav-btn next-btn" @click="nextPhoto">

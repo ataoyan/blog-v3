@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { myFeed } from '~~/blog.config'
 import feeds from '~/feeds'
-import ModernTicketCard from '~/components/partial/ModernTicketCard.vue'
+import FriendLinkCard from '~/components/partial/FriendLinkCard.vue'
 import { computed, watch } from 'vue'
 import type { WidgetName } from '~/composables/useWidgets'
 
@@ -188,20 +188,15 @@ const showToast = (message: string) => {
   <!-- 友链网格 -->
   <div class="feeds-section">
     <div class="feeds-grid">
-      <ModernTicketCard
+      <FriendLinkCard
         v-for="feed in categorizedFeeds[activeCategory]"
         :key="feed.link"
-        :title="feed.author"
-        :subtitle="feed.sitenick || feed.title"
-        :description="feed.desc"
-        :image="feed.avatar || feed.icon"
-        :href="feed.link"
-        :tags="feed.tags"
-        :meta="feed.date"
-        :status="feed.comment ? '' : undefined"
-        :badge-text="feed.badgeText"
-        :badge-color="feed.badgeColor"
-        :gender="feed.gender"
+        :siteName="feed.author"
+        :siteUrl="feed.link"
+        :siteDesc="feed.desc"
+        :siteIcon="feed.avatar || feed.icon"
+        :badgeText="feed.badgeText"
+        :upstream="feed.upstream || false"
       />
     </div>
   </div>

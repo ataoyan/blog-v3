@@ -107,13 +107,29 @@ export default defineAppConfig({
 				scale: 1
 			},
 			{
-				src: 'https://cdn.atao.cyou/Web/web_250922_130301.png',
-				scale: 0.95
+				src: 'https://cdn.atao.cyou/Web/web_250922_211434.png',
+				scale: 1.1
+			},
+			{
+				src: 'https://cdn.atao.cyou/Web/web_250922_213023.png',
+				scale: 1.1
+			},
+			{
+				src: 'https://cdn.atao.cyou/Web/web_250922_215322.png',
+				scale: 1.1
+			},
+			{
+				src: 'https://cdn.atao.cyou/Web/web_250922_220530.png',
+				scale: 1.1
+			},
+			{
+				src: 'https://cdn.atao.cyou/Web/web_250922_230254.png',
+				scale: 1.1
 			},
 		],
 		alt: '像素风',
 		width: 240,
-		height: 160,
+		height: 360, /* 调整为3:2比例，避免2:3比例显示问题 */
 		enabled: true,
 		carousel: {
 			enabled: true,

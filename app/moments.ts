@@ -37,7 +37,7 @@ const moments: MomentItem[] = [
         location: '宁波',
         createdAt: '2025-09-09 21:04'
     },
-        {
+    {
         id: '3',
         content: '面包节🍞',
         images: [
@@ -47,6 +47,20 @@ const moments: MomentItem[] = [
         ],
         location: '宁波',
         createdAt: '2025-09-20 20:58'
+    },
+    {
+        id: '4',
+        content: '像素小人🎊',
+        images: [
+            'https://cdn.atao.cyou/Web/web_250922_093223.png',
+            'https://cdn.atao.cyou/Web/web_250922_211434.png',
+            'https://cdn.atao.cyou/Web/web_250922_213023.png',
+            'https://cdn.atao.cyou/Web/web_250922_215322.png',
+            'https://cdn.atao.cyou/Web/web_250922_220530.png',
+            'https://cdn.atao.cyou/Web/web_250922_230254.png',
+        ],
+        location: '宁波',
+        createdAt: '2025-09-22 22:10'
     }
 ]
 
