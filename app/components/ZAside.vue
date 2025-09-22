@@ -1,4 +1,4 @@
-<script setup lang="ts">
+	<script setup lang="ts">
 const layoutStore = useLayoutStore()
 const appConfig = useAppConfig()
 
@@ -8,11 +8,8 @@ const { widgets } = useWidgets(() => layoutStore.asideWidgets)
 const getWidgetProps = (widgetName: string) => {
   if (widgetName === 'sidebar-image') {
     return {
-      src: appConfig.sidebarImage?.src,
-      alt: appConfig.sidebarImage?.alt,
-      width: appConfig.sidebarImage?.width,
-      height: appConfig.sidebarImage?.height,
-      scale: appConfig.sidebarImage?.scale
+      images: appConfig.sidebarImage?.images,
+      carousel: appConfig.sidebarImage?.carousel
     }
   }
   return {}

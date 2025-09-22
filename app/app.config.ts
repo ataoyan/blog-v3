@@ -101,18 +101,26 @@ export default defineAppConfig({
 
 	/** 侧边栏图片配置 */
 	sidebarImage: {
-		/** 图片URL，支持外部链接或本地路径 */
-		src: 'https://cdn.atao.cyou/Web/web_250922_093223.png',
-		/** 图片描述 */
+		images: [
+			{
+				src: 'https://cdn.atao.cyou/Web/web_250922_093223.png',
+				scale: 0.95
+			},
+			{
+				src: 'https://cdn.atao.cyou/Web/web_250922_130301.png',
+				scale: 0.85
+			},
+		],
 		alt: '像素风',
-		/** 图片宽度 */
 		width: 240,
-		/** 图片高度 */
 		height: 160,
-		/** 图片缩放比例，1.0 为原始大小 */
-		scale: 0.95,
-		/** 是否启用侧边栏图片 */
 		enabled: true,
+		carousel: {
+			enabled: true,
+			interval: 5000,
+			showControls: true,
+			showIndicators: true,
+		},
 	},
 
 	/** 左侧栏顶部 Logo */
