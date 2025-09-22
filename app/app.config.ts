@@ -104,7 +104,7 @@ export default defineAppConfig({
 		images: [
 			{
 				src: 'https://cdn.atao.cyou/Web/web_250922_093223.png',
-				scale: 0.95
+				scale: 1
 			},
 			{
 				src: 'https://cdn.atao.cyou/Web/web_250922_130301.png',
