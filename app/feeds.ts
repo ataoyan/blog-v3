@@ -129,6 +129,16 @@ export default [
 				date: '2025-09-21',
 				gender: 'male'
 			},
+			{
+				author: '雪萌天文台',
+				sitenick: "雪萌天文台",
+				desc: '发现巷子里的那颗星星',
+				link: 'https://blog.snowy.moe/',
+				avatar: 'https://img.snowy.moe/head.png',
+				tags: ['技术'],
+				date: '2025-09-22',
+				gender: 'male'
+			},
 		],
 	},
 ] satisfies FeedGroup[]
