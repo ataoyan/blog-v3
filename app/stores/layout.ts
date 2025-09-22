@@ -20,8 +20,12 @@ export const useLayoutStore = defineStore('layout', () => {
 
 	const toggle = (key: LayoutSection) => {
 		const isActive = open.value[key]
-		closeAll()
-		open.value[key] = !isActive
+		if (isActive) {
+			open.value[key] = false
+		} else {
+			closeAll()
+			open.value[key] = true
+		}
 	}
 
 	const setAside = (widgets?: WidgetName[]) => {
