@@ -12,6 +12,7 @@ interface CarouselConfig {
   interval?: number
   showControls?: boolean
   showIndicators?: boolean
+  animation?: 'fade' | 'slide' | 'scale' | 'none'
 }
 
 interface Props {
@@ -35,7 +36,8 @@ const props = withDefaults(defineProps<Props>(), {
     enabled: false,
     interval: 5000,
     showControls: true,
-    showIndicators: true
+    showIndicators: true,
+    animation: 'fade'
   })
 })
 
@@ -105,22 +107,47 @@ const onMouseLeave = () => {
     <div class="sidebar-image-wrapper">
       <!-- 图片轮播 -->
       <div class="carousel-container">
-        <div 
-          v-for="(image, index) in imageList"
-          v-show="index === currentIndex"
-          :key="`${image.src}-${index}`"
-          class="image-wrapper"
-          :style="{ transform: `scale(${image.scale ?? scale})` }"
-        >
-          <img
-            :src="image.src"
-            :alt="image.alt || alt || 'Sidebar Image'"
-            :width="image.width || width"
-            :height="image.height || height"
-            class="sidebar-image"
-            loading="lazy"
-          />
-        </div>
+        <template v-if="props.carousel?.animation === 'none'">
+          <div 
+            v-for="(image, index) in imageList"
+            v-show="index === currentIndex"
+            :key="`${image.src}-${index}`"
+            class="image-wrapper"
+            :style="{ transform: `scale(${image.scale ?? scale})` }"
+          >
+            <img
+              :src="image.src"
+              :alt="image.alt || alt || 'Sidebar Image'"
+              :width="image.width || width"
+              :height="image.height || height"
+              class="sidebar-image"
+              loading="lazy"
+            />
+          </div>
+        </template>
+        <template v-else>
+          <div 
+            v-for="(image, index) in imageList"
+            :key="`${image.src}-${index}`"
+          >
+            <Transition name="fade-slide" mode="out-in">
+              <div 
+                v-show="index === currentIndex"
+                class="image-wrapper"
+                :style="{ transform: `scale(${image.scale ?? scale})` }"
+              >
+                <img
+                  :src="image.src"
+                  :alt="image.alt || alt || 'Sidebar Image'"
+                  :width="image.width || width"
+                  :height="image.height || height"
+                  class="sidebar-image"
+                  loading="lazy"
+                />
+              </div>
+            </Transition>
+          </div>
+        </template>
       </div>
 
       <!-- 控制按钮 -->
@@ -179,14 +206,63 @@ const onMouseLeave = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
   transform-origin: center;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* 简单的淡入滑动动画 */
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .sidebar-image {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+/* 确保所有图片在容器中居中显示 */
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, opacity;
+}
+
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateX(30px) scale(0.98);
+}
+
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateX(-30px) scale(0.98);
+}
+
+.fade-slide-enter-to,
+.fade-slide-leave-from {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* 高性能动画容器 */
+.carousel-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0); /* 启用GPU加速 */
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 

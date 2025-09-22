@@ -108,7 +108,7 @@ export default defineAppConfig({
 			},
 			{
 				src: 'https://cdn.atao.cyou/Web/web_250922_130301.png',
-				scale: 0.85
+				scale: 0.95
 			},
 		],
 		alt: '像素风',
