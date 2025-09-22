@@ -20,8 +20,8 @@ const rawWidgets = {
 	LazyWidgetGithubCard,
 	LazyWidgetToc,
 	LazyWidgetThemeCard: defineAsyncComponent(() => import('~/components/widget/ThemeCard.vue')),
-	LazyWidgetWorkStatus: defineAsyncComponent(() => import('~/components/widget/WorkStatusCard.vue')),
 	LazyWidgetAnnouncementCard: defineAsyncComponent(() => import('~/components/widget/AnnouncementCard.vue')),
+	LazyWidgetSidebarImage: defineAsyncComponent(() => import('~/components/widget/SidebarImage.vue')),
 }
 
 type RawWidgetName = keyof typeof rawWidgets | 'LazyWidgetThemeCard'

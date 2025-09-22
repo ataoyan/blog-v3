@@ -4,11 +4,32 @@ import TravelCard from '~/components/travel/TravelCard.vue'
 import { useLayoutStore } from '~/stores/layout'
 import { useRoute, useHead, navigateTo } from '#imports'
 import { useAppConfig } from '#imports'
+import type { WidgetName } from '~/composables/useWidgets'
+import { computed, watch } from 'vue'
 
 const route = useRoute()
 const layoutStore = useLayoutStore()
-layoutStore.setAside(['blog-stats', 'announcement-card', 'work-status', 'theme-card'])
 const appConfig = useAppConfig()
+
+// 根据配置决定是否显示侧边栏图片
+const asideWidgets = computed<WidgetName[]>(() => {
+  const widgets: WidgetName[] = ['blog-stats', 'announcement-card', 'theme-card']
+  
+  // 如果启用了侧边栏图片，在公告后添加图片组件
+  if (appConfig.sidebarImage?.enabled) {
+    // 在 'announcement-card' 后插入 'sidebar-image'
+    const announcementIndex = widgets.indexOf('announcement-card')
+    if (announcementIndex !== -1) {
+      widgets.splice(announcementIndex + 1, 0, 'sidebar-image')
+    }
+  }
+  
+  return widgets
+})
+
+watch(asideWidgets, (newWidgets) => {
+  layoutStore.setAside(newWidgets)
+}, { immediate: true })
 
 // 照片预览状态
 const showPreview = ref(false)
@@ -31,7 +52,10 @@ const closePhotoPreview = () => {
 const nextPhoto = () => {
   if (travel && travel.photos) {
     currentPhotoIndex.value = (currentPhotoIndex.value + 1) % travel.photos.length
-    currentPhoto.value = travel.photos[currentPhotoIndex.value]
+    const photo = travel.photos[currentPhotoIndex.value]
+    if (photo) {
+      currentPhoto.value = photo
+    }
   }
 }
 
@@ -39,7 +63,10 @@ const nextPhoto = () => {
 const prevPhoto = () => {
   if (travel && travel.photos) {
     currentPhotoIndex.value = (currentPhotoIndex.value - 1 + travel.photos.length) % travel.photos.length
-    currentPhoto.value = travel.photos[currentPhotoIndex.value]
+    const photo = travel.photos[currentPhotoIndex.value]
+    if (photo) {
+      currentPhoto.value = photo
+    }
   }
 }
 
@@ -219,7 +246,7 @@ if (travel) {
         <NuxtImg 
           v-if="!isVideoFile(currentPhoto)"
           :src="currentPhoto" 
-          :alt="`${travel.location} 照片 ${currentPhotoIndex + 1}`"
+          :alt="`${travel?.location || '旅行'} 照片 ${currentPhotoIndex + 1}`"
           class="preview-image"
         />
         <video
@@ -238,7 +265,7 @@ if (travel) {
         </button>
       </div>
 
-      <div class="photo-counter">
+      <div class="photo-counter" v-if="travel && travel.photos">
         {{ currentPhotoIndex + 1 }} / {{ travel.photos.length }}
       </div>
     </div>

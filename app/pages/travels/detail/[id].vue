@@ -5,10 +5,11 @@ definePageMeta({
 })
 
 import travels from '~/travels'
-import { useRoute, useHead, onMounted, ref } from '#imports'
+import { useRoute, useHead, onMounted, ref, computed, watch } from '#imports'
 import { createError } from '#imports'
 import { useLayoutStore } from '~/stores/layout'
 import { useAppConfig } from '#imports'
+import type { WidgetName } from '~/composables/useWidgets'
 
 const route = useRoute()
 const travelId = ref(route.params.id as string)
@@ -36,7 +37,10 @@ const closePhotoPreview = () => {
 const nextPhoto = () => {
   if (travel.value && travel.value.photos) {
     currentPhotoIndex.value = (currentPhotoIndex.value + 1) % travel.value.photos.length
-    currentPhoto.value = travel.value.photos[currentPhotoIndex.value]
+    const photo = travel.value.photos[currentPhotoIndex.value]
+    if (photo) {
+      currentPhoto.value = photo
+    }
   }
 }
 
@@ -44,7 +48,10 @@ const nextPhoto = () => {
 const prevPhoto = () => {
   if (travel.value && travel.value.photos) {
     currentPhotoIndex.value = (currentPhotoIndex.value - 1 + travel.value.photos.length) % travel.value.photos.length
-    currentPhoto.value = travel.value.photos[currentPhotoIndex.value]
+    const photo = travel.value.photos[currentPhotoIndex.value]
+    if (photo) {
+      currentPhoto.value = photo
+    }
   }
 }
 
@@ -70,7 +77,26 @@ onMounted(() => {
 
 // 设置布局
 const layoutStore = useLayoutStore()
-layoutStore.setAside(['blog-stats', 'announcement-card', 'work-status', 'theme-card'])
+
+// 根据配置决定是否显示侧边栏图片
+const asideWidgets = computed<WidgetName[]>(() => {
+  const widgets: WidgetName[] = ['blog-stats', 'announcement-card', 'theme-card']
+  
+  // 如果启用了侧边栏图片，在公告后添加图片组件
+  if (appConfig.sidebarImage?.enabled) {
+    // 在 'announcement-card' 后插入 'sidebar-image'
+    const announcementIndex = widgets.indexOf('announcement-card')
+    if (announcementIndex !== -1) {
+      widgets.splice(announcementIndex + 1, 0, 'sidebar-image')
+    }
+  }
+  
+  return widgets
+})
+
+watch(asideWidgets, (newWidgets) => {
+  layoutStore.setAside(newWidgets)
+}, { immediate: true })
 
 // 在组件挂载后确保能正确获取路由参数
 onMounted(() => {

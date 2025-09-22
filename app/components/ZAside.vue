@@ -1,7 +1,22 @@
 <script setup lang="ts">
 const layoutStore = useLayoutStore()
+const appConfig = useAppConfig()
 
 const { widgets } = useWidgets(() => layoutStore.asideWidgets)
+
+// 为特定widget提供props
+const getWidgetProps = (widgetName: string) => {
+  if (widgetName === 'sidebar-image') {
+    return {
+      src: appConfig.sidebarImage?.src,
+      alt: appConfig.sidebarImage?.alt,
+      width: appConfig.sidebarImage?.width,
+      height: appConfig.sidebarImage?.height,
+      scale: appConfig.sidebarImage?.scale
+    }
+  }
+  return {}
+}
 </script>
 
 <template>
@@ -14,7 +29,7 @@ const { widgets } = useWidgets(() => layoutStore.asideWidgets)
 	<aside v-if="layoutStore.asideWidgets?.length" id="z-aside" :class="{ show: layoutStore.isOpen('aside') }">
 		<TransitionGroup name="float-in">
 			<!-- 更换页面时相同 key 的组件不会更新 -->
-			<component :is="widget.comp" v-for="widget in widgets" :key="widget.name" />
+			<component :is="widget.comp" v-for="widget in widgets" :key="widget.name" v-bind="getWidgetProps(widget.name)" />
 		</TransitionGroup>
 	</aside>
 </Transition>

@@ -3,10 +3,32 @@ import pets from '~/pets'
 import PetCard from '~/components/pet/PetCard.vue'
 import PetProfile from '~/components/pet/PetProfile.vue'
 import { useLayoutStore } from '~/stores/layout'
-import { ref } from 'vue'
+import { useAppConfig } from '#imports'
+import { ref, computed, watch } from 'vue'
+import type { WidgetName } from '~/composables/useWidgets'
 
 const layoutStore = useLayoutStore()
-layoutStore.setAside(['blog-stats', 'announcement-card', 'work-status', 'theme-card'])
+const appConfig = useAppConfig()
+
+// 根据配置决定是否显示侧边栏图片
+const asideWidgets = computed<WidgetName[]>(() => {
+  const widgets: WidgetName[] = ['blog-stats', 'announcement-card', 'theme-card']
+  
+  // 如果启用了侧边栏图片，在公告后添加图片组件
+  if (appConfig.sidebarImage?.enabled) {
+    // 在 'announcement-card' 后插入 'sidebar-image'
+    const announcementIndex = widgets.indexOf('announcement-card')
+    if (announcementIndex !== -1) {
+      widgets.splice(announcementIndex + 1, 0, 'sidebar-image')
+    }
+  }
+  
+  return widgets
+})
+
+watch(asideWidgets, (newWidgets) => {
+  layoutStore.setAside(newWidgets)
+}, { immediate: true })
 
 const selectedPetId = ref<string>(pets[0]?.id || '')
 const selectedPet = ref(pets.find(pet => pet.id === selectedPetId.value) || undefined)
@@ -14,7 +36,7 @@ const selectedPet = ref(pets.find(pet => pet.id === selectedPetId.value) || unde
 const selectPet = (petId: string) => {
   selectedPetId.value = petId
   const foundPet = pets.find(pet => pet.id === petId)
-  selectedPet.value = foundPet ? { ...foundPet } : null
+  selectedPet.value = foundPet ? { ...foundPet } : undefined
 }
 </script>
 

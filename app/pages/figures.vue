@@ -3,13 +3,35 @@ import figures from '~/figures'
 import FigureCard from '~/components/figure/FigureCard.vue'
 import { useStorage } from '@vueuse/core'
 import { useLayoutStore } from '~/stores/layout'
+import { useAppConfig } from '#imports'
 import { computed, ref, watch } from 'vue'
 import { navigateTo, useRoute } from '#imports'
+import type { WidgetName } from '~/composables/useWidgets'
 
 type Series = string
 
 const layoutStore = useLayoutStore()
-layoutStore.setAside(['blog-stats', 'announcement-card', 'work-status', 'theme-card'])
+const appConfig = useAppConfig()
+
+// 根据配置决定是否显示侧边栏图片
+const asideWidgets = computed<WidgetName[]>(() => {
+  const widgets: WidgetName[] = ['blog-stats', 'announcement-card', 'theme-card']
+  
+  // 如果启用了侧边栏图片，在公告后添加图片组件
+  if (appConfig.sidebarImage?.enabled) {
+    // 在 'announcement-card' 后插入 'sidebar-image'
+    const announcementIndex = widgets.indexOf('announcement-card')
+    if (announcementIndex !== -1) {
+      widgets.splice(announcementIndex + 1, 0, 'sidebar-image')
+    }
+  }
+  
+  return widgets
+})
+
+watch(asideWidgets, (newWidgets) => {
+  layoutStore.setAside(newWidgets)
+}, { immediate: true })
 
 
 const route = useRoute()
