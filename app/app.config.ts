@@ -127,10 +127,6 @@ export default defineAppConfig({
 				scale: 1.1
 			},
 			{
-				src: 'https://cdn.atao.cyou/Web/web_250923_085738.png',
-				scale: 1.1
-			},
-			{
 				src: 'https://cdn.atao.cyou/Web/web_250923_085739.png',
 				scale: 1.1
 			},

@@ -17,7 +17,7 @@ export default {
 			name: 'iPad Air(第 5 代)',
 			series: '深空灰色 / 256G',
 			desc: '性能出色，轻薄便携，屏幕优质，体验良好。',
-			image: 'https://cdn.atao.cyou/Web/web_250115_230822.png',
+			image: 'https://cdn.atao.cyou/Web/web_250923_202422.png',
 			url: 'https://support.apple.com/zh-cn/111887/',
 		},
 		{

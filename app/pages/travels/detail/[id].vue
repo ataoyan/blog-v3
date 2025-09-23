@@ -207,6 +207,7 @@ useHead({
               :alt="`${travel.location} 照片 ${index + 1}`" 
               loading="lazy" 
               :width="400" 
+              :height="300"
               :quality="90" 
               densities="x1 x1.5 x2 x3" 
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" 
@@ -223,25 +224,31 @@ useHead({
   </div>
 
   <!-- 照片预览模态框 -->
-  <div v-if="showPreview" class="photo-preview-modal" @click.self="closePhotoPreview">
-    <div class="preview-content">
-      <!-- 关闭按钮 -->
+  <div v-if="showPreview" class="photo-preview-modal" @click="closePhotoPreview">
+    <div class="preview-content" @click.stop>
       <button class="close-btn" @click="closePhotoPreview">
-        <Icon name="ph:x-bold" size="24" />
+        <Icon name="ph:x-bold" />
       </button>
       
-      <!-- 照片容器 -->
-      <div class="photo-container">
-        <img :src="currentPhoto" :alt="`旅行照片 ${currentPhotoIndex + 1}`" class="preview-image" />
+      <div class="preview-image-container">
+        <button v-if="travel?.photos && travel.photos.length > 1" class="nav-btn prev-btn" @click="prevPhoto">
+          <Icon name="ph:caret-left-bold" size="32" />
+        </button>
+        
+        <img 
+          :src="currentPhoto" 
+          :alt="`旅行照片 ${currentPhotoIndex + 1}`"
+          class="preview-image"
+        />
+        
+        <button v-if="travel?.photos && travel.photos.length > 1" class="nav-btn next-btn" @click="nextPhoto">
+          <Icon name="ph:caret-right-bold" size="32" />
+        </button>
       </div>
-      
-      <!-- Apple风格的导航按钮 -->
-      <button v-if="travel?.photos && travel.photos.length > 1" class="nav-btn prev-btn" @click.stop="prevPhoto">
-        <Icon name="ph:caret-left-bold" size="32" />
-      </button>
-      <button v-if="travel?.photos && travel.photos.length > 1" class="nav-btn next-btn" @click.stop="nextPhoto">
-        <Icon name="ph:caret-right-bold" size="32" />
-      </button>
+
+      <div v-if="travel?.photos && travel.photos.length > 1" class="photo-counter">
+        {{ currentPhotoIndex + 1 }} / {{ travel.photos.length }}
+      </div>
     </div>
   </div>
 </template>
@@ -336,7 +343,7 @@ useHead({
     
     .photos-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
       gap: 1.5rem;
       
       .photo-item {
@@ -351,7 +358,7 @@ useHead({
         
         .photo-image {
           width: 100%;
-          height: 250px;
+          height: 300px;
           object-fit: cover;
           object-position: center;
         }
@@ -382,12 +389,12 @@ useHead({
     
     .photos-section {
       .photos-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 1rem;
         
         .photo-item {
           .photo-image {
-            height: 200px;
+            height: 250px;
           }
         }
       }
@@ -395,15 +402,165 @@ useHead({
   }
 }
 
+.photo-preview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.photo-preview-modal .preview-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  background: var(--ld-bg-card);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.photo-preview-modal .close-btn {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-primary);
+  cursor: pointer;
+  backdrop-filter: blur(20px);
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.photo-preview-modal .close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.photo-preview-modal .preview-image-container {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 20px;
+  width: 1000px;
+  height: 700px;
+  position: relative;
+}
+
+.photo-preview-modal .preview-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 左右导航按钮 */
+.photo-preview-modal .nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-primary);
+  cursor: pointer;
+  backdrop-filter: blur(20px);
+  transition: all 0.2s ease;
+  opacity: 0.8;
+  z-index: 10;
+  box-shadow: 0 0 0 2px var(--c-primary), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.photo-preview-modal .nav-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 0 3px var(--c-primary), 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.photo-preview-modal .nav-btn.prev-btn {
+  left: 20px;
+}
+
+.photo-preview-modal .nav-btn.next-btn {
+  right: 20px;
+}
+
+/* 页码指示器 */
+.photo-preview-modal .photo-counter {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  color: var(--c-primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  z-index: 10;
+  box-shadow: 0 0 0 2px var(--c-primary), 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--c-primary);
+}
+
+@media (max-width: 768px) {
+  .photo-preview-modal .preview-content .close-btn {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .photo-preview-modal .preview-content .nav-btn {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .photo-preview-modal .preview-content .nav-btn.prev-btn {
+    left: 10px;
+  }
+  
+  .photo-preview-modal .preview-content .nav-btn.next-btn {
+    right: 10px;
+  }
+}
+
 @media (max-width: 480px) {
-  .travel-detail {
-    .header-section {
-      .info-panel {
-        .info-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    }
+  .travel-detail .header-section .info-panel .info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .photo-preview-modal .photo-counter {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    bottom: 1.5rem;
+  }
+  
+  .photo-preview-modal .preview-image-container {
+    width: 90vw;
+    height: 70vh;
+    padding: 15px;
   }
 }
 </style>

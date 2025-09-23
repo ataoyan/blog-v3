@@ -170,10 +170,10 @@ onMounted(() => {
                 class="moment-image"
                 :class="{ 'grid-item': moment.images.length > 1 }"
                 :modifiers="{
-                  width: 600,
-                  height: 400,
+                  width: 400,
+                  height: 300,
                   fit: 'cover',
-                  quality: 75
+                  quality: 80
                 }"
                 loading="lazy"
                 @click="openPhotoPreview(image, moment.images, index)"
@@ -377,24 +377,24 @@ onMounted(() => {
 
 .single-image .moment-image {
   width: 100%;
+  max-width: 600px;
+  height: 400px;
   border-radius: 12px;
   object-fit: cover;
-  max-height: 400px;
   transition: filter 0.3s ease;
 }
 
 .grid-images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .grid-item {
   width: 100%;
-  height: 100%;
-  border-radius: 8px;
+  height: 300px;
+  border-radius: 10px;
   object-fit: cover;
-  aspect-ratio: 1;
   transition: filter 0.3s ease;
 }
 
@@ -508,7 +508,7 @@ onMounted(() => {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: var(--c-primary);
       cursor: pointer;
       backdrop-filter: blur(20px);
       transition: all 0.2s ease;
@@ -521,11 +521,14 @@ onMounted(() => {
     }
     
     .preview-image-container {
-      max-width: 80vw;
-      max-height: 70vh;
+      background: white;
       display: flex;
       align-items: center;
       justify-content: center;
+      border-radius: 8px;
+      padding: 20px;
+      width: 1000px;
+      height: 700px;
       
       .preview-image {
         max-width: 100%;
@@ -549,17 +552,19 @@ onMounted(() => {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: var(--c-primary);
       cursor: pointer;
       backdrop-filter: blur(20px);
       transition: all 0.2s ease;
       opacity: 0.8;
       z-index: 10;
+      box-shadow: 0 0 0 2px var(--c-primary), 0 4px 12px rgba(0, 0, 0, 0.3);
       
       &:hover {
         background: rgba(255, 255, 255, 0.2);
         opacity: 1;
         transform: translateY(-50%) scale(1.1);
+        box-shadow: 0 0 0 3px var(--c-primary), 0 6px 16px rgba(0, 0, 0, 0.4);
       }
       
       &.prev-btn {
@@ -577,15 +582,15 @@ onMounted(() => {
       bottom: 2rem;
       left: 50%;
       transform: translateX(-50%);
-      background: var(--ld-bg-card);
+      background: rgba(255, 255, 255, 0.9);
       padding: 0.75rem 2rem;
       border-radius: 2rem;
-      color: var(--c-text-1);
+      color: var(--c-primary);
       font-size: 1.2rem;
       font-weight: 700;
       z-index: 10;
-      box-shadow: 0 4px 20px var(--ld-shadow);
-      border: 2px solid var(--c-border);
+      box-shadow: 0 0 0 2px var(--c-primary), 0 4px 12px rgba(0, 0, 0, 0.3);
+      border: 2px solid var(--c-primary);
     }
   }
 }
@@ -617,6 +622,12 @@ onMounted(() => {
       .photo-counter {
         font-size: 1rem;
         padding: 0.5rem 1rem;
+      }
+      
+      .preview-image-container {
+        width: 90vw;
+        height: 70vh;
+        padding: 15px;
       }
     }
   }
