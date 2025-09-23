@@ -35,7 +35,7 @@
     <!-- 右下角upstream图片 -->
     <div v-if="upstream" class="upstream-image">
       <img 
-        src="/imgs/upstream.png" 
+        src="https://cdn.atao.cyou/Web/upstream.png" 
         alt="upstream"
         class="upstream-img"
       />
@@ -44,7 +44,7 @@
     <!-- 右下角recommend图片 -->
     <div v-if="recommend" class="recommend-image">
       <img 
-        src="/imgs/recommend.png" 
+        src="https://cdn.atao.cyou/Web/recommend.png" 
         alt="recommend"
         class="recommend-img"
       />
