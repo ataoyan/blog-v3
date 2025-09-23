@@ -25,6 +25,10 @@ export interface FeedEntry {
 	tags?: string[]
 	/** 是否为上游友链 */
 	upstream?: boolean
+	/** 二维码图片链接 */
+	qrcode?: string
+	/** 是否为推荐友链 */
+	recommend?: boolean
 }
 
 export interface FeedGroup {

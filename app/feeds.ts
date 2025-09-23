@@ -14,7 +14,8 @@ export default [
 				link: 'https://blog.zhilu.site/',
 				avatar: 'https://www.zhilu.site/api/avatar.png',
 				date: '2025-09-03',
-				upstream: true
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_zhilu.png",
+				upstream: true,
 			},
 			{
 				author: 'Luxynth',
@@ -22,7 +23,8 @@ export default [
 				desc: '我心匪石不可转',
 				link: 'https://www.luxynth.cn',
 				avatar: 'https://www.luxynth.cn/assets/images/avatar.jpg',
-				date: '2025-09-09'
+				date: '2025-09-09',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_luxynth.png",
 			},
 			{
 				author: '鈴奈咲桜',
@@ -30,7 +32,9 @@ export default [
 				desc: '愛することを忘れないで',
 				link: 'https://blog.sakura.ink',
 				avatar: 'https://q2.qlogo.cn/headimg_dl?dst_uin=2731443459&spec=5',
-				date: '2025-09-09'
+				date: '2025-09-09',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_sakura.png",
+				recommend: true
 			},
 			{
 				author: 'Almango',
@@ -38,7 +42,9 @@ export default [
 				desc: '天真永不消逝，浪漫至死不渝。',
 				link: 'https://www.almango.cn/',
 				avatar: 'https://www.almango.cn/img/favicon.png',
-				date: '2025-09-09'
+				date: '2025-09-09',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_almango.png",
+				recommend: true
 			},
 			{
 				author: 'kzhik',
@@ -46,7 +52,9 @@ export default [
 				desc: 'EXPLORE THE WORLD!',
 				link: 'https://www.kzhik.cn',
 				avatar: 'https://www.kzhik.cn/avatar.webp',
-				date: '2025-09-09'
+				date: '2025-09-09',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_kzhik.png",
+				recommend: true
 			},
 			{
 				author: '成烁',
@@ -54,7 +62,8 @@ export default [
 				desc: '致一锦程 探索不停',
 				link: 'https://blog.chengshuo.top',
 				avatar: 'https://blog.chengshuo.top/usr/uploads/2025/08/1293883047.webp',
-				date: '2025-09-10'
+				date: '2025-09-10',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_chengshuo.png",
 			},
 			{
 				author: '落尘up',
@@ -62,7 +71,8 @@ export default [
 				desc: '不止于代码与技术，更关注生活与思考。在喧嚣中落下的尘埃，亦能闪烁微光。',
 				link: 'https://www.luochen.chat/',
 				avatar: 'https://www.luochenup.xyz/b_a5a3aa888355bdc617dca021efb19ab8.png',
-				date: '2025-09-11'
+				date: '2025-09-11',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_luochen.png",
 			},
 			{
 				author: 'HeLongaa',
@@ -70,7 +80,8 @@ export default [
 				desc: '等待和犹豫才是这个世界上最无情的杀手',
 				link: 'https://blog.helong.online',
 				avatar: 'https://oss.helong.online/bucket-IMG/bea2394fef15b88de49ae37707b3c1b86d7dbc2035a752ef2581a8b6cb3b2e8c.png',
-				date: '2025-09-11'
+				date: '2025-09-11',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_helong.png",
 			},
 			{
 				author: '克喵爱吃卤面',
@@ -78,7 +89,8 @@ export default [
 				desc: '愿你看清一切真相后，依旧热爱你的家人和朋友。',
 				link: 'https://blog-v3.kemeow.top',
 				avatar: 'https://img.314926.xyz/images/2025/08/13/no-background-kemiaofxjun.webp',
-				date: '2025-09-11'
+				date: '2025-09-11',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_kemeow.png",
 			},
 			{
 				author: 'Zixue',
@@ -86,7 +98,8 @@ export default [
 				desc: '人山人海人来人往,自尊自爱自由自在',
 				link: 'https://blog.ziyibbs.com/',
 				avatar: 'https://blog.ziyibbs.com/favicon/logo.png',
-				date: '2025-09-11'
+				date: '2025-09-11',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_ziyibbs.png",
 			},
 			{
 				author: 'Refactored',
@@ -94,7 +107,8 @@ export default [
 				desc: '形体是简单而纯粹的，它不是完整的群体，每个形体都指向其复杂性，并最终被复杂性联系在一起。',
 				link: 'https://www.refact.cc/',
 				avatar: 'https://www.refact.cc/avatar.png',
-				date: '2025-09-21'
+				date: '2025-09-21',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_refact.png",
 			},
 			{
 				author: '酥米',
@@ -102,7 +116,8 @@ export default [
 				desc: '终有一日，寻梦中人',
 				link: 'https://www.sumi233.top/',
 				avatar: 'https://cdn.sumi233.top/gh/huang233893/blog-image-bed/top/huang233893/imgs/blog/userfb6a1018b84ce485.jpg',
-				date: '2025-09-21'
+				date: '2025-09-21',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_sumi233.png",
 			},
 			{
 				author: '雪萌天文台',
@@ -110,7 +125,8 @@ export default [
 				desc: '发现巷子里的那颗星星',
 				link: 'https://blog.snowy.moe/',
 				avatar: 'https://img.snowy.moe/head.png',
-				date: '2025-09-22'
+				date: '2025-09-22',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_snowy.png",
 			},
 		],
 	},

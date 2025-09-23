@@ -192,11 +192,14 @@ const showToast = (message: string) => {
         v-for="feed in categorizedFeeds[activeCategory]"
         :key="feed.link"
         :siteName="feed.author"
+        :sitenick="feed.sitenick"
         :siteUrl="feed.link"
         :siteDesc="feed.desc"
         :siteIcon="feed.avatar || feed.icon"
-        :badgeText="feed.badgeText"
+        :date="feed.date"
         :upstream="feed.upstream || false"
+        :qrcode="feed.qrcode || ''"
+        :recommend="feed.recommend || false"
       />
     </div>
   </div>
