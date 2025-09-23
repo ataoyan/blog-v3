@@ -126,6 +126,22 @@ export default defineAppConfig({
 				src: 'https://cdn.atao.cyou/Web/web_250922_230254.png',
 				scale: 1.1
 			},
+			{
+				src: 'https://cdn.atao.cyou/Web/web_250923_085738.png',
+				scale: 1.1
+			},
+			{
+				src: 'https://cdn.atao.cyou/Web/web_250923_085739.png',
+				scale: 1.1
+			},
+			{
+				src: 'https://cdn.atao.cyou/Web/web_250923_085740.png',
+				scale: 1.1
+			},
+			{
+				src: 'https://cdn.atao.cyou/Web/web_250923_085741.png',
+				scale: 1.1
+			},
 		],
 		alt: '像素风',
 		width: 240,
