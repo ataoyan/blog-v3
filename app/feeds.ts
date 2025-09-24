@@ -128,6 +128,15 @@ export default [
 				date: '2025-09-22',
 				qrcode: "https://cdn.atao.cyou/Web/qrcode_snowy.png",
 			},
+			{
+				author: '森语 - SENblog',
+				sitenick: "森语 - SENblog",
+				desc: '无限进步！',
+				link: 'https://blog.sakurasen.cn',
+				avatar: 'https://sakurasen.cn/icon',
+				date: '2025-09-24',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_sakurasen.png",
+			},
 		],
 	},
 ] satisfies FeedGroup[]
