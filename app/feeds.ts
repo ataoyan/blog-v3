@@ -137,6 +137,15 @@ export default [
 				date: '2025-09-24',
 				qrcode: "https://cdn.atao.cyou/Web/qrcode_sakurasen.png",
 			},
+			{
+				author: 'CrB_Uki',
+				sitenick: "UTOPIA",
+				desc: '散落在世界一角的故事',
+				link: 'https://ishya.top',
+				avatar: 'https://ishya.top/source/imgs/avatar.jpg',
+				date: '2025-09-24',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_ishya.png",
+			},
 		],
 	},
 ] satisfies FeedGroup[]
