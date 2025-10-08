@@ -87,28 +87,21 @@ caption: MAIL_TEMPLATE样式
             <div style="text-align: center;">
                 <div
                     style="font-size: 28px; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px;">
-                    <span style="font-size: 26px;">👋</span> Hi ${PARENT_NICK} </div>
+                    <span style="font-size: 26px;">👋</span> Hi ATao </div>
                 <div style="margin-top: 10px; font-size:16px;"> 您在 <a href="${SITE_URL}"
-                        style="color: white; text-decoration: underline; font-weight: 500;">${SITE_NAME}</a> 中收到一条新回复！
+                        style="color: white; text-decoration: underline; font-weight: 500;">${SITE_NAME}</a> 中收到一条新的评论！
                 </div>
-            </div> <!-- 右侧图片 --> <img src="https://cdn.atao.cyou/Web/web_250913_194213.png"
+            </div> <!-- 右侧图片 --> <img src="https://cdn.atao.cyou/Web/web_250913_213324.png"
                 style="display:block; max-width:100px;">
         </div> <!-- 内容区域 -->
         <div style="padding: 25px 20px;"> <!-- 原评论部分 -->
             <div style="margin-bottom: 20px;">
-                <div style="font-weight: bold; margin-bottom: 10px; color: #333; font-size: 16px;">您发表的评论：</div>
-                <div style="background-color: #f5f7fa; border-radius: 6px; padding: 15px; border: 1px solid #ebf0f5;">
-                    <div style="color: #f8db8f; font-weight: 500; margin-bottom: 8px;">@${PARENT_NICK}:</div>
-                    <div style="color: #333; line-height: 1.6;">
-                        <div style="margin-bottom: 5px;">${PARENT_COMMENT}</div>
-                    </div>
-                </div>
-            </div> <!-- 收到的回复部分 -->
-            <div style="margin-bottom: 30px;">
-                <div style="font-weight: bold; margin-bottom: 10px; color: #333; font-size: 16px;">您收到的回复</div>
+                <div style="font-weight: bold; margin-bottom: 10px; color: #333; font-size: 16px;">评论内容：</div>
                 <div style="background-color: #f5f7fa; border-radius: 6px; padding: 15px; border: 1px solid #ebf0f5;">
                     <div style="color: #f8db8f; font-weight: 500; margin-bottom: 8px;">@${NICK}:</div>
-                    <div style="color: #333; line-height: 1.6;">${COMMENT}</div>
+                    <div style="color: #333; line-height: 1.6;">
+                        <div style="margin-bottom: 5px;">${COMMENT}</div>
+                    </div>
                 </div>
             </div> <!-- 回复按钮 -->
             <div style="margin-bottom: 30px;"> <a href="${POST_URL}"
