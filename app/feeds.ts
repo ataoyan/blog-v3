@@ -146,6 +146,15 @@ export default [
 				date: '2025-09-24',
 				qrcode: "https://cdn.atao.cyou/Web/qrcode_ishya.png",
 			},
+			{
+				author: '喜之梁',
+				sitenick: "喜之梁",
+				desc: '多点关心多点爱',
+				link: 'https://blog.liang.one',
+				avatar: 'https://bu.dusays.com/2025/10/02/68de1a78e7aa4.webp',
+				date: '2025-10-08',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_liang.png",
+			},
 		],
 	},
 ] satisfies FeedGroup[]
