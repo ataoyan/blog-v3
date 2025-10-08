@@ -277,6 +277,52 @@ const travels: TravelItem[] = [
       { name: '演唱会', color: '#E84855' },
     ]
   },
+  {
+    id: '11',
+    year: '2025',
+    location: '绍兴',
+    province: '浙江',
+    date: '2025-10-03',
+    transportation: '自驾',
+    duration: '3天',
+    weather: '晴',
+    rating: 4.7,
+    coverImage: 'https://cdn.atao.cyou/Travel/travel_251008_224612.jpg',
+    photos: [
+      'https://cdn.atao.cyou/Travel/travel_251008_224612.jpg',
+      'https://cdn.atao.cyou/Travel/travel_251008_224610.jpg',
+      'https://cdn.atao.cyou/Travel/travel_251008_224611.jpg',
+      'https://cdn.atao.cyou/Travel/travel_251008_224613.jpg',
+      'https://cdn.atao.cyou/Travel/travel_251008_224618.jpg',
+      'https://cdn.atao.cyou/Travel/travel_251008_224620.jpg',
+    ],
+    attractions: [
+      { name: '鲁迅故居', color: '#4d78cc' },
+    ]
+  },
+  {
+    id: '12',
+    year: '2025',
+    location: '宁波',
+    province: '浙江',
+    date: '2025-10-05',
+    transportation: '自驾',
+    duration: '0.5天',
+    weather: '晴',
+    rating: 4.2,
+    coverImage: 'https://cdn.atao.cyou/Travel/travel_251008_224614.jpg',
+    photos: [
+      'https://cdn.atao.cyou/Travel/travel_251008_224614.jpg',
+      'https://cdn.atao.cyou/Travel/travel_251008_224616.jpg',
+      'https://cdn.atao.cyou/Travel/travel_251008_224603.jpg',
+      'https://cdn.atao.cyou/Travel/travel_251008_224606.jpg',
+      'https://cdn.atao.cyou/Travel/travel_251008_224608.jpg',
+    ],
+    attractions: [
+      { name: '天一广场', color: '#a878d2' },
+      { name: '东钱湖', color: '#61afef' },
+    ]
+  },
 ]
 
 // 按日期降序排序（时间最近的在前）
