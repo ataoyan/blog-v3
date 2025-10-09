@@ -155,6 +155,15 @@ export default [
 				date: '2025-10-08',
 				qrcode: "https://cdn.atao.cyou/Web/qrcode_liang.png",
 			},
+			{
+				author: '春华秋实',
+				sitenick: "春华秋实",
+				desc: '无恙桃花，依然燕子，春景多别',
+				link: 'https://linqiushi.top',
+				avatar: 'https://youke1.picui.cn/s1/2025/10/07/68e52c2a55563.png',
+				date: '2025-10-09',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_liuqiushi.png",
+			},
 		],
 	},
 ] satisfies FeedGroup[]
