@@ -164,6 +164,15 @@ export default [
 				date: '2025-10-09',
 				qrcode: "https://cdn.atao.cyou/Web/qrcode_liuqiushi.png",
 			},
+			{
+				author: 'SatouのBlog',
+				sitenick: "SatouのBlog",
+				desc: '彼女の愛は、甘くて痛い',
+				link: 'https://www.matsusatou.top/',
+				avatar: 'https://github.com/SokiSama/picked/blob/main/avatar.jpg?raw=true',
+				date: '2025-10-15',
+				qrcode: "https://cdn.atao.cyou/Web/qrcode_satou.png",
+			},
 		],
 	},
 ] satisfies FeedGroup[]
